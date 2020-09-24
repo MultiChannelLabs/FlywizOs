@@ -1,0 +1,7 @@
+_site
+vendor
+Gemfile.lock
+_book
+npm-debug.log
+node_modules
+
