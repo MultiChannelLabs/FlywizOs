@@ -14,7 +14,7 @@ require(["gitbook"], function(gitbook) {
 function docSetupIdeDownloadUrl() {
     link_ide = $("#ide-download");
     if (link_ide != null) {
-      if ("developer.flywizos.com" == document.domain) {
+      if ("flywizos.com" == document.domain) {
         link_ide.attr("href", "http://download.zkswe.com/ide/flythings-ide-win32-win32-x86-zkswe-setup.exe");
       } else if ("docs.flywizos.com" == document.domain) {
         link_ide.attr("href", "http://download.zkswe.com/ide/flythings-ide-win32-win32-x86-community-setup.exe");
@@ -25,7 +25,7 @@ function docSetupIdeDownloadUrl() {
 function docSetupCopyright() {
     spancopyright = $("span.copyright").first();
     if (spancopyright != null) {
-      if ("developer.flywizos.com" == document.domain) {
+      if ("flywizos.com" == document.domain) {
         spancopyright.html('Copyright &copy 2020 <a target="_blank" href="http://www.flywizos.com" > <b>MultiChannelLabs</b></a>');
       } else if ("docs.flywizos.com" == document.domain) {
       } else {
