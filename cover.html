@@ -419,7 +419,7 @@ function docSetupUrl() {
     mainUrl = window.location.href.slice(0,window.location.href.length - window.location.pathname.length);
     document.getElementById("install").setAttribute("href", mainUrl + "/en/download.html");
     document.getElementById("doc").setAttribute("href", mainUrl + "/en/docs_brief.html");
-    if ("developer.flywizOS.com" == document.domain) {
+    if ("developer.flywizos.com" == document.domain) {
       document.getElementById("demo").setAttribute("href", mainUrl + "/en/demo_download.html");
       document.getElementById("demo").removeAttribute("style");
     }

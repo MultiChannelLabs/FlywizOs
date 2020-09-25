@@ -14,9 +14,9 @@ require(["gitbook"], function(gitbook) {
 function docSetupIdeDownloadUrl() {
     link_ide = $("#ide-download");
     if (link_ide != null) {
-      if ("developer.flythings.cn" == document.domain) {
+      if ("developer.flywizos.com" == document.domain) {
         link_ide.attr("href", "http://download.zkswe.com/ide/flythings-ide-win32-win32-x86-zkswe-setup.exe");
-      } else if ("docs.flythings.cn" == document.domain) {
+      } else if ("docs.flywizos.com" == document.domain) {
         link_ide.attr("href", "http://download.zkswe.com/ide/flythings-ide-win32-win32-x86-community-setup.exe");
       } else {
       }     
@@ -25,9 +25,9 @@ function docSetupIdeDownloadUrl() {
 function docSetupCopyright() {
     spancopyright = $("span.copyright").first();
     if (spancopyright != null) {
-      if ("developer.flythings.cn" == document.domain) {
-        spancopyright.html('Copyright &copy 2020 <a target="_blank" href="http://www.zkswe.com" > <b>深圳市中科世为科技有限公司</b></a>');
-      } else if ("docs.flythings.cn" == document.domain) {
+      if ("developer.flywizos.com" == document.domain) {
+        spancopyright.html('Copyright &copy 2020 <a target="_blank" href="http://www.flywizos.com" > <b>MultiChannelLabs</b></a>');
+      } else if ("docs.flywizos.com" == document.domain) {
       } else {
       }     
     }
@@ -39,7 +39,7 @@ function docSetupIndexPage() {
     }
 }
 function docSetupDemoLink() {
-  if ("docs.flythings.cn" == document.domain) {
+  if ("docs.flywizos.com" == document.domain) {
     $("li[data-path='demo_download.html']").first().remove();
     $("a[href^='demo_download.html']").each(
       function(){
