@@ -27,7 +27,7 @@ public:
    *        -10000 读取超时
    *        其他   出错
    */
-  virtual int Read(byte* buffer, int buffer_len, int timeout) = 0;
+  virtual int Read(byte* buffer, int buffer_len, int timeout_millisecond) = 0;
   virtual void Close() = 0;
   virtual Addr LocalAddr() = 0;
   virtual Addr RemoteAddr() = 0;

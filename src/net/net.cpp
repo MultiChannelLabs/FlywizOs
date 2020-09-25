@@ -174,7 +174,7 @@ public:
     return Send(sock_, bytes, bytes_len);
   }
 
-  virtual int Read(byte* buffer, int buffer_len, int timeout) {
+  virtual int Read(byte* buffer, int buffer_len, int timeout_millisecond) {
     if (sock_ < 0) {
       //没有连接
       return -1;
@@ -182,7 +182,7 @@ public:
     struct pollfd fd;
     fd.fd = sock_;
     fd.events = POLLIN;
-    int ret = poll(&fd, 1, 1000); // 1 second for timeout
+    int ret = poll(&fd, 1, timeout_millisecond);
     switch (ret) {
     case -1:
       //LOGD("poll error"); // Error
@@ -302,7 +302,7 @@ public:
    *        -10000 读取超时
    *        其他   出错
    */
-  virtual int Read(byte* buffer, int buffer_len, int timeout) {
+  virtual int Read(byte* buffer, int buffer_len, int timeout_millisecond) {
     if (sock_ < 0) {
       //没有连接
       return -1;
@@ -310,7 +310,7 @@ public:
     struct pollfd fd;
     fd.fd = sock_;
     fd.events = POLLIN;
-    int ret = poll(&fd, 1, timeout); // 1 second for timeout
+    int ret = poll(&fd, 1, timeout_millisecond);
     switch (ret) {
     case -1:
       //LOGD("poll error"); // Error
