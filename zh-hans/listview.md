@@ -26,7 +26,7 @@ WiFi列表，设备列表，表格信息
  你可以分别修改它们的属性，调整样式。我这边修改后的结果如下：  
 
  ![](assets/list/preview.png)  
-4. 在UI文件中调整好列表的大致外观后，再进行编译[(如何编译FlyThings项目)](how_to_compile_flythings.md#how_to_compile_flythings)。在自动生成的关联函数中，我们要添加具体的逻辑代码，绘制列表的具体内容。
+4. 在UI文件中调整好列表的大致外观后，再进行编译[(如何编译FlywizOS项目)](how_to_compile_flywizOS.md#how_to_compile_flywizOS)。在自动生成的关联函数中，我们要添加具体的逻辑代码，绘制列表的具体内容。
 5. 编译后，在对应的Logic.cc源文件中，每一个列表控件会生成三个与之相关的函数。
   *  `int getListItemCount_ListView1()`： 获取将要绘制列表的长度  
         例如: 要显示的数据有100条， 那么就返回100。
@@ -95,7 +95,7 @@ WiFi列表，设备列表，表格信息
 
 2. 编译项目
 这一步会自动生成列表相关的代码到相应 **Logic.cc** 文件中。  
-具体操作参考[《如何编译FlyThings项目》](how_to_compile_flythings.md#how_to_compile_flythings)
+具体操作参考[《如何编译FlywizOS项目》](how_to_compile_flywizOS.md#how_to_compile_flywizOS)
 
 3. 创建List1列表需要的数据结构体  
 一般情况，我们会定义一个结构体来作为列表每项数据的模型  

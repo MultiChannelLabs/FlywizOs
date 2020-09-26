@@ -26,7 +26,7 @@ WiFi list, device list, table information
  You can modify their properties separately and adjust the style. Below is the modified result using the example : 
 
  ![](assets/list/preview.png)  
-4. After adjusting the general appearance of the list in the UI file, compile [(How to compile the FlywizOS project)](how_to_compile_flythings.md#how_to_compile_flythings). In the automatically generated correlation function, we need to add specific logic code to draw the specific content of the list.
+4. After adjusting the general appearance of the list in the UI file, compile [(How to compile the FlywizOS project)](how_to_compile_flywizOS.md#how_to_compile_flywizOS). In the automatically generated correlation function, we need to add specific logic code to draw the specific content of the list.
 5. After compiling, in the corresponding Logic.cc source file, each list control will generate three related functions.
   *  `int getListItemCount_ListView1()`： Get the length of the list to be drawn  
         For example: there are 100 data to be displayed, then 100 is returned.
@@ -98,7 +98,7 @@ We create two list controls in turn and try to set different properties and appe
 
 2. Compile the project
 This step will automatically generate the code related to the list to the corresponding **Logic.cc** file.  
-Specific operation reference ["How to compile FlyThings project"](how_to_compile_flythings.md#how_to_compile_flythings)
+Specific operation reference ["How to compile FlywizOS project"](how_to_compile_flywizOS.md#how_to_compile_flywizOS)
 
 3. The data structure needed to create the List1 list  
 In general, we will define a structure as a model for each data item in the list  

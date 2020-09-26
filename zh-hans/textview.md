@@ -141,7 +141,7 @@ mTextview1Ptr->setText('c'); // Textview1控件将显示'c'字符
 
 3. 编译项目，注册定时器  
     添加了文本控件后，再次编译项目，在生成的`Logic.cc`文件中，注册一个定时器，时间间隔设置为 50 ms。 我们利用定时器每隔50ms切换一张图片。  
-    [如何编译项目？](how_to_compile_flythings.md)  
+    [如何编译项目？](how_to_compile_flywizOS.md)  
     [如何注册定时器？](timer.md)
 4. 动态切换文本控件的背景  
    在相应的`Logic.cc`文件中，添加如下切换背景图的函数， 并在定时器的触发函数 `bool onUI_Timer(int id)` 中调用它。   

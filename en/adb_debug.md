@@ -40,7 +40,7 @@ Similarly, after selecting the project, you can also use the shortcut keys **Ctr
 
 ![](assets/ide/launch_adb.gif)
 
-[**查看打印日志**](logcat.md)
+[**View log**](logcat.md)
 
 
 

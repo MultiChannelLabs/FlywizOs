@@ -4,12 +4,12 @@
 만약 바로가기를 삭제했다면, 설치된 폴더에서 bin폴더에서 ![ide](assets/ide/ide.png) 를 찾아 직접 실행할 수 있습니다.
 
 ## Workspace 선택
- 툴을 실행하면, 아래의 팝업화면을 볼 수 있습니다.
-* **Workspace** 는 개발에 관련된 설정과 이력이 저장되는 공간입니다. 개발자는 이 공간을 여러 프로젝트를 동시에 관리하는 컨테이너처럼 이해할 수 있어, 툴을 동시에 여러개 실행할 필요가 없습니다.
+ IDE를 실행하면, 아래의 팝업화면을 볼 수 있습니다.
+* **Workspace** 는 개발에 관련된 설정과 이력이 저장되는 공간입니다. 이 공간은 여러 프로젝트를 동시에 관리하는 컨테이너처럼 이해할 수 있어, IDE를 동시에 여러개 실행할 필요가 없습니다.
 
    ![选择工作空间](assets/ide/select_workspace.png)
 ## Welcome 화면
-만약 처음으로 툴을 실행하고 workspace를 선택하고나면 아래 그림의 Welcome화면을 볼 수 있습니다. 
+만약 처음으로 IDE를 실행하고 workspace를 선택하고나면 아래 그림의 Welcome화면을 볼 수 있습니다. 
 이 화면은 2가지의 기능을 제공합니다 : **New Project** , **Import Project**
 
   * **New Project**  
@@ -24,6 +24,6 @@
 
  Welcome화면을 다시 열기를 원한다면 **메뉴**에서 **Help -> Welcome** 를 선택하십시오.
 
- ![如何打开欢迎界面](assets/ide/reopen_welcome.png)  
+ ![시작 화면을 여는 방법](assets/ide/reopen_welcome.png)  
 
 ​    

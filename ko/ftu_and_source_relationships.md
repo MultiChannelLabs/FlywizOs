@@ -4,11 +4,11 @@
  FlywizOS는 간편한 관리를 위해 UI와 code를 분리합니다.
  아래에서, UI파일은 프로젝트의 UI폴더의 모든 ftu파일들입니다.
  개발하는 동안 코드의 중복을 줄이기 위해서, FlywizOS IDE는 컴파일 과정을 개선했습니다. 실제 소스 코드를 컴파일 하기 전에, IDE는 먼저 UI파일로부터 생성된 동일한 접두사 이름을 가지는`Logic.cc` 파일을 생성합니다.(예 : `main.ftu`는 `mainLogic.cc` 파일이 생성됨). 여기서 `Logic.cc`파일의 생성은 바로  덮어써지는 것이 아니라, 점차적으로 수정된다는 것에 주의해야 합니다.  
- 컴파일 시, IDE는 각 Ui파일을 순회하며 UI파일에 포함된 컨트롤을 읽어 코드에 컨트롤을 위한 포인터 변수를 선언하고, 개발자는 이 포인터를 이용하여 해당하는 컨트롤을 제어할 수 있습니다.  이 포인터 변수들은 UI파일과 동일한 접두사 이름을 가지는  `Activity.cpp` 파일 안에 정의됩니다.  **main.ftu** 를 예로 들면, 아래와 같습니다.
+ 컴파일 시, IDE는 각 Ui파일을 순회하며 UI파일에 포함된 컨트롤을 읽어 코드에 컨트롤을 위한 포인터 변수를 정의하고, 개발자는 이 포인터를 이용하여 해당하는 컨트롤을 제어할 수 있습니다. 이 포인터 변수들은 UI파일과 동일한 접두사 이름을 가지는  `Activity.cpp` 파일 안에 정의됩니다.  **main.ftu** 를 예로 들면, 아래와 같습니다.
 
 ![](assets/global_control_pointer.png)  
 
-**의 그림에서 보는 것처럼 모든 포인터들은 static global변수들입니다. 그리고, 그것들은 모두 동일한 명명규칙에 의해 생성되었습니다. 이 명명규칙은 [컨트롤 ID이름에 의한 포인터 변수의 명명규칙](named_rule#id_name_rule.md)을 참고하십시오. 그리고 위 그림에서 `#include "logic/mainLogic.cc"`도 주의해야 할 포인트로,  `mainLogic.cc`은 `mainActivity.cpp`에 포함되고, 개발자는 `mainLogic.cc`에서 필요한 코딩을 하기에 모든 컨트롤 포인터 변수를 사용할 수 있습니다. **  
+**위의 그림에서 보는 것처럼 모든 포인터들은 static global변수들입니다. 그리고, 그것들은 모두 동일한 명명규칙에 의해 생성되었습니다. 이 명명규칙은 [컨트롤 ID이름에 의한 포인터 변수의 이름 지정 규칙](named_rule.md#id_name_rule)을 참고하십시오. 그리고 위 그림에서 `#include "logic/mainLogic.cc"`도 주의해야 할 포인트로,  `mainLogic.cc`은 `mainActivity.cpp`에 포함되고, 개발자는 `mainLogic.cc`에서 필요한 코딩을 하기에 모든 컨트롤 포인터 변수를 사용할 수 있습니다.**  
  만약 이 포인터들의 초기화에 관심이 있다면 `mainActivity`의  `onCreate` 함수를 찾아보십시오.
 
 
@@ -145,7 +145,7 @@ typedef struct {
  타이머 콜백 함수입니다. 등록된 타이머의 타이머 주기가 도달했을 때, 시스템에 의해서 호출됩니다. 타이머가 여러개 등록되었었다면, id파라미터로 각 타이머를 구분할 수 있습니다. 이 id는 **REGISTER_ACTIVITY_TIMER_TAB[ ]  array**에 등록된 id와 같습니다.  
 Return `true`  해당 타이머를 계속 유지  
 Return `false` 해당 타이머를 중지  
-If you stopped the timer by returning `false`, how do you start it again? Please refer to [How to start and stop the timer arbitrarily](how_to_register_timer.md)
+`false`를 반환하여 타이머를 중지했다면 어떻게 다시 시작합니까? [타이머를 임의로 시작 및 중지하는 방법] (how_to_register_timer.md)을 참조하십시오.
 
 * **bool onmainActivityTouchEvent(const MotionEvent &ev)**  
  터치 이벤트 콜백 함수입니다. 모든 터치 메세지를 수신 가능합니다. 

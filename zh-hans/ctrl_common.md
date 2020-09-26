@@ -167,13 +167,13 @@ mButton1Ptr->setInvalid(FALSE);
 
 ### 1.创建控件
 
-首先，我们新建一个Flythings项目,双击打开项目UI文件夹下的main.ftu文件，在控件栏中分别拖出按键控件和文本控件。
+首先，我们新建一个FlywizOSs项目,双击打开项目UI文件夹下的main.ftu文件，在控件栏中分别拖出按键控件和文本控件。
 
 ![](images/ctrl_new_widget.gif)
 
 
 ### 2.编译项目
-(如不清楚具体操作请看[《如何编译FlyThings项目》](how_to_compile_flythings.md#how_to_compile_flythings)章节)
+(如不清楚具体操作请看[《如何编译FlywizOSs项目》](how_to_compile_flywizOS.md#how_to_compile_flywizOS)章节)
 
 ![](images/ctrl_compile_project.gif)
 

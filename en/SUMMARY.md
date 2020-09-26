@@ -47,7 +47,7 @@
 * [System application](system_app.md)
 
 * [Timer](timer.md)
-   * [Manually register/stop the timer ](how_to_register_timer.md)
+   * [Manually start/stop the timer ](how_to_register_timer.md)
 
 * [Serial communication]()
     * [Linux serial programming](linux_serial_programming.md)

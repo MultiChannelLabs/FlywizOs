@@ -7,7 +7,7 @@
 
    ![](assets/set_project_properties.png)  
 
-3. 在弹出框中选择 **FlyThings** 选项，在右侧可以看到目前项目的属性配置，确认后，点击 **应用** 保存配置。  
+3. 在弹出框中选择 **FlywizOS** 选项，在右侧可以看到目前项目的属性配置，确认后，点击 **应用** 保存配置。  
 
     ![](assets/set_project_properties2.png)
 

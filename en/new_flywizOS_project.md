@@ -1,6 +1,6 @@
 # <span id="new_flythings_project">How to create a new FlywizOS project</span>
 Creating a new FlywizOS project is very simple. Specific steps are as follows :
-1. In the menu bar at the top of the editor, select **File -> New -> FlywziOS Application Project**  
+1. In the menu bar at the top of the editor, select **File -> New -> FlywizOS Application Project**  
 
    ![新建项目](assets/ide/new_flythings_project.gif)  
 
@@ -28,27 +28,28 @@ Creating a new FlywizOS project is very simple. Specific steps are as follows :
    
     FlywizOS system provides screensaver function. If there is no touch operation on the serial port screen within the specified time, or you have not reset the screen saver timing through the code, then the system will automatically enter the screen saver.
      If the time is **-1** second, it means that the screen saver function is disabled.
-    
+   
    * **Serial port**  
     Specify the communication serial port, and generally do not need to be modified.
-     
+   
   * **Baud rate**   
      Specify the baud rate of the communication serial port 
     
    * **Resolution**  
+
     Specify the width and height of the screen in pixels
-     
+
   * **Screen rotation**  
     For some screen coordinate axis directions, you can check this option to rotate the displayed content by 90° to achieve normal display.
-     
+    
   * **Font**  
     FlywizOS supports custom fonts. If you are not satisfied with the default fonts, you can cancel the defaults and select your font file.
     
   * **Input method**  
     If you need Chinese input, you can check it, and cooperate with **[Edit Text box](edittext.md)** control to solve Chinese input.     
-  
+
    The above attributes can be modified again later, so don't worry too much about filling in errors. ([How to modify the attributes of an existing project](set_project_properties.md))  
     After the attributes are filled in and confirmed, click **Finish** to end the creation. The creation process will take some time and wait patiently.  
-  
+
 4. After the project is created, you should first understand [FlywizOS project code structure introduction](project_structure#project_structure.md)
 

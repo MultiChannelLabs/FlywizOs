@@ -113,8 +113,3 @@ The list control is the most complex control, it will create three associated fu
    ```
 ![列表outline](assets/ListView-tree.png) 
 ![列表子项示例](assets/ListView-subitem.png)  
-
-
->[!Note]
->
->### Skill: [Goto relative code](editor_tip#jump_to_source.md)

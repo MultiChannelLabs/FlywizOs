@@ -63,8 +63,8 @@ static bool onButtonClick_Button2(ZKButton *pButton) {
 
 ![](images/ctrl_bgcolor.png)
 
- 비교적 간단합니다. 색상을 수정하여 효과를 확인하세요.
- 다음은 배경색을 설정하는 코드입니다.
+비교적 간단합니다. 색상을 수정하여 효과를 확인하세요.
+다음은 배경색을 설정하는 코드입니다.
 
 ```c++
 /* When color is -1, the background is set to transparent; other color values are 0xRGB, and the color value does not support alpha */
@@ -105,8 +105,7 @@ mButton1Ptr->setBackgroundPic("bg.png");    // Set the bg.png picture in the res
 
 ![](images/ctrl_visible.png)
 
-컨트롤의 기본 상태를 표시 또는 숨김으로 설정할 수 있습니다.
-
+컨트롤의 기본 상태를 표시 또는 숨김으로 설정할 수 있습니다.   
 Outline 창에서 해당 컨트롤을 더블 클릭하는 것으로 이 속성을 변경할 수 있습니다.
 
 ![](images/ctrl_visible.gif)
@@ -143,7 +142,8 @@ mWindow1Ptr->hideWnd();
 
 ![](images/ctrl_pic_status.png)
 
-Pressed 스테이트는 별도로 코드에서 설정할 필요가 없이 터치를 통해 자동으로 변경됩니다.<br/>아래는 Selected와 Invalid스테이트에 대한 운영 예제입니다.
+Pressed 스테이트는 별도로 코드에서 설정할 필요가 없이 터치를 통해 자동으로 변경됩니다.   
+아래는 Selected와 Invalid스테이트에 대한 운영 예제입니다.
 ```c++
 // Set selected state
 void setSelected(BOOL isSelected);
@@ -179,14 +179,14 @@ mButton1Ptr->setInvalid(FALSE);
 
 
 ### 2. 프로젝트 컴파일
-(더 자세한 사항은  ["FlywizOS 프로젝트 컴파일"](how_to_compile_flythings.md#how_to_compile_flythings) 참고하십시오)
+(더 자세한 사항은  ["FlywizOS 프로젝트 컴파일"](how_to_compile_flywizOS.md#how_to_compile_flythings) 참고하십시오)
 
 ![](images/ctrl_compile_project.gif)
 
 ### 3. 컨트롤 속성 함수 호출
- 컴파일이 끝난 후 프로젝트의 jni/logic/mainLogic.cc을 열면 파일의 하단부에  `onButtonClick_Button1`함수가 생성된 것을 확인할 수 있다.
-**이 함수에 getID()함수를 호출하여 Button1 버튼 컨트롤의 ID 값을 가져오고 setText () 함수를 호출하여 TextView1 텍스트 컨트롤에 표시합니다.**
-([컨트롤ID와 컨트롤 포인터 변수의 관계에 대해 더 자세히 알고 싶다면 click here](named_rule.md))
+ 컴파일이 끝난 후 프로젝트의 jni/logic/mainLogic.cc을 열면 파일의 하단부에  `onButtonClick_Button1`함수가 생성된 것을 확인할 수 있습니다.
+**이 함수에 getID()함수를 호출하여 Button1 버튼 컨트롤의 ID 값을 가져오고 setText() 함수를 호출하여 TextView1 텍스트 컨트롤에 표시합니다.**
+([컨트롤ID와 컨트롤 포인터 변수의 관계에 대해 더 자세히 알고 싶다면 여기를 클릭하십시오.](named_rule.md))
 
 ![](images/ctrl_getButton1ID.jpg)
 
@@ -194,6 +194,5 @@ mButton1Ptr->setInvalid(FALSE);
  Project explorer에서 프로젝트 이름을 선택, 오른쪽 클릭 후 팝업 메뉴에서 **Download and Debug**를 선택하면 프로그램이 보드에 다운로드되고 실행됩니다. 프로그램 실행 후 버튼(Button1컨트롤의 버튼) 텍스트 컨트롤에 버튼의 ID인 20001이 표시되는지 확인합니다.
 
 ### Note :
-
-<font color="#E6161E" size="4">공통 속성의 설정 함수에 대해 더 알고 싶다면, /jni/include/control/ZKBase.h파일을 참고하십시오</font>
+<font color="#E6161E" size="4">공통 속성의 설정 함수에 대해 더 알고 싶다면, /jni/include/control/ZKBase.h파일을 참고하십시오</font>   
 ![](images/ctrl_ZKBase.jpg)

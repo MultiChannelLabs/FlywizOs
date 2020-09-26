@@ -1,7 +1,7 @@
 
-# <span id = "ftu_and_source_relationships">FlyThings编译过程以及UI文件与源代码的对应关系</span>
-## UI文件中的控件是如何与指针变量关联的
-FlyThings 将UI与代码区分开来，方便管理。 
+# <span id = "ftu_and_source_relationships">FlywizOS编译过程以及UI文件与源代码的对应关系</span>
+## How controls in the UI file are associated with pointer variables
+FlywizOS 将UI与代码区分开来，方便管理。 
 下文中，UI文件是指项目 **ui** 文件夹下的 所有 **ftu** 文件。
 为了减少开发中编写重复代码，我们改进了编译过程。在真正的源码编译之前，工具会根据 UI文件生成相同前缀名的`Logic.cc` 文件，例如`main.ftu`会生成配对的`mainLogic.cc`文件，这里需要注意的是：  
 `Logic.cc`文件的生成，并不是直接覆盖，而是增量修改。  
@@ -156,8 +156,8 @@ typedef struct {
  返回 `true` 则表示该触摸事件在此被拦截了，不再传递到控件上  
  返回 `false` 则表示触摸事件将继续传递到控件上  
  [了解更多触摸事件的处理](motion_event.md)
- 
- 
+
+
 以上是默认的UI文件编译生成的Logic.cc。当我们在UI文件中添加控件后，再次编译时，工具会根据不同的控件生成不同的关联函数到对应的Logic.cc文件中。  
 例如：我在**main.ftu** 这个 UI文件中添加了两个按键控件，它们的ID分别是 `Button1` 、`Button2`，那么，经过编译之后，在 **mainLogic.cc**文件中会生成以下两个关联函数  
 ```c++
@@ -179,7 +179,7 @@ static bool onButtonClick_Button2(ZKButton *pButton) {
  * 对于修改控件的情况，关联函数的生成只与控件ID名有关，如果你在UI文件中，修改控件除了ID名的其他属性，将不会对关联函数造成影响；如果你修改了控件ID名属性，那么编译时，将按照增加控件的情况来处理，旧关联函数保留。
 
 
-**上面我们只以按键控件为例，讲述了UI文件中的控件与Logic.cc内生成的关联函数的关系，FlyThings还提供生成其他控件的关联函数，比如 滑动条、列表、滑动窗口等控件，了解其他控件的关联函数，请参考[控件自动生成的关联函数讲解](named_rule.md#relation_function)**
+**上面我们只以按键控件为例，讲述了UI文件中的控件与Logic.cc内生成的关联函数的关系，FlywizOS还提供生成其他控件的关联函数，比如 滑动条、列表、滑动窗口等控件，了解其他控件的关联函数，请参考[控件自动生成的关联函数讲解](named_rule.md#relation_function)**
 
 <br/>
 

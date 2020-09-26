@@ -54,7 +54,7 @@
 1. 首先创建一个`按键`控件，将属性ID命名为`Button1`。[如何创建按键控件](#add_button)
 
    ![ID属性示例](assets/Button-properties-id-button1.png)
-2. 在`项目资源管理器`中，选中当前项目，右键，在弹出菜单中选择`编译FlyThings`选项。这一步的作用是 **根据当前项目内所有的UI文件自动生成模板代码** 。 [了解更多关于代码生成的细节](ftu_and_source_relationships.md#ftu_and_source_relationships)
+2. 在`项目资源管理器`中，选中当前项目，右键，在弹出菜单中选择`编译FlywizOSs`选项。这一步的作用是 **根据当前项目内所有的UI文件自动生成模板代码** 。 [了解更多关于代码生成的细节](ftu_and_source_relationships.md#ftu_and_source_relationships)
 3. 以UI文件为`main.ftu`为例，上一步完成后，将在当前项目文件夹下会生成 `jni/logic/mainLogic.cc`文件， 如下图：
 
    ![](assets/Button-callback-generate.png) <br/>

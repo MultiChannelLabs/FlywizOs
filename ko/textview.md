@@ -2,7 +2,7 @@
 
 ## Note
 
-텍스트의 공통 속성을 수정하는 방법을 모르는 경우 [《공통 속성》](ctrl_common # ctrl_common.md)을 참조하세요.
+텍스트의 공통 속성을 수정하는 방법을 모르는 경우 [《공통 속성》](ctrl_common.md# ctrl_common)을 참조하세요.
 
 ## <span id="add_textview">텍스트 / 라벨을 표시해야 합니다. 어떻게 해야합니까?</span>
 텍스트를 표시해야하는 경우 기존 `Text view`로 빠르게 구현할 수 있습니다. 구체적인 단계는 다음과 같습니다.
@@ -124,7 +124,7 @@ Text View 컨트롤은 문자열 설정을위한 인터페이스를 제공합니
 										//0 will be added
   mTextView1Ptr->setText(buf);
 ```
- `snprintf`는 C 언어 표준 함수로 인터넷에서 관련 정보를 검색하거나 여기 [간단한 소개 및 사용 예](cpp_base.md # snprintf)에서 확인할 수 있습니다.
+ `snprintf`는 C 언어 표준 함수로 인터넷에서 관련 정보를 검색하거나 여기 [간단한 소개 및 사용 예](cpp_base.md#snprintf)에서 확인할 수 있습니다.
 
 
 ## 애니메이션 구현
@@ -151,7 +151,7 @@ Text View 컨트롤은 문자열 설정을위한 인터페이스를 제공합니
 ![](assets/textview/textview_properties.png)      
 3. 프로젝트 컴파일, 타이머 등록  
      Text View 컨트롤을 추가 한 후 프로젝트를 다시 컴파일하고 생성 된 `Logic.cc` 파일에 타이머를 등록하고 시간 간격을 50ms로 설정합니다. 타이머를 사용하여 50ms마다 이미지를 전환합니다.  
-    [프로젝트 컴파일 방법](how_to_compile_flythings.md)
+    [프로젝트 컴파일 방법](how_to_compile_flywizOS.md)
     [타이머 등록 방법 ](timer.md)
 
 4. Text View 컨트롤의 배경을 동적으로 전환  
@@ -182,7 +182,6 @@ Text View 컨트롤은 문자열 설정을위한 인터페이스를 제공합니
 
 5. [다운로드 및 실행](adb_debug.md)하여 결과를 확인해 봅시다.
 
-6. [샘플 다운로드](# example_download)
 
 ## 이미지 문자 세트 사용
  ascii 코드의 정의에 따르면 `character char`와 `integer int` 사이에는 상관 관계가 있습니다. 예를 들어 문자 '0'의 ascii 코드는 '48'입니다. 이미지 문자 집합은 ascii 코드를 이미지에 매핑하는 기능입니다. 이 기능을 설정 한 후 문자열을 표시 할 때 시스템은 문자열의 각 문자를 지정된 이미지에 매핑하고 마지막으로 화면에 이미지 문자열을 표시합니다.

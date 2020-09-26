@@ -12,7 +12,7 @@
 
 5. 프로그램을 보드에 다운로드해서 실행 후 `Edit Text` 컨트롤을 터치하면 내장된 가상 숫자 키보드나 가상 텍스트 키보드가 자동으로 팝업되며, 이를 통해 숫자나 텍스트를 입력할 수 있습니다.
 
-    ![创建编辑框](assets/EditText-create.gif)     
+    ![](assets/EditText-create.gif)     
 
     
 
@@ -49,7 +49,7 @@
 ## 가상 키보드로부터 입력된 컨텐츠 가져오기
 `Edit Text`컨트롤을 성공적으로 완성 후 컴파일하면 이와 관련된 함수들이 자동으로 생성됩니다. 프로젝트 디렉토리에서 `jni/logic/****Logic.cc`파일을 열면 해당 함수를 찾을 수 있습니다.
 
-```c++
+```C++
 static void onEditTextChanged_XXXX(const std::string &text) {
 	  //LOGD("The current input is %s \n", text.c_str());
 }
@@ -57,7 +57,7 @@ static void onEditTextChanged_XXXX(const std::string &text) {
 가상 키보드로 텍스트를 입력하면 시스템은 자동으로 해당 함수를 호출하고, `text`파라미터를 통해 현재 입력된 컨텐츠가 전달됩니다.   
 `std::string` 은 C++의 string이며, 사용자는 아래의 예제처럼 string 포인터를 가져올 수 있습니다. 
 
-```
+```C++
 const char* str = text.c_str();
 ```
 
@@ -72,7 +72,7 @@ const char* str = text.c_str();
   예 :  
   `atoi("213abc");` return `213`  
   `atoi("abc");`  return `0`
-```
+```C++
 static void onEditTextChanged_EditText1(const std::string &text) {
   int number = atoi(text.c_str());
   LOGD("String to number = %d", number);

@@ -4,7 +4,7 @@
 
 ## How to use
 1. 더블 클릭하여 UI 파일을 엽니다.
-2. 우측의 컨트롤 박스에서  `RadioGroup` 컨트롤을 찾습니다.
+2. 우측의 컨트롤 박스에서  `RadioGroup` 컨트롤을 찾습니다.   
    ![](assets/radiogroup/r1.png)  
    ![](assets/radiogroup/option.png) 
 3. `RadioGroup`컨트롤에서 마우스 왼쪽 버튼을 클릭 한 상태에서 원하는 위치로 드래그 한 후 왼쪽 버튼을 놓으면 자동으로 직사각형 영역이 생성되는 것을 볼 수 있고, 그 역역은 `RadioButton`컨트롤을 보유 할 수있는 컨테이너를 나타냅니다.
@@ -12,7 +12,7 @@
 5. 추가 된 `RadioButton` 컨트롤을 마우스 왼쪽 버튼으로 클릭하면 우측에서 관련 속성을 볼 수 있습니다.
    필요에 따라 각 컨트롤의 각 상태 그림과 색상을 설정할 수 있습니다. 여기서 선택시 **Picture and Background Colors** 속성에 주의하십시오.
 
-  ![](assets/radiogroup/properties.png)  
+    ![](assets/radiogroup/properties.png)  
 
    그림을 설정 한 후 그림의 크기가 비정상적으로 표시되는 경우 **Picture Location** 속성에서 그림의 위치와 크기를 조정할 수 있습니다.
    **Default State** 속성에서 **Checked** 또는 **Unchecked**을 설정할 수도 있습니다.
@@ -53,4 +53,4 @@
 [Sample Code](demo_download.md#demo_download)의 RadioGroupDemo 프로젝트를 참고하십시오.
 예제 미리보기 :
 
-![效果图](assets/radiogroup/example.png)
+![](assets/radiogroup/example.png)

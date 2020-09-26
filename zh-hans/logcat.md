@@ -5,7 +5,7 @@
   ```c++
   #include "utils/Log.h"
   ```
-  FlyThings 的打印统一调用 `LOGD` 或 `LOGE` 宏输出，使用方法与C语言的`printf`相同 ; 默认生成的代码里就有调用的例子（默认被注释掉，需要时打开）：
+  FlywizOS 的打印统一调用 `LOGD` 或 `LOGE` 宏输出，使用方法与C语言的`printf`相同 ; 默认生成的代码里就有调用的例子（默认被注释掉，需要时打开）：
 
     ```c++
     static bool onButtonClick_Button1(ZKButton *pButton) {
@@ -26,5 +26,5 @@
 
    ![](assets/ide/log_view.png)
  
-   如果你想回到代码编辑界面， 在工具的右上角，点击 **FlyThings**的图标即可。
+   如果你想回到代码编辑界面， 在工具的右上角，点击 **FlywizOS**的图标即可。
      ![](assets/ide/perspective_fly.png)

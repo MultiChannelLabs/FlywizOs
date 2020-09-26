@@ -1,7 +1,7 @@
 
-# <span id = "project_structure">FlyThings项目代码结构介绍</span>
-开始编写代码之前，首先要了解一个FlyThings项目的基本构成，然后你就能知道自己的代码应该添加到哪个位置。  
-对于一个基本的FlyThings项目，它的目录结构是这样的：  
+# <span id = "project_structure">FlywizOS项目代码结构介绍</span>
+开始编写代码之前，首先要了解一个FlywizOS项目的基本构成，然后你就能知道自己的代码应该添加到哪个位置。  
+对于一个基本的FlywizOS项目，它的目录结构是这样的：  
 
 ![项目结构](assets/project_structure.png)  
 大致分为 **jni** 、**resources** 、 **ui** 三个文件夹。下面分别解释各个文件夹的作用。    
@@ -11,9 +11,9 @@
   
   ![ui文件夹展开](assets/project_ui_expand.png)    
   
-  可以看到默认包含了一个 **main.ftu** 文件。**ftu** 是**FlyThings** 项目UI文件的后缀名。每一个 **ftu** 文件对应一个应用界面。通常，一个应用包含多个界面，所以你需要在 **ui** 文件夹下创建多个 **ftu** 文件。添加新的 **ftu** 文件，可以参考 [如何新建FlyThings UI文件](new_flythings_ui_file.md)。 为了描述方便，以后的教程中，统一将 **ftu** 文件称为 **UI文件**。  
+  可以看到默认包含了一个 **main.ftu** 文件。**ftu** 是**FlywizOS** 项目UI文件的后缀名。每一个 **ftu** 文件对应一个应用界面。通常，一个应用包含多个界面，所以你需要在 **ui** 文件夹下创建多个 **ftu** 文件。添加新的 **ftu** 文件，可以参考 [如何新建FlywizOS UI文件](new_flywizOS_ui_file.md)。 为了描述方便，以后的教程中，统一将 **ftu** 文件称为 **UI文件**。  
   你可以双击打开 **UI文件** ，并对它进行编辑，并且可以即时预览效果。编辑 **UI** 文件的具体步骤，可以参考**控件介绍**的教程。  
-  编辑结束后，你就可以开始 **“编译”**  ([如何编译](how_to_compile_flythings.md)）  
+  编辑结束后，你就可以开始 **“编译”**  ([如何编译](how_to_compile_flywizOS.md)）  
   
   > [!Note]
 > **注意： 这里所说的编译不仅仅是编译源代码，还包括对 ui文件的预处理，以及生成模板代码等一系列操作，但是这些都是自动化的，你无需手动操作。编译这一动作背后的所有具体操作，请参考 [具体编译过程以及UI文件与源代码的对应关系](ftu_and_source_relationships.md#ftu_and_source_relationships)，看完后，相信你会更容易理解，并且快速上手开发**

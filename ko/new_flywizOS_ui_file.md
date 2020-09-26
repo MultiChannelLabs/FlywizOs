@@ -5,7 +5,7 @@
    ![](assets/ide/new_ftu.gif)  
 2. 위의 단계를 수행하면 **New FlywizOS UI File Wizard**가 아래 보이는 것처럼 팝업됩니다.
 
-   ![新建UI文件向导](assets/ide/wizard_new_ftu.png)  
+   ![](assets/ide/wizard_new_ftu.png)  
 
    여기에는 지정할 세 가지의 속성이 있습니다.
    

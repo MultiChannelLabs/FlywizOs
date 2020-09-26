@@ -32,4 +32,4 @@ For models without WIFI function, almost all support USB cable connection. **Not
 
 ## Boot from TF card
 If for other reasons, both USB and WIFI cannot be used normally or are occupied, you can start the program from the TF card with the help of a TF card.
-For specific steps, please refer to [Tutorial-Start the program from TF card](start_from_sdcard.md)
+For specific steps, please refer to [Start the program from the TF card](start_from_sdcard.md)

@@ -1,6 +1,6 @@
 
 # <span id = "first_run">First use of FlywizOS integrated development tool</span>
-If you have successfully installed [FlyThings IDE](download.md), then on your desktop, fine the ![ZKSW-Editor快捷方式](assets/ide/quick_link.png) shortcut and double-click to run it.  
+If you have successfully installed [FlywizOS IDE](download.md), then on your desktop, fine the ![ZKSW-Editor快捷方式](assets/ide/quick_link.png) shortcut and double-click to run it.  
 If you delete the shortcut, you can also find it in the `bin` folder in the installation directory, find ![ide](assets/ide/ide.png) and run it directly.
 
 ## Choose a workspace
@@ -13,7 +13,7 @@ If you open the software for the first time, or choose a new workspace, then you
 It provides two shortcut functions: **New Project** and **Import Project**
 
   * **New Project**  
-    It will guide you step by step [How to create a new FlywizOS project](new_flythings_project.html)
+    It will guide you step by step [How to create a new FlywizOS project](new_flywizOS_project.html)
   * **Import Project**
     Through it, you can import existing projects into the current workspace and continue previous development. [How to import a project](import_project.md)
     

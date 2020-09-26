@@ -1,4 +1,4 @@
-# <span id="ide_introduce"> FlyThings IDE 工作区域使用介绍</span>  
+# <span id="ide_introduce"> FlywizOS IDE 工作区域使用介绍</span>  
 当你新建项目完成后，你将看到如下界面    
  
   ![新建项目完成后的界面](https://ae01.alicdn.com/kf/HTB1dXL2aOfrK1RjSspb7634pFXao.png)  

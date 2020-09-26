@@ -3,8 +3,8 @@ Here is an introductory guide.
 
 ## Tools
 1. Before starting to use our screen, you must first [install the development tool](download.md);
-2. Open the tool, and simply get familiar with [Development Environment](flythings_ide_snapshot.md), you can try [Create a new project](new_flythings_project.md), browse what is there, don’t have to delve into the details inside.
-3. There is nothing on the newly created project UI. We can drag and drop a [text control](textview.md) on it, and then [compile](how_to_compile_flythings.md) and [run](run_project.md) to see the effect on our screen; **Note: If you have a wifi version of the board, you must configure the ADB IP to download normally**; refer to the [document](run_project.md);
+2. Open the tool, and simply get familiar with [Development Environment](flywizOS_ide_snapshot.md), you can try [Create a new project](new_flywizOS_project.md), browse what is there, don’t have to delve into the details inside.
+3. There is nothing on the newly created project UI. We can drag and drop a [text control](textview.md) on it, and then [compile](how_to_compile_flywizOS.md) and [run](run_project.md) to see the effect on our screen; **Note: If you have a wifi version of the board, you must configure the ADB IP to download normally**; refer to the [document](run_project.md);
 4. We have provided a large number of [Sample Code](demo_download.md), select the code package of the corresponding platform size, download it, unzip it, and [Import](import_project.md) into the tool; there are many projects, These later chapters will introduce in detail, here we can select the example we are interested in [run](run_project.md) to see the effect on our screen; <br/>
 
 At this point, the simple use of the tool, I believe you will do it too.

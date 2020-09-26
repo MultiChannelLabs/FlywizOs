@@ -7,17 +7,15 @@
   
      ![](assets/diagram/add_diagram.gif)  
      
-  2. 필요한 경우 **Waveform**컨트롤 추가하여 파형을 추가할 수 있습니다.
-
-  **Note : 프리뷰에서는 Diagram 컨트롤에 있는 Waveform 컨트롤을 선택할 수 없기 때문에 Waveform 컨트롤의 속성을 확인하거나 수정하기 위해서는 outline 에서 waveform컨트롤을 선택하는 수 밖에 없습니다.**
-     
-  ![](assets/diagram/outline.png)  
+  2. 필요한 경우 **Waveform**컨트롤 추가하여 파형을 추가할 수 있습니다.   
+    **Note : 프리뷰에서는 Diagram 컨트롤에 있는 Waveform 컨트롤을 선택할 수 없기 때문에 Waveform 컨트롤의 속성을 확인하거나 수정하기 위해서는 outline 에서 waveform컨트롤을 선택하는 수 밖에 없습니다.**   
+     ![](assets/diagram/outline.png)  
 
   3. Diagram과 Waveform 컨트롤 각각의 속성을 확인하면 Diagram 컨트롤의 속성으로는 파형의 x, y좌표의 범위와 그려질 영역을 결정한다는 것을 알 수 있습니다. 그리고 Waveform 컨트롤의 속성으로는 각 파형의 선 스타일을 결정합니다.
 
-     ![波形图属性](assets/diagram/diagram_property.png)   
+     ![Diagram 속성](assets/diagram/diagram_property.png)   
 
-     ![波形属性](assets/diagram/wave_property.png)  
+     ![Waveform 속성](assets/diagram/wave_property.png)  
 
  Waveform 컨트롤의 속성 중 `Step`과 `Erase Space`은  아래와 같습니다.
 

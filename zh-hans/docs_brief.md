@@ -3,8 +3,8 @@
 
 ## 工具篇
 1. 在开始使用我们的屏之前，得先把开发工具[安装](download.md)好；
-2. 打开工具，简单的熟悉一下[开发环境](flythings_ide_snapshot.md)，可以尝试着[新建个工程](new_flythings_project.md)，浏览一下有哪些内容，不必深究里边的细节;
-3. 新建的工程UI上面是没有东西的，我们可以先拖放个[文本控件](textview.md)上去，然后[编译](how_to_compile_flythings.md)、[运行](run_project.md)到我们的屏上看效果；**注意：如果你的是wifi版本的机器，务必配置好ADB IP，才能正常下载**；参考该[文档](run_project.md);
+2. 打开工具，简单的熟悉一下[开发环境](flywizOS_ide_snapshot.md)，可以尝试着[新建个工程](new_flywizOS_project.md)，浏览一下有哪些内容，不必深究里边的细节;
+3. 新建的工程UI上面是没有东西的，我们可以先拖放个[文本控件](textview.md)上去，然后[编译](how_to_compile_flywizOS.md)、[运行](run_project.md)到我们的屏上看效果；**注意：如果你的是wifi版本的机器，务必配置好ADB IP，才能正常下载**；参考该[文档](run_project.md);
 4. 我们已经提供了大量的[样例代码](demo_download.md)，选择相应平台尺寸的代码包下载下来，解压出来，[导入](import_project.md)到工具里边；工程比较多，这些后边章节会具体介绍，这里我们可以选择自己感兴趣的例子[运行](run_project.md)到我们的屏上看效果； <br/>
 
 至此，工具的简单使用相信你也就会了；

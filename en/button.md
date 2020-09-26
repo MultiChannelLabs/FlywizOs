@@ -8,7 +8,7 @@ If you need a button, you can quickly implement it using the existing `Button` c
 4. Left-click on the button just generated then you can see the related properties of the control on the right side of the editor. In this attribute form, you can freely modify the attributes like filling in an Excel sheet!
 
    ![创建Button](assets/Button-create.gif)
-## How to modify the color of buttons/keys?(如何修改按键/按钮的颜色？)
+## How to modify the color of buttons/keys?
 Refer to ["How to modify the color of text"](textview.md#change_color)
 ## <span id = "add_button_style">How to add more animation effects to the button? </span>
 
@@ -60,7 +60,7 @@ To respond to the click time of the button is very simple. The following are the
 1. First create a `button` control and the property ID as `Button1`. [How to create a button control](#add_button)
 
    ![ID属性示例](assets/Button-properties-id-button1.png)
-2. In the `Project Explorer`, select the current project, right-click, and select the `Compile FlyThings` option in the pop-up menu. The function of this step is to **automatically generate template code** based on all UI files in the current project. [Learn more about code generation details](ftu_and_source_relationships.md#ftu_and_source_relationships)
+2. In the `Project Explorer`, select the current project, right-click, and select the `Compile FlywizOS` option in the pop-up menu. The function of this step is to **automatically generate template code** based on all UI files in the current project. [Learn more about code generation details](ftu_and_source_relationships.md#ftu_and_source_relationships)
 3. Take the UI file `main.ftu` as an example. After the previous step is completed, the file `jni/logic/mainLogic.cc` will be generated in the current project folder, as shown below :
 
    ![](assets/Button-callback-generate.png) <br/>
@@ -75,7 +75,7 @@ static bool onButtonClick_Button1(ZKButton *pButton) {
 When the `button` control is clicked on the serial port screen, the system will automatically call the associated function. So, if you need to add your own processing code, just write it directly in the associated function.
 
  *  As you can see, the function name is generated according to certain rules. Take the `button` control as an example, its function name generation rule is `onButtonClick_XXXX(ZKButton *pButton)`, where **XXXX** will be replaced with the control ID,
-  So multiple button controls will generate different associated functions.
+    So multiple button controls will generate different associated functions.
 
 [Learn more about the associated functions of controls](relation_function.md#relation_function)
 
@@ -141,7 +141,7 @@ class LongClickListener : public ZKBase::ILongClickListener {
     ```
     
 6. After adding the code, compile, download the program to the machine, and long press to test; you can see that the text of the button has been modified, and it means that the `onLongClick` function has successfully responded.
-  For specific implementation, please refer to [Sample Code](demo_download.md#demo_download)
+    For specific implementation, please refer to [Sample Code](demo_download.md#demo_download)
 
   
 

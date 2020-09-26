@@ -178,7 +178,7 @@ First, we create a new FlywizOS project, double-click to open the main.ftu file 
 
 
 ### 2.Compile the project
-(If you are not sure about the specific operation, please see the ["How to compile the FlywizOS project"](how_to_compile_flythings.md#how_to_compile_flythings) chapter)
+(If you are not sure about the specific operation, please see the ["How to compile the FlywizOS project"](how_to_compile_flywizOS.md#how_to_compile_flywizOS) chapter)
 
 ![](images/ctrl_compile_project.gif)
 

@@ -2,7 +2,7 @@
 
 ## Note
 
-If you don’t know how to modify the common properties of the text, please refer to [《Common properties》](ctrl_common#ctrl_common.md)
+If you don’t know how to modify the common properties of the text, please refer to [《Common properties》](ctrl_common.md#ctrl_common)
 
 ## <span id="add_textview">I need to display a text/label, what should I do?</span>
 If you need to display text, you can quickly implement it with the existing `Text View`. The specific steps are as follows :
@@ -150,7 +150,7 @@ One step further, if we dynamically switch the background image of the text cont
     
 3. Compile the project, register the timer  
     After adding the text view control, compile the project again, register a timer in the generated `Logic.cc` file and set the time interval to 50 ms. We use the timer to switch a picture every 50ms.  
-    [How to compile the project? ](how_to_compile_flythings.md) 
+    [How to compile the project? ](how_to_compile_flywizOS.md) 
     [How to register timer? ](timer.md)
 
 4. Dynamically switch the background of the text view control  

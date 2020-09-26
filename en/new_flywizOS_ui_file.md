@@ -1,5 +1,5 @@
 # <span id="new_flythings_project">How to create a new FlywizOS UI file</span>  
-Creating a new UI file is similar to [New FlywizOS Project](new_flythings_project.md#new_flythings_project).
+Creating a new UI file is similar to [New FlywizOS Project](new_flywizOS_project.md#new_flywizOS_project).
 1. In the Project Explorer, expand the project that needs to create the UI file, select the **ui** folder under the project, then right-click, and in the pop-up menu, select the menu **New** -> **FlywizOS UI file**.
 
    ![](assets/ide/new_ftu.gif)  

@@ -2,11 +2,11 @@
  새로운 FlywizOS 프로젝트를 만드는 것은 매우 간단합니다. 구체적인 단계는 다음과 같습니다 :
 1. IDE의 상단 메뉴바에서 **File -> New -> FlywziOS Application Project**를 선택합니다.
 
-   ![新建项目](assets/ide/new_flythings_project.gif)  
+   ![새로운 프로젝트](assets/ide/new_flythings_project.gif)  
 
 2. 앞서 선택이 완료되면 **FlywizOS New Wizard**가 팝업됩니다.
   
-   ![创建向导第一步](assets/ide/wizard_new_project_page1.png)  
+   ![](assets/ide/wizard_new_project_page1.png)  
    새로운 프로젝트를 만드는데 필요한 파라미터들을 채우십시오.
 
    * **Project name**  
@@ -21,7 +21,7 @@
    위의 파라미터들을 채운 후, 바로 **Finish**를 누르면 프로젝트가 생성됩니다. 그러나 지금은 더 많은 설정을 위해 **Next**를 선택하겠습니다.
 3. Next 클릭 후, 아래와 같은 파라미터들을 볼 수 있습니다.
   
-   ![新建参数](assets/ide/wizard_new_project_page2.png)  
+   ![](assets/ide/wizard_new_project_page2.png)  
    
    
    ## 프로젝트의 각 속성의 의미와 기능

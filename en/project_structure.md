@@ -11,11 +11,11 @@ It is roughly divided into three folders: **jni**, **resources**, **ui**. The ro
   
   ![ui文件夹展开](assets/project_ui_expand.png)    
   
-  You can see that a **main.ftu** file is included by default. **ftu** is the suffix of the UI file of the **FlywizOS** project. Each **ftu** file corresponds to an application interface. Usually, an application contains multiple interfaces, so you need to create multiple **ftu** files in the **ui** folder. To add a new **ftu** file, please refer to [How to create a new FlywizOS UI file](new_flythings_ui_file.md). For the convenience of description, in the following tutorials, the **ftu** file will be referred to as the **UI file**.
+  You can see that a **main.ftu** file is included by default. **ftu** is the suffix of the UI file of the **FlywizOS** project. Each **ftu** file corresponds to an application interface. Usually, an application contains multiple interfaces, so you need to create multiple **ftu** files in the **ui** folder. To add a new **ftu** file, please refer to [How to create a new FlywizOS UI file](new_flywizOS_ui_file.md). For the convenience of description, in the following tutorials, the **ftu** file will be referred to as the **UI file**.
   
   You can double-click to open the **UI file**, edit it, and preview the effect instantly. For the specific steps of editing the **UI** file, please refer to the tutorial of **Introduction to Controls**.
   
-  After editing, you can start **"compile"** ([How to compile](how_to_compile_flythings.md))
+  After editing, you can start **"compile"** ([How to compile](how_to_compile_flywizOS.md))
 
   > [!Note]
   > **Note: The compilation mentioned here is not only the compilation of the source code, but also a series of operations such as the preprocessing of the ui file and the generation of the template code, but these are all automated, and you do not need to manually operate. For all the specific operations behind compiling this action, please refer to [The specific compilation process and the correspondence between the UI file and the source code](ftu_and_source_relationships.md#ftu_and_source_relationships). After reading it, I believe you will be easier to understand and get started quickly**
@@ -46,7 +46,7 @@ We can get the absolute path of a file in the resources directory in the code.
    * ### uart subfolder  
     As the name implies, this folder stores serial port operation related codes, including reading and writing serial ports, protocol analysis, etc.
    * ### Main.cpp
-    The entry code of the entire FlyThings application, including the interface for selecting the boot and some initialization, generally does not need to modify this file.
+    The entry code of the entire FlywizOS application, including the interface for selecting the boot and some initialization, generally does not need to modify this file.
    * ### Makefile/Android.mk、Application.mk
     Compilation configuration file, which contains the specific source code compilation process, generally does not need to be modified  
 

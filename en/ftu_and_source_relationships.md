@@ -9,7 +9,7 @@ When compiling, the tool will traverse each UI file and read the controls contai
 
 ![](assets/global_control_pointer.png)  
 
-**As you can see in the figure, all pointers are static global variables, and they all have the same naming rules. For specific naming rules, please refer to [Naming Rules for Control ID Names and Pointer Variable Names](named_rule#id_name_rule.md) ; And, you should also notice the statement `#include "logic/mainLogic.cc"` in the screenshot, which includes the `mainLogic.cc` file into `mainActivity.cpp`, and our code is written in ` mainLogic.cc` file, so we can fully use these control pointers in `mainLogic.cc`. **  
+**As you can see in the figure, all pointers are static global variables, and they all have the same naming rules. For specific naming rules, please refer to [Naming Rules for Control ID Names and Pointer Variable Names](named_rule.md#id_name_rule) ; And, you should also notice the statement `#include "logic/mainLogic.cc"` in the screenshot, which includes the `mainLogic.cc` file into `mainActivity.cpp`, and our code is written in ` mainLogic.cc` file, so we can fully use these control pointers in `mainLogic.cc`. **  
 If you are interested in the initialization of these pointers, you can find it in the `onCreate` function of `mainActivity`.
 
 ## The relationship between UI files and Logic.cc files

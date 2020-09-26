@@ -1,10 +1,10 @@
-# <span id="new_flythings_project">如何新建FlyThings项目</span>
-新建一个FlyThings项目十分简单。具体步骤如下：  
-1. 在编辑器顶部的菜单栏中，依次选择 **文件 -> 新建 -> FlyThings项目**   
+# <span id="new_flywizOS_project">如何新建FlywizOS项目</span>
+新建一个FlywizOS项目十分简单。具体步骤如下：  
+1. 在编辑器顶部的菜单栏中，依次选择 **文件 -> 新建 -> FlywizOS项目**   
 
-   ![新建项目](assets/ide/new_flythings_project.gif)  
+   ![新建项目](assets/ide/new_flywizOS_project.gif)  
 
-2. 上一步选择完成后，将弹出 **FlyThings创建向导** 提示框。  
+2. 上一步选择完成后，将弹出 **FlywizOS创建向导** 提示框。  
   
    ![创建向导第一步](assets/ide/wizard_new_project_page1.png)  
    按要求填写新建项目相关的参数。  这些参数分别是：  
@@ -25,7 +25,7 @@
    
    ## 项目各个属性的含义及作用：  
    * **屏保超时时间**  
-   FlyThings系统提供屏保的功能。如果在指定的时间内，串口屏没有任何触摸操作，或者你没有通过代码重置屏保计时，那么，系统将自动进入屏保。  
+   FlywizOS系统提供屏保的功能。如果在指定的时间内，串口屏没有任何触摸操作，或者你没有通过代码重置屏保计时，那么，系统将自动进入屏保。  
   如果时间为 **-1** 秒， 表示禁止屏保功能。
    * **串口**  
   指定通讯串口，一般情况下不需要修改。
@@ -36,11 +36,11 @@
    * **屏幕旋转**  
   针对某些屏幕坐标轴方向不同，可勾选该选项，将显示内容旋转90°，达到正常显示。
    * **字体**  
-  FlyThings支持自定义字体，如果你不满意默认字体，可取消默认，再选择你的字体文件。
+  FlywizOS支持自定义字体，如果你不满意默认字体，可取消默认，再选择你的字体文件。
    * **输入法**  
   如果你有中文输入的需求，可以勾选它， 配合 **[编辑输入框](edittext.md)** 控件，就可以解决中文输入了。      
   
     以上属性后续都可以再次修改，所以不必过分担心填写错误。([如何修改已有项目的属性](set_project_properties.md))  
   属性都填写确认后，点击 **完成** 结束创建，创建过程会花费些许时间，耐心等待。  
   
-4. 项目创建完成后，你应该先了解 [FlyThings 项目代码结构介绍](project_structure#project_structure.md)
+4. 项目创建完成后，你应该先了解 [FlywizOS 项目代码结构介绍](project_structure#project_structure.md)

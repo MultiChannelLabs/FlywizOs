@@ -1,17 +1,17 @@
 # Summary
 
 * [关于我们](README.md)
-    * [FlyThings 系统介绍](system_introdoction.md)
+    * [FlywizOS 系统介绍](system_introdoction.md)
 
 * [开发流程]()
     * [入门须知](docs_brief.md)
     * [环境安装](download.md)
-    * [初次使用](flythings_ide_snapshot.md)
-    * [工作区域介绍](flythings_ide_layout_introduce.md)
-    * [新建项目](new_flythings_project.md)
+    * [初次使用](flywizOS_ide_snapshot.md)
+    * [工作区域介绍](flywizOS_ide_layout_introduce.md)
+    * [新建项目](new_flywizOS_project.md)
     * [导入项目](import_project.md)
-    * [新建UI文件](new_flythings_ui_file.md)
-    * [编译项目](how_to_compile_flythings.md)
+    * [新建UI文件](new_flywizOS_ui_file.md)
+    * [编译项目](how_to_compile_flywizOS.md)
     * [运行项目](run_project.md)
     * [项目结构介绍](project_structure.md)
     * [UI文件与生成代码讲解](ftu_and_source_relationships.md)

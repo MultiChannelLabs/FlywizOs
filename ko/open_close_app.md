@@ -6,7 +6,7 @@
 ```c++
 EASYUICONTEXT->openActivity("subActivity");
 ```
- 만약 버튼 클릭을 통해 **sub.ftu** 액티비티로 진입하려면 버튼 클릭 이벤트 함수에서 위의 statement를 호출할 수 있습니다.
+ 만약 버튼 클릭을 통해 **sub.ftu** 액티비티로 진입하려면 버튼 클릭 이벤트 함수에서 위의 함수를 호출하십시오.
 ```c++
 static bool onButtonClick_Button1(ZKButton *pButton) {
     // Jump to the sub.ftu activity 
@@ -32,9 +32,8 @@ static void onUI_intent(const Intent *intentPtr) {
 	}
 }
 ```
-Note：
-
-	1. 새로운 인텐트는 수동으로 삭제할 필요가 없으며 프레임 워크 내에서 자동으로 삭제됩니다.
+Note：   
+	1. 새로운 인텐트는 수동으로 삭제할 필요가 없으며 프레임 워크 내에서 자동으로 삭제됩니다.   
 	2. putExtra는 string의 key-value pair 메소드 만 제공합니다. int 또는 다른 유형의 값을 전달해야하는 경우 문자열 유형으로 변환 한 다음 onIntent에서 수신 한 후 해당 변환을 수행해야합니다.
 
 ## Application activity 종료</span>
@@ -44,7 +43,7 @@ Note：
 ```c++
 EASYUICONTEXT->goBack();
 ```
- 버튼에 의해 goBack()이 트리거되는 경우, IDE를 사용하여 버튼의 ID 값을 `sys_back`으로 하는 것으로 직접 goBack() 기능을 사용할 수 있습니다.
+ 버튼에 의해 goBack()이 트리거되는 경우, IDE를 사용하여 버튼의 ID 값을 `sys_back`으로 설정하면 직접 goBack() 기능을 사용할 수 있습니다.
 
 ![](images/Screenshotfrom2018-06-06220522.png)
 
@@ -55,8 +54,8 @@ EASYUICONTEXT->goBack();
 EASYUICONTEXT->goHome();
 ```
  시작 액티비티로 돌아갑니다.
- 또한 버튼으로 트리거되는 경우 IDE를 사용하여 버튼의 ID값을 `sys_home`으로 하는 것으로 직접 goHome()기능을 사용할 수 있습니다.
- 끝으로, EasyUIContext의 closeActivity함수를 통해 액티비티를 종료할 수도 있습니다. 예를 들어 subActivity를 종료하고 싶습니다.
+ 또한 버튼으로 트리거되는 경우 IDE를 사용하여 버튼의 ID값을 `sys_home`으로 설정하면 직접 goHome()기능을 사용할 수 있습니다.
+ 끝으로, EasyUIContext의 closeActivity함수를 통해 액티비티를 종료할 수도 있습니다. 예를 들어 subActivity를 종료하고 싶을 경우 아래처럼 할 수 있습니다.
 
 ```c++
 EASYUICONTEXT->closeActivity("subActivity");

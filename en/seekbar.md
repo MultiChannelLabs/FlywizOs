@@ -18,7 +18,7 @@ Using a few simple pictures, we can quickly implement this effect.
 2. In the editor, create a Seek Bar control  
 
  ![创建滑块](assets/SeekBar-create.gif)
-  If you don’t know how to create controls, [Refer to Creating Button Controls](#add_button)
+  If you don’t know how to create controls, [Refer to Creating Button Controls](button.md#add_button)
 
 3. The default Seek Bar style is transparent, and we must add enough image resources for it to work properly.  
     In the property table, we set the **Valid Picture, Thumb-Normal Picture, Thumb-Pressed Picture and Background Picture**.

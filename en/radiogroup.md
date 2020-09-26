@@ -21,7 +21,7 @@ When one of the options is clicked, the option will automatically switch to the 
 6. Compile after the properties are set, and its associated functions will be generated in the corresponding `Logic.cc`.  
    When you click on one of the RadioButton, the associated function will be called by the system, where the parameter `int checkedID` represents the `ID` of the selected RadioButton.  
    We can determine which RadioButton is currently clicked based on this ID value.
-   This `ID` is a macro-defined integer value. After the UI file is compiled, each control will automatically generate the corresponding macro ID. (For more information about the macro, please refer to its [naming rule](name_rule.md#id_macro_rule)),  
+   This `ID` is a macro-defined integer value. After the UI file is compiled, each control will automatically generate the corresponding macro ID. (For more information about the macro, please refer to its [naming rule](named_rule.md#id_macro_rule)),  
    The macro ID of each RadioButton can be found in the corresponding `Activity.h` header file. E.g
    
    ![](assets/radiogroup/id.png)  
