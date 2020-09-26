@@ -1,0 +1,1750 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>UI文件与生成代码讲解 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="named_rule.html" />
+    
+    
+    <link rel="prev" href="project_structure.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    关于我们
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="system_introdoction.html">
+            
+                <a href="system_introdoction.html">
+            
+                    
+                    FlywizOS 系统介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    开发流程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="docs_brief.html">
+            
+                <a href="docs_brief.html">
+            
+                    
+                    入门须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="download.html">
+            
+                <a href="download.html">
+            
+                    
+                    环境安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="flywizOS_ide_snapshot.html">
+            
+                <a href="flywizOS_ide_snapshot.html">
+            
+                    
+                    初次使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="flywizOS_ide_layout_introduce.html">
+            
+                <a href="flywizOS_ide_layout_introduce.html">
+            
+                    
+                    工作区域介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="new_flywizOS_project.html">
+            
+                <a href="new_flywizOS_project.html">
+            
+                    
+                    新建项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="import_project.html">
+            
+                <a href="import_project.html">
+            
+                    
+                    导入项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="new_flywizOS_ui_file.html">
+            
+                <a href="new_flywizOS_ui_file.html">
+            
+                    
+                    新建UI文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="how_to_compile_flywizOS.html">
+            
+                <a href="how_to_compile_flywizOS.html">
+            
+                    
+                    编译项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="run_project.html">
+            
+                <a href="run_project.html">
+            
+                    
+                    运行项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="project_structure.html">
+            
+                <a href="project_structure.html">
+            
+                    
+                    项目结构介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.11" data-path="ftu_and_source_relationships.html">
+            
+                <a href="ftu_and_source_relationships.html">
+            
+                    
+                    UI文件与生成代码讲解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="named_rule.html">
+            
+                <a href="named_rule.html">
+            
+                    
+                    控件的命名规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="editor_tip.html">
+            
+                <a href="editor_tip.html">
+            
+                    
+                    开发工具常用技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">控件介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="ctrl_common.html">
+            
+                <a href="ctrl_common.html">
+            
+                    
+                    通用属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="textview.html">
+            
+                <a href="textview.html">
+            
+                    
+                    文本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="button.html">
+            
+                <a href="button.html">
+            
+                    
+                    按键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="checkbox.html">
+            
+                <a href="checkbox.html">
+            
+                    
+                    复选框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="radiogroup.html">
+            
+                <a href="radiogroup.html">
+            
+                    
+                    单选组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="seekbar.html">
+            
+                <a href="seekbar.html">
+            
+                    
+                    进度条/滑块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="pointer.html">
+            
+                <a href="pointer.html">
+            
+                    
+                    指针/仪表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="listview.html">
+            
+                <a href="listview.html">
+            
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="diagram.html">
+            
+                <a href="diagram.html">
+            
+                    
+                    波形图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="circlebar.html">
+            
+                <a href="circlebar.html">
+            
+                    
+                    圆形进度条
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="qrcode.html">
+            
+                <a href="qrcode.html">
+            
+                    
+                    二维码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="video.html">
+            
+                <a href="video.html">
+            
+                    
+                    视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="edittext.html">
+            
+                <a href="edittext.html">
+            
+                    
+                    编辑框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="window.html">
+            
+                <a href="window.html">
+            
+                    
+                    窗口容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="slidewindow.html">
+            
+                <a href="slidewindow.html">
+            
+                    
+                    滑动窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="painter.html">
+            
+                <a href="painter.html">
+            
+                    
+                    画布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="camera.html">
+            
+                <a href="camera.html">
+            
+                    
+                    摄像头
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.18" data-path="digital_clock.html">
+            
+                <a href="digital_clock.html">
+            
+                    
+                    数字时钟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.19" data-path="relation_function.html">
+            
+                <a href="relation_function.html">
+            
+                    
+                    关联函数介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">界面交互</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="first_app.html">
+            
+                <a href="first_app.html">
+            
+                    
+                    第一个启动界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="open_close_app.html">
+            
+                <a href="open_close_app.html">
+            
+                    
+                    打开/关闭应用界面 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="activity_life_cycle.html">
+            
+                <a href="activity_life_cycle.html">
+            
+                    
+                    界面活动周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="internal_app.html">
+            
+                <a href="internal_app.html">
+            
+                    
+                    系统内置界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="system_app.html">
+            
+                <a href="system_app.html">
+            
+                    
+                    系统应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="timer.html">
+            
+                <a href="timer.html">
+            
+                    
+                    定时器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="how_to_register_timer.html">
+            
+                <a href="how_to_register_timer.html">
+            
+                    
+                    手动注册/停止定时器 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" >
+            
+                <span>
+            
+                    
+                    串口通讯
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.7.1" data-path="linux_serial_programming.html">
+            
+                <a href="linux_serial_programming.html">
+            
+                    
+                    Linux串口编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.2" data-path="serial_introdoction.html">
+            
+                <a href="serial_introdoction.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.3" data-path="serial_framework.html">
+            
+                <a href="serial_framework.html">
+            
+                    
+                    通讯框加讲解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.4" data-path="serial_example.html">
+            
+                <a href="serial_example.html">
+            
+                    
+                    通讯案例实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.5" data-path="serial_configuration.html">
+            
+                <a href="serial_configuration.html">
+            
+                    
+                    串口配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.6" data-path="multiuart.html">
+            
+                <a href="multiuart.html">
+            
+                    
+                    多串口配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" >
+            
+                <span>
+            
+                    
+                    网络控制
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.1" data-path="wifi.html">
+            
+                <a href="wifi.html">
+            
+                    
+                    wifi设置 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.2" data-path="wifi_ap.html">
+            
+                <a href="wifi_ap.html">
+            
+                    
+                    热点设置 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" >
+            
+                <span>
+            
+                    
+                    多媒体
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.9.1" data-path="video.html">
+            
+                <a href="video.html">
+            
+                    
+                    视频播放 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.2" data-path="audio.html">
+            
+                <a href="audio.html">
+            
+                    
+                    音频播放 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="thread.html">
+            
+                <a href="thread.html">
+            
+                    
+                    线程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.10.1" data-path="mutex.html">
+            
+                <a href="mutex.html">
+            
+                    
+                    互斥量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="screenshot.html">
+            
+                <a href="screenshot.html">
+            
+                    
+                    截屏
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">系统操作</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="data.html">
+            
+                <a href="data.html">
+            
+                    
+                    数据存储 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="vireeprom.html">
+            
+                <a href="vireeprom.html">
+            
+                    
+                    模拟EEPROM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="brightness.html">
+            
+                <a href="brightness.html">
+            
+                    
+                    屏幕背光操作 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="system_time.html">
+            
+                <a href="system_time.html">
+            
+                    
+                    系统时间 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="machine_unique_id.html">
+            
+                <a href="machine_unique_id.html">
+            
+                    
+                    设备唯一ID 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="tf.html">
+            
+                <a href="tf.html">
+            
+                    
+                    TF卡
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.1" data-path="mount.html">
+            
+                <a href="mount.html">
+            
+                    
+                    插拔卡监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="gpio.html">
+            
+                <a href="gpio.html">
+            
+                    
+                    GPIO操作 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="spi.html">
+            
+                <a href="spi.html">
+            
+                    
+                    SPI操作 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="i2c.html">
+            
+                <a href="i2c.html">
+            
+                    
+                    I2C操作 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="adc.html">
+            
+                <a href="adc.html">
+            
+                    
+                    ADC操作 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="reboot.html">
+            
+                <a href="reboot.html">
+            
+                    
+                    重启系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">国际化</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="i18n.html">
+            
+                <a href="i18n.html">
+            
+                    
+                    多国语言翻译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <span>
+            
+                    
+                    升级与调试
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="adb_debug.html">
+            
+                <a href="adb_debug.html">
+            
+                    
+                    ADB调试 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="logcat.html">
+            
+                <a href="logcat.html">
+            
+                    
+                    查看打印日志 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="start_from_sdcard.html">
+            
+                <a href="start_from_sdcard.html">
+            
+                    
+                    从TF卡启动程序 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.4" data-path="update_logo.html">
+            
+                <a href="update_logo.html">
+            
+                    
+                    升级开机LOGO 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.5" data-path="make_image.html">
+            
+                <a href="make_image.html">
+            
+                    
+                    制作升级镜像文件 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.6" data-path="autoupgrade.html">
+            
+                <a href="autoupgrade.html">
+            
+                    
+                    自动升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.7" data-path="sd_boot.html">
+            
+                <a href="sd_boot.html">
+            
+                    
+                    制作刷机卡 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.8" data-path="remote_update.html">
+            
+                <a href="remote_update.html">
+            
+                    
+                    远程升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="demo_download.html">
+            
+                <a href="demo_download.html">
+            
+                    
+                    代码样例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux标准编程</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="file_read_write.html">
+            
+                <a href="file_read_write.html">
+            
+                    
+                    文件读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" >
+            
+                <span>
+            
+                    
+                    网络编程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="net.html">
+            
+                <a href="net.html">
+            
+                    
+                    Socket编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.2" data-path="http.html">
+            
+                <a href="http.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="transcoding.html">
+            
+                <a href="transcoding.html">
+            
+                    
+                    编码转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="json.html">
+            
+                <a href="json.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" >
+            
+                <span>
+            
+                    
+                    附录
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.5.1" data-path="cpp_base.html">
+            
+                <a href="cpp_base.html">
+            
+                    
+                    C++基础 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.2" data-path="touchcalibration.html">
+            
+                <a href="touchcalibration.html">
+            
+                    
+                    触摸校准 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.3" data-path="font_setting.html">
+            
+                <a href="font_setting.html">
+            
+                    
+                    字体库设置说明 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.4" data-path="font_cut_tool.html">
+            
+                <a href="font_cut_tool.html">
+            
+                    
+                    裁剪字体 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.5" data-path="hardware.html">
+            
+                <a href="hardware.html">
+            
+                    
+                    硬件使用说明 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.6" data-path="problems.html">
+            
+                <a href="problems.html">
+            
+                    
+                    常见问题 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.7" data-path="install_adb_driver.html">
+            
+                <a href="install_adb_driver.html">
+            
+                    
+                    安装ADB驱动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.8" data-path="convert_platform.html">
+            
+                <a href="convert_platform.html">
+            
+                    
+                    转换项目平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.9" data-path="board_tag_explain.html">
+            
+                <a href="board_tag_explain.html">
+            
+                    
+                    产品规格型号说明 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.10" data-path="core_module.html">
+            
+                <a href="core_module.html">
+            
+                    
+                    核心模组使用教程 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >UI文件与生成代码讲解</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="flywizos&#x7F16;&#x8BD1;&#x8FC7;&#x7A0B;&#x4EE5;&#x53CA;ui&#x6587;&#x4EF6;&#x4E0E;&#x6E90;&#x4EE3;&#x7801;&#x7684;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;"><span id="ftu_and_source_relationships">FlywizOS&#x7F16;&#x8BD1;&#x8FC7;&#x7A0B;&#x4EE5;&#x53CA;UI&#x6587;&#x4EF6;&#x4E0E;&#x6E90;&#x4EE3;&#x7801;&#x7684;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;</span></h1>
+<h2 id="how-controls-in-the-ui-file-are-associated-with-pointer-variables">How controls in the UI file are associated with pointer variables</h2>
+<p>FlywizOS &#x5C06;UI&#x4E0E;&#x4EE3;&#x7801;&#x533A;&#x5206;&#x5F00;&#x6765;&#xFF0C;&#x65B9;&#x4FBF;&#x7BA1;&#x7406;&#x3002; 
+&#x4E0B;&#x6587;&#x4E2D;&#xFF0C;UI&#x6587;&#x4EF6;&#x662F;&#x6307;&#x9879;&#x76EE; <strong>ui</strong> &#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684; &#x6240;&#x6709; <strong>ftu</strong> &#x6587;&#x4EF6;&#x3002;
+&#x4E3A;&#x4E86;&#x51CF;&#x5C11;&#x5F00;&#x53D1;&#x4E2D;&#x7F16;&#x5199;&#x91CD;&#x590D;&#x4EE3;&#x7801;&#xFF0C;&#x6211;&#x4EEC;&#x6539;&#x8FDB;&#x4E86;&#x7F16;&#x8BD1;&#x8FC7;&#x7A0B;&#x3002;&#x5728;&#x771F;&#x6B63;&#x7684;&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x4E4B;&#x524D;&#xFF0C;&#x5DE5;&#x5177;&#x4F1A;&#x6839;&#x636E; UI&#x6587;&#x4EF6;&#x751F;&#x6210;&#x76F8;&#x540C;&#x524D;&#x7F00;&#x540D;&#x7684;<code>Logic.cc</code> &#x6587;&#x4EF6;&#xFF0C;&#x4F8B;&#x5982;<code>main.ftu</code>&#x4F1A;&#x751F;&#x6210;&#x914D;&#x5BF9;&#x7684;<code>mainLogic.cc</code>&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF1A;<br><code>Logic.cc</code>&#x6587;&#x4EF6;&#x7684;&#x751F;&#x6210;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x76F4;&#x63A5;&#x8986;&#x76D6;&#xFF0C;&#x800C;&#x662F;&#x589E;&#x91CF;&#x4FEE;&#x6539;&#x3002;<br>&#x7F16;&#x8BD1;&#x65F6;&#xFF0C;&#x5DE5;&#x5177;&#x4F1A;&#x904D;&#x5386;&#x6BCF;&#x4E2A;UI&#x6587;&#x4EF6;&#xFF0C;&#x8BFB;&#x53D6;UI&#x6587;&#x4EF6;&#x4E2D;&#x5305;&#x542B;&#x7684;&#x63A7;&#x4EF6;&#x3002;&#x5E76;&#x4E14;&#x4E3A;&#x8FD9;&#x4E2A;&#x63A7;&#x4EF6;&#x58F0;&#x660E;&#x6307;&#x9488;&#x53D8;&#x91CF;&#xFF0C;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6307;&#x9488;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x64CD;&#x4F5C;&#x5BF9;&#x5E94;&#x7684;&#x63A7;&#x4EF6;&#x3002; &#x6307;&#x9488;&#x53D8;&#x91CF;&#x5B9A;&#x4E49;&#x5728;&#x540C;&#x524D;&#x7F00;&#x540D;&#x7684; <code>Activity.cpp</code> &#x6587;&#x4EF6;&#x4E2D;&#x3002;&#x4EE5;<strong>main.ftu</strong>&#x4E3A;&#x4F8B;&#xFF0C;&#x5C31;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;  </p>
+<p><img src="assets/global_control_pointer.png" alt="">  </p>
+<p><strong>&#x56FE;&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C; &#x6240;&#x6709;&#x6307;&#x9488;&#x4E3A;&#x9759;&#x6001;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x5B83;&#x4EEC;&#x90FD;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x547D;&#x540D;&#x89C4;&#x5219;&#xFF0C;&#x5177;&#x4F53;&#x547D;&#x540D;&#x89C4;&#x5219;&#x8BF7;&#x53C2;&#x8003;<a href="named_rule#id_name_rule.md">&#x63A7;&#x4EF6;ID&#x540D;&#x4E0E;&#x6307;&#x9488;&#x53D8;&#x91CF;&#x540D;&#x7684;&#x547D;&#x540D;&#x89C4;&#x5219;</a>&#xFF1B;&#x5E76;&#x4E14;&#xFF0C;&#x4F60;&#x8FD8;&#x5E94;&#x8BE5;&#x6CE8;&#x610F;&#x5230;&#x622A;&#x56FE;&#x4E2D; <code>#include &quot;logic/mainLogic.cc&quot;</code> &#x8FD9;&#x6761;&#x8BED;&#x53E5;&#xFF0C;&#x5B83;&#x5C06; <code>mainLogic.cc</code>&#x6587;&#x4EF6;include&#x5230;<code>mainActivity.cpp</code>&#x5F53;&#x4E2D;&#xFF0C;&#x800C;&#x6211;&#x4EEC;&#x7684;&#x4E1A;&#x52A1;&#x4EE3;&#x7801;&#x5C31;&#x662F;&#x5199;&#x5728;<code>mainLogic.cc</code>&#x6587;&#x4EF6;&#x91CC;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;<code>mainLogic.cc</code>&#x4E2D;&#x5B8C;&#x5168;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x63A7;&#x4EF6;&#x6307;&#x9488;&#x3002;</strong><br>&#x5982;&#x679C;&#x4F60;&#x5BF9;&#x8FD9;&#x4E9B;&#x6307;&#x9488;&#x7684;&#x521D;&#x59CB;&#x5316;&#x611F;&#x5174;&#x8DA3;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;<code>mainActivity</code>&#x7684;<code>onCreate</code>&#x65B9;&#x6CD5;&#x4E2D;&#x627E;&#x5230;&#x3002;</p>
+<h2 id="ui&#x6587;&#x4EF6;&#x4E0E;logiccc&#x6587;&#x4EF6;&#x7684;&#x5173;&#x7CFB;">UI&#x6587;&#x4EF6;&#x4E0E;Logic.cc&#x6587;&#x4EF6;&#x7684;&#x5173;&#x7CFB;</h2>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x4F60;&#x5927;&#x6982;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4E86;UI&#x6587;&#x4EF6;&#x91CC;&#x7684;&#x63A7;&#x4EF6;&#x662F;&#x5982;&#x4F55;&#x4E0E;&#x8FD9;&#x4E9B;&#x6307;&#x9488;&#x8054;&#x7CFB;&#x8D77;&#x6765;&#x7684;&#x3002;  &#x8BA9;&#x6211;&#x4EEC;&#x518D;&#x6765;&#x770B;&#x770B;<code>mainLogic.cc</code>&#x6587;&#x4EF6;&#x91CC;&#x53C8;&#x4E3A;&#x6211;&#x4EEC;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4E86;&#x54EA;&#x4E9B;&#x4EE3;&#x7801;&#x3002;<br>&#x5982;&#x679C;&#x4F60;&#x7684;UI&#x6587;&#x4EF6;&#x4E2D;&#x6CA1;&#x6709;&#x6DFB;&#x52A0;&#x4EFB;&#x4F55;&#x63A7;&#x4EF6;&#xFF0C;&#x90A3;&#x4F60;&#x7684;<code>mainLogic.cc</code>&#x6587;&#x4EF6;&#x5C06;&#x662F;&#x8FD9;&#x6837;&#x7684;:   </p>
+<pre><code class="lang-c++"><span class="hljs-comment">/**
+ * &#x6CE8;&#x518C;&#x5B9A;&#x65F6;&#x5668;
+ * &#x586B;&#x5145;&#x6570;&#x7EC4;&#x7528;&#x4E8E;&#x6CE8;&#x518C;&#x5B9A;&#x65F6;&#x5668;
+ * &#x6CE8;&#x610F;&#xFF1A;id&#x4E0D;&#x80FD;&#x91CD;&#x590D;
+ */</span>
+<span class="hljs-keyword">static</span> S_ACTIVITY_TIMEER REGISTER_ACTIVITY_TIMER_TAB[] = {
+    <span class="hljs-comment">//{0,  6000}, //&#x5B9A;&#x65F6;&#x5668;id=0, &#x65F6;&#x95F4;&#x95F4;&#x9694;6&#x79D2;</span>
+    <span class="hljs-comment">//{1,  1000},</span>
+};
+
+<span class="hljs-comment">/**
+ * &#x5F53;&#x754C;&#x9762;&#x6784;&#x9020;&#x65F6;&#x89E6;&#x53D1;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onUI_init</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-comment">//Tips :&#x6DFB;&#x52A0; UI&#x521D;&#x59CB;&#x5316;&#x7684;&#x663E;&#x793A;&#x4EE3;&#x7801;&#x5230;&#x8FD9;&#x91CC;,&#x5982;:mText1Ptr-&gt;setText(&quot;123&quot;);</span>
+
+}
+
+<span class="hljs-comment">/**
+ * &#x5F53;&#x5207;&#x6362;&#x5230;&#x8BE5;&#x754C;&#x9762;&#x65F6;&#x89E6;&#x53D1;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onUI_intent</span><span class="hljs-params">(<span class="hljs-keyword">const</span> Intent *intentPtr)</span> </span>{
+    <span class="hljs-keyword">if</span> (intentPtr != <span class="hljs-literal">NULL</span>) {
+        <span class="hljs-comment">//TODO</span>
+    }
+}
+
+<span class="hljs-comment">/*
+ * &#x5F53;&#x754C;&#x9762;&#x663E;&#x793A;&#x65F6;&#x89E6;&#x53D1;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onUI_show</span><span class="hljs-params">()</span> </span>{
+
+}
+
+<span class="hljs-comment">/*
+ * &#x5F53;&#x754C;&#x9762;&#x9690;&#x85CF;&#x65F6;&#x89E6;&#x53D1;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onUI_hide</span><span class="hljs-params">()</span> </span>{
+
+}
+
+<span class="hljs-comment">/*
+ * &#x5F53;&#x754C;&#x9762;&#x5B8C;&#x5168;&#x9000;&#x51FA;&#x65F6;&#x89E6;&#x53D1;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onUI_quit</span><span class="hljs-params">()</span> </span>{
+
+}
+
+<span class="hljs-comment">/**
+ * &#x4E32;&#x53E3;&#x6570;&#x636E;&#x56DE;&#x8C03;&#x63A5;&#x53E3;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onProtocolDataUpdate</span><span class="hljs-params">(<span class="hljs-keyword">const</span> SProtocolData &amp;data)</span> </span>{
+
+}
+
+<span class="hljs-comment">/**
+ * &#x5B9A;&#x65F6;&#x5668;&#x89E6;&#x53D1;&#x51FD;&#x6570;
+ * &#x4E0D;&#x5EFA;&#x8BAE;&#x5728;&#x6B64;&#x51FD;&#x6570;&#x4E2D;&#x5199;&#x8017;&#x65F6;&#x64CD;&#x4F5C;&#xFF0C;&#x5426;&#x5219;&#x5C06;&#x5F71;&#x54CD;UI&#x5237;&#x65B0;
+ * &#x53C2;&#x6570;&#xFF1A; id
+ *         &#x5F53;&#x524D;&#x6240;&#x89E6;&#x53D1;&#x5B9A;&#x65F6;&#x5668;&#x7684;id&#xFF0C;&#x4E0E;&#x6CE8;&#x518C;&#x65F6;&#x7684;id&#x76F8;&#x540C;
+ * &#x8FD4;&#x56DE;&#x503C;: true
+ *             &#x7EE7;&#x7EED;&#x8FD0;&#x884C;&#x5F53;&#x524D;&#x5B9A;&#x65F6;&#x5668;
+ *         false
+ *             &#x505C;&#x6B62;&#x8FD0;&#x884C;&#x5F53;&#x524D;&#x5B9A;&#x65F6;&#x5668;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">onUI_Timer</span><span class="hljs-params">(<span class="hljs-keyword">int</span> id)</span></span>{
+    <span class="hljs-keyword">switch</span> (id) {
+
+        <span class="hljs-keyword">default</span>:
+            <span class="hljs-keyword">break</span>;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+}
+
+<span class="hljs-comment">/**
+ * &#x6709;&#x65B0;&#x7684;&#x89E6;&#x6478;&#x4E8B;&#x4EF6;&#x65F6;&#x89E6;&#x53D1;
+ * &#x53C2;&#x6570;&#xFF1A;ev
+ *         &#x65B0;&#x7684;&#x89E6;&#x6478;&#x4E8B;&#x4EF6;
+ * &#x8FD4;&#x56DE;&#x503C;&#xFF1A;true
+ *            &#x8868;&#x793A;&#x8BE5;&#x89E6;&#x6478;&#x4E8B;&#x4EF6;&#x5728;&#x6B64;&#x88AB;&#x62E6;&#x622A;&#xFF0C;&#x7CFB;&#x7EDF;&#x4E0D;&#x518D;&#x5C06;&#x6B64;&#x89E6;&#x6478;&#x4E8B;&#x4EF6;&#x4F20;&#x9012;&#x5230;&#x63A7;&#x4EF6;&#x4E0A;
+ *         false
+ *            &#x89E6;&#x6478;&#x4E8B;&#x4EF6;&#x5C06;&#x7EE7;&#x7EED;&#x4F20;&#x9012;&#x5230;&#x63A7;&#x4EF6;&#x4E0A;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">onmainActivityTouchEvent</span><span class="hljs-params">(<span class="hljs-keyword">const</span> MotionEvent &amp;ev)</span> </span>{
+
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+}
+</code></pre>
+<p>&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x7684;&#x5177;&#x4F53;&#x4F5C;&#x7528;&#x5982;&#x4E0B;&#xFF1A;  </p>
+<ul>
+<li><p><strong>REGISTER_ACTIVITY_TIMER_TAB[ ] &#x6570;&#x7EC4;</strong><br>&#x7528;&#x4E8E;<a href="timer.html#timer">&#x6CE8;&#x518C;&#x5B9A;&#x65F6;&#x5668;</a>&#xFF1B; &#x6570;&#x7EC4;&#x6210;&#x5458;&#x7C7B;&#x578B;&#x4E3A;&#x5982;&#x4E0B;&#x7ED3;&#x6784;&#x4F53;  </p>
+<pre><code class="lang-c++"><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> {
+  <span class="hljs-keyword">int</span> id; <span class="hljs-comment">// &#x5B9A;&#x65F6;&#x5668;ID &#xFF0C; &#x4E0D;&#x80FD;&#x91CD;&#x590D;</span>
+  <span class="hljs-keyword">int</span> time; <span class="hljs-comment">// &#x5B9A;&#x65F6;&#x5668;  &#x65F6;&#x95F4;&#x95F4;&#x9694;  &#x5355;&#x4F4D; &#x6BEB;&#x79D2;</span>
+}S_ACTIVITY_TIMEER;
+</code></pre>
+<p><strong>&#x5B9E;&#x8D28;&#x4E0A;&#xFF0C;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x5C06;&#x5728; <code>mainActivity.cpp</code>&#x7684;<code>rigesterActivityTimer()</code>&#x51FD;&#x6570;&#x4E2D;&#x5F15;&#x7528;&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528; <code>void registerTimer(int id, int time)</code>&#x65B9;&#x6CD5;&#x4F9D;&#x6B21;&#x6CE8;&#x518C;&#x5230;&#x7CFB;&#x7EDF;&#x4E2D;&#x3002;</strong></p>
+</li>
+<li><p><strong>void onUI_init()</strong><br>&#x7528;&#x4E8E;&#x754C;&#x9762;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x6253;&#x5F00;&#x8FD9;&#x4E2A;UI&#x754C;&#x9762;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E9B;&#x5185;&#x5BB9;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x4EE3;&#x7801;&#x6DFB;&#x52A0;&#x5230;&#x8FD9;&#x51FD;&#x6570;&#x91CC;&#x3002;<br>&#x5B9E;&#x8D28;&#x4E0A;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5C06;&#x5728;<code>mainActivity.cpp</code>&#x7684;<code>onCreate()</code>&#x65B9;&#x6CD5;&#x4E2D;&#x8C03;&#x7528;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;<code>mainActivity</code>&#x7684;&#x6784;&#x9020;&#x3002;</p>
+</li>
+<li><p><strong>void onUI_quit()</strong><br>&#x7528;&#x4E8E;&#x754C;&#x9762;&#x7684;&#x9000;&#x51FA;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x5F53;UI&#x754C;&#x9762;&#x9000;&#x51FA;&#x7684;&#x65F6;&#x5019;&#x505A;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x4EE3;&#x7801;&#x6DFB;&#x52A0;&#x5230;&#x8FD9;&#x51FD;&#x6570;&#x91CC;&#x3002;
+&#x5B9E;&#x8D28;&#x4E0A;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5C06;&#x5728;<code>mainActivity.cpp</code>&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#x4E2D;&#x8C03;&#x7528;</p>
+</li>
+<li><p><strong>void onProtocolDataUpdate(const SProtocolData &amp;data)</strong><br>&#x7528;&#x4E8E;&#x63A5;&#x6536;&#x4E32;&#x53E3;&#x6570;&#x636E;&#x3002;&#x5F53;&#x89E3;&#x6790;&#x5230;&#x4E32;&#x53E3;&#x6570;&#x636E;&#x5E27;&#x65F6;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;&#x8BE5;&#x51FD;&#x6570;&#x3002;<br>&#x5B9E;&#x8D28;&#x662F;&#xFF0C; <code>mainActivity.cpp</code>&#x7684;<code>onCreate()</code>&#x4E2D;&#xFF0C;&#x4F1A;&#x9ED8;&#x8BA4;&#x8C03;&#x7528;<code>void registerProtocolDataUpdateListener(OnProtocolDataUpdateFun pListener)</code>&#x8FDB;&#x884C;&#x63A5;&#x6536;&#x4E32;&#x53E3;&#x6570;&#x636E;&#x7684;&#x6CE8;&#x518C;&#xFF0C; &#x5728;<code>mainActivity.cpp</code>&#x7684;&#x6790;&#x6784;&#x4E2D;&#x53D6;&#x6D88;&#x6CE8;&#x518C;&#x3002;&#x5F53;&#x4E32;&#x53E3;&#x8BFB;&#x5230;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x901A;&#x8FC7;<code>ProtocolParser.cpp</code>&#x4E2D;&#x7684;<code>void notifyProtocolDataUpdate(const SProtocolData &amp;data)</code>&#x4F9D;&#x6B21;&#x8C03;&#x7528;&#x5DF2;&#x6CE8;&#x518C;&#x7684;UI&#x754C;&#x9762;&#x3002;<br>&#x8FD9;&#x662F;<code>ProtocolParser.cpp</code>&#x4E2D;&#x7684;&#x4E32;&#x53E3;&#x89E3;&#x6790;&#x51FD;&#x6570;&#xFF0C;&#x7ED3;&#x5408;&#x4E0A;&#x9762;&#x63CF;&#x8FF0;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x5C31;&#x80FD;&#x7406;&#x89E3;&#x4E32;&#x53E3;&#x6570;&#x636E;&#x662F;&#x5982;&#x4F55;&#x5728;&#x5404;&#x4E2A;&#x754C;&#x9762;&#x5206;&#x53D1;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-c++">  <span class="hljs-comment">/**
+   * &#x89E3;&#x6790;&#x6BCF;&#x4E00;&#x5E27;&#x6570;&#x636E;
+   */</span>
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">procParse</span><span class="hljs-params">(<span class="hljs-keyword">const</span> BYTE *pData, UINT len)</span> </span>{
+      <span class="hljs-keyword">switch</span> (MAKEWORD(pData[<span class="hljs-number">3</span>], pData[<span class="hljs-number">2</span>])) {
+      <span class="hljs-keyword">case</span> CMDID_POWER:
+          sProtocolData.power = pData[<span class="hljs-number">5</span>];
+          <span class="hljs-keyword">break</span>;
+      }
+
+      <span class="hljs-comment">// &#x901A;&#x77E5;&#x534F;&#x8BAE;&#x6570;&#x636E;&#x66F4;&#x65B0;</span>
+      notifyProtocolDataUpdate(sProtocolData);
+  }
+</code></pre>
+</li>
+<li><p><strong>bool onUI_Timer(int id)</strong><br>&#x5B9A;&#x65F6;&#x5668;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF1B; &#x5F53;&#x67D0;&#x4E2A;&#x5B9A;&#x65F6;&#x5668;&#x8FBE;&#x5230;&#x89C4;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x540E;&#xFF0C;&#x7CFB;&#x7EDF;&#x5C06;&#x8C03;&#x7528;&#x8BE5;&#x51FD;&#x6570;&#xFF0C;&#x5F53;&#x6DFB;&#x52A0;&#x4E86;&#x591A;&#x4E2A;&#x5B9A;&#x65F6;&#x5668;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <strong>id</strong> &#x53C2;&#x6570;&#xFF0C;&#x533A;&#x5206;&#x5B9A;&#x65F6;&#x5668;&#x3002;&#x8FD9;&#x4E2A; <strong>id</strong> &#x53C2;&#x6570;&#x4E0E; &#x4E0A;&#x9762;&#x7ED3;&#x6784;&#x4F53;&#x6570;&#x7EC4;&#x4E2D;&#x586B;&#x5199;&#x7684; id &#x76F8;&#x540C;&#x3002;<br>&#x8FD4;&#x56DE; <code>true</code> &#x5219;&#x7EE7;&#x7EED;&#x8FD0;&#x884C;&#x5F53;&#x524D;&#x5B9A;&#x65F6;&#x5668;;<br>&#x8FD4;&#x56DE; <code>false</code> &#x5219;&#x505C;&#x6B62;&#x8FD0;&#x884C;&#x5F53;&#x524D;&#x5B9A;&#x65F6;&#x5668;;<br>&#x5982;&#x679C;&#x4F60;&#x901A;&#x8FC7;&#x8FD4;&#x56DE; <code>false</code>&#x505C;&#x6B62;&#x4E86;&#x5B9A;&#x65F6;&#x5668;&#xFF0C;&#x90A3;&#x4E48;&#x5982;&#x4F55;&#x518D;&#x6B21;&#x5F00;&#x542F;&#x5B83;&#x5462;&#xFF1F;&#x53EF;&#x4EE5;&#x53C2;&#x8003; <a href="how_to_register_timer.html">&#x5982;&#x4F55;&#x4EFB;&#x610F;&#x5F00;&#x542F;&#x505C;&#x6B62;&#x5B9A;&#x65F6;&#x5668;</a></p>
+</li>
+<li><strong>bool onmainActivityTouchEvent(const MotionEvent &amp;ev)</strong><br>&#x89E6;&#x6478;&#x4E8B;&#x4EF6;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x80FD;&#x591F;&#x5F97;&#x5230;&#x6240;&#x6709;&#x7684;&#x89E6;&#x6478;&#x6D88;&#x606F;&#x3002;<br>&#x540C;&#x6837;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x4E5F;&#x662F;&#x5728;<code>mainActivity.cpp</code>&#x4E2D;&#x901A;&#x8FC7;<code>registerGlobalTouchListener</code>&#x65B9;&#x6CD5;&#x9ED8;&#x8BA4;&#x6CE8;&#x518C;&#xFF1B;&#x53EA;&#x6709;&#x6CE8;&#x518C;&#x4E4B;&#x540E;&#x624D;&#x80FD;&#x5F97;&#x5230;&#x89E6;&#x6478;&#x6D88;&#x606F;&#x3002;<br>&#x8FD4;&#x56DE; <code>true</code> &#x5219;&#x8868;&#x793A;&#x8BE5;&#x89E6;&#x6478;&#x4E8B;&#x4EF6;&#x5728;&#x6B64;&#x88AB;&#x62E6;&#x622A;&#x4E86;&#xFF0C;&#x4E0D;&#x518D;&#x4F20;&#x9012;&#x5230;&#x63A7;&#x4EF6;&#x4E0A;<br>&#x8FD4;&#x56DE; <code>false</code> &#x5219;&#x8868;&#x793A;&#x89E6;&#x6478;&#x4E8B;&#x4EF6;&#x5C06;&#x7EE7;&#x7EED;&#x4F20;&#x9012;&#x5230;&#x63A7;&#x4EF6;&#x4E0A;<br><a href="motion_event.md">&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x89E6;&#x6478;&#x4E8B;&#x4EF6;&#x7684;&#x5904;&#x7406;</a></li>
+</ul>
+<p>&#x4EE5;&#x4E0A;&#x662F;&#x9ED8;&#x8BA4;&#x7684;UI&#x6587;&#x4EF6;&#x7F16;&#x8BD1;&#x751F;&#x6210;&#x7684;Logic.cc&#x3002;&#x5F53;&#x6211;&#x4EEC;&#x5728;UI&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x63A7;&#x4EF6;&#x540E;&#xFF0C;&#x518D;&#x6B21;&#x7F16;&#x8BD1;&#x65F6;&#xFF0C;&#x5DE5;&#x5177;&#x4F1A;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x63A7;&#x4EF6;&#x751F;&#x6210;&#x4E0D;&#x540C;&#x7684;&#x5173;&#x8054;&#x51FD;&#x6570;&#x5230;&#x5BF9;&#x5E94;&#x7684;Logic.cc&#x6587;&#x4EF6;&#x4E2D;&#x3002;<br>&#x4F8B;&#x5982;&#xFF1A;&#x6211;&#x5728;<strong>main.ftu</strong> &#x8FD9;&#x4E2A; UI&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x4E86;&#x4E24;&#x4E2A;&#x6309;&#x952E;&#x63A7;&#x4EF6;&#xFF0C;&#x5B83;&#x4EEC;&#x7684;ID&#x5206;&#x522B;&#x662F; <code>Button1</code> &#x3001;<code>Button2</code>&#xFF0C;&#x90A3;&#x4E48;&#xFF0C;&#x7ECF;&#x8FC7;&#x7F16;&#x8BD1;&#x4E4B;&#x540E;&#xFF0C;&#x5728; <strong>mainLogic.cc</strong>&#x6587;&#x4EF6;&#x4E2D;&#x4F1A;&#x751F;&#x6210;&#x4EE5;&#x4E0B;&#x4E24;&#x4E2A;&#x5173;&#x8054;&#x51FD;&#x6570;  </p>
+<pre><code class="lang-c++"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">onButtonClick_Button1</span><span class="hljs-params">(ZKButton *pButton)</span> </span>{
+    <span class="hljs-comment">//LOGD(&quot; ButtonClick Button1 !!!\n&quot;);</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">onButtonClick_Button2</span><span class="hljs-params">(ZKButton *pButton)</span> </span>{
+    <span class="hljs-comment">//LOGD(&quot; ButtonClick Button2 !!!\n&quot;);</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+}
+</code></pre>
+<p>&#x6CE8;&#x610F;&#x51FD;&#x6570;&#x7684;&#x547D;&#x540D;&#xFF0C;&#x51FD;&#x6570;&#x540D;&#x79F0;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x63A7;&#x4EF6;&#x7684;ID&#x540D;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x8981;&#x6C42;&#x63A7;&#x4EF6;&#x7684;ID&#x547D;&#x540D;&#x9700;&#x8981;&#x7B26;&#x5408;C&#x8BED;&#x8A00;&#x547D;&#x540D;&#x6807;&#x51C6;&#x3002;<br>&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x65AD;&#x7684;&#x6DFB;&#x52A0;&#x63A7;&#x4EF6;&#xFF0C;&#x90A3;&#x4E48;&#x7F16;&#x8BD1;&#x540E;&#x4F1A;&#x751F;&#x6210;&#x66F4;&#x591A;&#x7684;&#x5173;&#x8054;&#x51FD;&#x6570;&#x5230; <strong>mainLogic.cc</strong> &#x6587;&#x4EF6;&#x4E2D;&#x3002;<br>&#x901A;&#x5E38;&#xFF0C;&#x5728;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x5728;UI&#x6587;&#x4EF6;&#x4E2D;&#x591A;&#x6B21;&#x589E;&#x52A0;&#x3001;&#x5220;&#x9664;&#x3001;&#x4FEE;&#x6539;&#x63A7;&#x4EF6;&#xFF0C;&#x9488;&#x5BF9;&#x8FD9;&#x4E9B;&#x60C5;&#x51B5;&#xFF0C;&#x76EE;&#x524D;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5982;&#x4E0B;&#xFF1A;  </p>
+<ul>
+<li>&#x5BF9;&#x4E8E;&#x589E;&#x52A0;&#x63A7;&#x4EF6;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x7F16;&#x8BD1;&#x65F6;&#x5DE5;&#x5177;&#x4F1A;&#x6839;&#x636E;&#x63A7;&#x4EF6;ID&#x540D;&#x751F;&#x6210;&#x5173;&#x8054;&#x51FD;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x76F8;&#x540C;&#x7684;&#x5173;&#x8054;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x7565;&#x8FC7;&#x3002;&#x4E0D;&#x4F1A;&#x5BF9;<strong>Logic.cc</strong>&#x6587;&#x4EF6;&#x9020;&#x6210;&#x4EFB;&#x4F55;&#x5F71;&#x54CD;&#x3002;  </li>
+<li>&#x5BF9;&#x4E8E;&#x5220;&#x9664;&#x63A7;&#x4EF6;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5982;&#x679C;&#x5728;UI&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5C06;&#x5DF2;&#x6709;&#x7684;&#x63A7;&#x4EF6;&#x5220;&#x9664;&#xFF0C;&#x5DE5;&#x5177;&#x5E76;&#x4E0D;&#x4F1A;&#x5C06;&#x5B83;&#x7684;&#x5173;&#x8054;&#x51FD;&#x6570;&#x4E5F;&#x5220;&#x9664;&#x3002;&#x5982;&#x679C;&#x5C06;&#x5173;&#x8054;&#x51FD;&#x6570;&#x4E5F;&#x5220;&#x9664;&#xFF0C;&#x90A3;&#x4E48;&#x5F88;&#x53EF;&#x80FD;&#x4F1A;&#x9020;&#x6210;&#x5BA2;&#x6237;&#x4EE3;&#x7801;&#x7684;&#x4E22;&#x5931;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x4FDD;&#x7559;&#x5B83;&#x3002;</li>
+<li>&#x5BF9;&#x4E8E;&#x4FEE;&#x6539;&#x63A7;&#x4EF6;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5173;&#x8054;&#x51FD;&#x6570;&#x7684;&#x751F;&#x6210;&#x53EA;&#x4E0E;&#x63A7;&#x4EF6;ID&#x540D;&#x6709;&#x5173;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5728;UI&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4FEE;&#x6539;&#x63A7;&#x4EF6;&#x9664;&#x4E86;ID&#x540D;&#x7684;&#x5176;&#x4ED6;&#x5C5E;&#x6027;&#xFF0C;&#x5C06;&#x4E0D;&#x4F1A;&#x5BF9;&#x5173;&#x8054;&#x51FD;&#x6570;&#x9020;&#x6210;&#x5F71;&#x54CD;&#xFF1B;&#x5982;&#x679C;&#x4F60;&#x4FEE;&#x6539;&#x4E86;&#x63A7;&#x4EF6;ID&#x540D;&#x5C5E;&#x6027;&#xFF0C;&#x90A3;&#x4E48;&#x7F16;&#x8BD1;&#x65F6;&#xFF0C;&#x5C06;&#x6309;&#x7167;&#x589E;&#x52A0;&#x63A7;&#x4EF6;&#x7684;&#x60C5;&#x51B5;&#x6765;&#x5904;&#x7406;&#xFF0C;&#x65E7;&#x5173;&#x8054;&#x51FD;&#x6570;&#x4FDD;&#x7559;&#x3002;</li>
+</ul>
+<p><strong>&#x4E0A;&#x9762;&#x6211;&#x4EEC;&#x53EA;&#x4EE5;&#x6309;&#x952E;&#x63A7;&#x4EF6;&#x4E3A;&#x4F8B;&#xFF0C;&#x8BB2;&#x8FF0;&#x4E86;UI&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x63A7;&#x4EF6;&#x4E0E;Logic.cc&#x5185;&#x751F;&#x6210;&#x7684;&#x5173;&#x8054;&#x51FD;&#x6570;&#x7684;&#x5173;&#x7CFB;&#xFF0C;FlywizOS&#x8FD8;&#x63D0;&#x4F9B;&#x751F;&#x6210;&#x5176;&#x4ED6;&#x63A7;&#x4EF6;&#x7684;&#x5173;&#x8054;&#x51FD;&#x6570;&#xFF0C;&#x6BD4;&#x5982; &#x6ED1;&#x52A8;&#x6761;&#x3001;&#x5217;&#x8868;&#x3001;&#x6ED1;&#x52A8;&#x7A97;&#x53E3;&#x7B49;&#x63A7;&#x4EF6;&#xFF0C;&#x4E86;&#x89E3;&#x5176;&#x4ED6;&#x63A7;&#x4EF6;&#x7684;&#x5173;&#x8054;&#x51FD;&#x6570;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;<a href="named_rule.html#relation_function">&#x63A7;&#x4EF6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x5173;&#x8054;&#x51FD;&#x6570;&#x8BB2;&#x89E3;</a></strong></p>
+<p><br></p>
+<p><strong>&#x6700;&#x540E;&#x7528;&#x4E00;&#x5F20;&#x56FE;&#x6765;&#x603B;&#x7ED3;ftu&#x6587;&#x4EF6;&#x4E0E;&#x4EE3;&#x7801;&#x7684;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;&#xFF1A;</strong>
+<img src="assets/relationships.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="project_structure.html" class="navigation navigation-prev " aria-label="Previous page: 项目结构介绍">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="named_rule.html" class="navigation navigation-next " aria-label="Next page: 控件的命名规则">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"UI文件与生成代码讲解","level":"1.2.11","depth":2,"next":{"title":"控件的命名规则","level":"1.2.12","depth":2,"path":"named_rule.md","ref":"named_rule.md","articles":[]},"previous":{"title":"项目结构介绍","level":"1.2.10","depth":2,"path":"project_structure.md","ref":"project_structure.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ftu_and_source_relationships.md","mtime":"2020-09-26T06:04:00.310Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-26T06:06:28.268Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

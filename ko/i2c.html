@@ -1,0 +1,1692 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>I2C · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="adc.html" />
+    
+    
+    <link rel="prev" href="spi.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    About us
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="system_introdoction.html">
+            
+                <a href="system_introdoction.html">
+            
+                    
+                    FlywizOS 시스템 소개
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    개발 과정
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="docs_brief.html">
+            
+                <a href="docs_brief.html">
+            
+                    
+                    시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="download.html">
+            
+                <a href="download.html">
+            
+                    
+                    개발 환경 설치
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="flywizOS_ide_snapshot.html">
+            
+                <a href="flywizOS_ide_snapshot.html">
+            
+                    
+                    처음 사용
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="flywizOS_ide_layout_introduce.html">
+            
+                <a href="flywizOS_ide_layout_introduce.html">
+            
+                    
+                    작업 영역 소개
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="new_flywizOS_project.html">
+            
+                <a href="new_flywizOS_project.html">
+            
+                    
+                    새로운 프로젝트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="import_project.html">
+            
+                <a href="import_project.html">
+            
+                    
+                    프로젝트 가져오기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="new_flywizOS_ui_file.html">
+            
+                <a href="new_flywizOS_ui_file.html">
+            
+                    
+                    새로운 UI파일
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="how_to_compile_flywizOS.html">
+            
+                <a href="how_to_compile_flywizOS.html">
+            
+                    
+                    프로젝트 컴파일
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="run_project.html">
+            
+                <a href="run_project.html">
+            
+                    
+                    프로젝트 실행
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="project_structure.html">
+            
+                <a href="project_structure.html">
+            
+                    
+                    프로젝트 구조 소개
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="ftu_and_source_relationships.html">
+            
+                <a href="ftu_and_source_relationships.html">
+            
+                    
+                    UI파일과 생성된 코드 설명
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="named_rule.html">
+            
+                <a href="named_rule.html">
+            
+                    
+                    컨트롤 이름 지정 규칙
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="editor_tip.html">
+            
+                <a href="editor_tip.html">
+            
+                    
+                    공통 스킬 및 개발 도구
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">컨트롤 소개</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="ctrl_common.html">
+            
+                <a href="ctrl_common.html">
+            
+                    
+                    공통 속성
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="textview.html">
+            
+                <a href="textview.html">
+            
+                    
+                    Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="button.html">
+            
+                <a href="button.html">
+            
+                    
+                    Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="checkbox.html">
+            
+                <a href="checkbox.html">
+            
+                    
+                    Checkbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="radiogroup.html">
+            
+                <a href="radiogroup.html">
+            
+                    
+                    RadioGroup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="seekbar.html">
+            
+                <a href="seekbar.html">
+            
+                    
+                    Seek Bar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="pointer.html">
+            
+                <a href="pointer.html">
+            
+                    
+                    Pointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="listview.html">
+            
+                <a href="listview.html">
+            
+                    
+                    List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="diagram.html">
+            
+                <a href="diagram.html">
+            
+                    
+                    Diagram
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="circlebar.html">
+            
+                <a href="circlebar.html">
+            
+                    
+                    Circle Bar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="qrcode.html">
+            
+                <a href="qrcode.html">
+            
+                    
+                    QR Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="video.html">
+            
+                <a href="video.html">
+            
+                    
+                    Video View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="edittext.html">
+            
+                <a href="edittext.html">
+            
+                    
+                    Edit Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="window.html">
+            
+                <a href="window.html">
+            
+                    
+                    Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="slidewindow.html">
+            
+                <a href="slidewindow.html">
+            
+                    
+                    Slide Window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="painter.html">
+            
+                <a href="painter.html">
+            
+                    
+                    Painter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="camera.html">
+            
+                <a href="camera.html">
+            
+                    
+                    Camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.18" data-path="digital_clock.html">
+            
+                <a href="digital_clock.html">
+            
+                    
+                    Digital Clock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.19" data-path="relation_function.html">
+            
+                <a href="relation_function.html">
+            
+                    
+                    상관 함수 소개
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">액티비티 상호 작용</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="first_app.html">
+            
+                <a href="first_app.html">
+            
+                    
+                    시작 액티비티
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="open_close_app.html">
+            
+                <a href="open_close_app.html">
+            
+                    
+                    어플리케이션 액티비시 실행/종료
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="activity_life_cycle.html">
+            
+                <a href="activity_life_cycle.html">
+            
+                    
+                    액티비티 라이프 사이클
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="internal_app.html">
+            
+                <a href="internal_app.html">
+            
+                    
+                    시스템 내장 액티비티
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="system_app.html">
+            
+                <a href="system_app.html">
+            
+                    
+                    시스템 어플리케이션
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="timer.html">
+            
+                <a href="timer.html">
+            
+                    
+                    타이머
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="how_to_register_timer.html">
+            
+                <a href="how_to_register_timer.html">
+            
+                    
+                    타이머 수동 조작
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" >
+            
+                <span>
+            
+                    
+                    시리얼 통신
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.7.1" data-path="linux_serial_programming.html">
+            
+                <a href="linux_serial_programming.html">
+            
+                    
+                    Linux serial programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.2" data-path="serial_introdoction.html">
+            
+                <a href="serial_introdoction.html">
+            
+                    
+                    소개
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.3" data-path="serial_framework.html">
+            
+                <a href="serial_framework.html">
+            
+                    
+                    통신 프레임워크 설명
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.4" data-path="serial_example.html">
+            
+                <a href="serial_example.html">
+            
+                    
+                    시리얼 통신 예제
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.5" data-path="serial_configuration.html">
+            
+                <a href="serial_configuration.html">
+            
+                    
+                    시리얼 포트 구성
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.6" data-path="multiuart.html">
+            
+                <a href="multiuart.html">
+            
+                    
+                    다중 시리얼 포트 구성
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" >
+            
+                <span>
+            
+                    
+                    네트워크 컨트롤
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.1" data-path="wifi.html">
+            
+                <a href="wifi.html">
+            
+                    
+                    WIFI 설정
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.2" data-path="wifi_ap.html">
+            
+                <a href="wifi_ap.html">
+            
+                    
+                    Hotspot 설정
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" >
+            
+                <span>
+            
+                    
+                    멀티미디아
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.9.1" data-path="video.html">
+            
+                <a href="video.html">
+            
+                    
+                    Video 플레이
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.2" data-path="audio.html">
+            
+                <a href="audio.html">
+            
+                    
+                    Audio 플레이
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="thread.html">
+            
+                <a href="thread.html">
+            
+                    
+                    Thread
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.10.1" data-path="mutex.html">
+            
+                <a href="mutex.html">
+            
+                    
+                    Mutex
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="screenshot.html">
+            
+                <a href="screenshot.html">
+            
+                    
+                    스크린샷
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">시스템 운영</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="data.html">
+            
+                <a href="data.html">
+            
+                    
+                    데이타 저장소
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="vireeprom.html">
+            
+                <a href="vireeprom.html">
+            
+                    
+                    Emulated EEPROM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="brightness.html">
+            
+                <a href="brightness.html">
+            
+                    
+                    화면 밝기 조정
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="system_time.html">
+            
+                <a href="system_time.html">
+            
+                    
+                    시스템 시간
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="machine_unique_id.html">
+            
+                <a href="machine_unique_id.html">
+            
+                    
+                    기기 고유 ID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="tf.html">
+            
+                <a href="tf.html">
+            
+                    
+                    TF card
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.1" data-path="mount.html">
+            
+                <a href="mount.html">
+            
+                    
+                    카드 모니터링
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="gpio.html">
+            
+                <a href="gpio.html">
+            
+                    
+                    GPIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="spi.html">
+            
+                <a href="spi.html">
+            
+                    
+                    SPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.8" data-path="i2c.html">
+            
+                <a href="i2c.html">
+            
+                    
+                    I2C
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="adc.html">
+            
+                <a href="adc.html">
+            
+                    
+                    ADC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="reboot.html">
+            
+                <a href="reboot.html">
+            
+                    
+                    시스템 재 시작
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">세계화</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="i18n.html">
+            
+                <a href="i18n.html">
+            
+                    
+                    다중 언어
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <span>
+            
+                    
+                    업그레이드와 디버깅
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="adb_debug.html">
+            
+                <a href="adb_debug.html">
+            
+                    
+                    ADB 디버그
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="logcat.html">
+            
+                <a href="logcat.html">
+            
+                    
+                    View log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="start_from_sdcard.html">
+            
+                <a href="start_from_sdcard.html">
+            
+                    
+                    TF card에서 프로그램 시작
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.4" data-path="update_logo.html">
+            
+                <a href="update_logo.html">
+            
+                    
+                    Boot LOGO 업그레이드
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.5" data-path="make_image.html">
+            
+                <a href="make_image.html">
+            
+                    
+                    Upgrade image 파일 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.6" data-path="autoupgrade.html">
+            
+                <a href="autoupgrade.html">
+            
+                    
+                    자동 TF card 업데이트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.7" data-path="sd_boot.html">
+            
+                <a href="sd_boot.html">
+            
+                    
+                    플래쉬 카드 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.8" data-path="remote_update.html">
+            
+                <a href="remote_update.html">
+            
+                    
+                    원격 업그레이드
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="demo_download.html">
+            
+                <a href="demo_download.html">
+            
+                    
+                    Sample code
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux standard programming</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="file_read_write.html">
+            
+                <a href="file_read_write.html">
+            
+                    
+                    파일 읽기/쓰기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" >
+            
+                <span>
+            
+                    
+                    네트워크 프로그래밍
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="net.html">
+            
+                <a href="net.html">
+            
+                    
+                    소켓 프로그래밍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.2" data-path="http.html">
+            
+                <a href="http.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="transcoding.html">
+            
+                <a href="transcoding.html">
+            
+                    
+                    트랜스코딩
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="json.html">
+            
+                <a href="json.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" >
+            
+                <span>
+            
+                    
+                    부록
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.5.1" data-path="cpp_base.html">
+            
+                <a href="cpp_base.html">
+            
+                    
+                    C++ basic 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.2" data-path="touchcalibration.html">
+            
+                <a href="touchcalibration.html">
+            
+                    
+                    터치 보정
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.3" data-path="font_setting.html">
+            
+                <a href="font_setting.html">
+            
+                    
+                    Font 설정
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.4" data-path="font_cut_tool.html">
+            
+                <a href="font_cut_tool.html">
+            
+                    
+                    Font 자르기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.5" data-path="hardware.html">
+            
+                <a href="hardware.html">
+            
+                    
+                    하드웨어 사용 설명
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.6" data-path="problems.html">
+            
+                <a href="problems.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.7" data-path="install_adb_driver.html">
+            
+                <a href="install_adb_driver.html">
+            
+                    
+                    ADB driver 설치
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.8" data-path="convert_platform.html">
+            
+                <a href="convert_platform.html">
+            
+                    
+                    플랫폼 전환
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.9" data-path="board_tag_explain.html">
+            
+                <a href="board_tag_explain.html">
+            
+                    
+                    제품 사양 및 모델 설명
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5.10" data-path="core_module.html">
+            
+                <a href="core_module.html">
+            
+                    
+                    핵심 모듈 사용법 튜토리얼
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >I2C</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="i2c">I2C</h2>
+<blockquote>
+<p>[!Note]</p>
+<ol>
+<li>Currently only <strong>SV50P series modules</strong> support this function.</li>
+<li>Before use, you need to enable the <strong>TWI</strong> function in <a href="https://superv.flythings.cn" target="_blank">Module Configuration</a> and upgrade with the generated new system package before it can be used normally.</li>
+<li>More about the module <a href="core_module.html">Using Tutorial</a>.</li>
+</ol>
+</blockquote>
+<h3 id="required-header-file">Required header file</h3>
+<pre><code class="lang-c++">  <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">&quot;utils/I2CHelper.h&quot;</span></span>
+</code></pre>
+<h3 id="specific-operation">Specific operation</h3>
+<pre><code class="lang-c++">  <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">&quot;utils/I2CHelper.h&quot;</span></span>
+
+  <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> CFG_L        0x47</span>
+  <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> CFG_H        0x80</span>
+  <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> VER_L        0x41</span>
+  <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> VER_H        0x81</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testI2C</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">uint8_t</span> tx[<span class="hljs-number">512</span>], rx[<span class="hljs-number">512</span>];
+    <span class="hljs-built_in">memset</span>(tx, <span class="hljs-number">0</span>, <span class="hljs-number">512</span>);
+    <span class="hljs-built_in">memset</span>(rx, <span class="hljs-number">0</span>, <span class="hljs-number">512</span>);
+
+    <span class="hljs-comment">/**
+     * Define variables
+     *
+     * Parameter 1: i2c bus number
+     * Parameter 2: Slave address, be sure to pay attention to the 7bit address
+     * Parameter 3: Timeout time, unit: ms
+     * Parameter 4: Number of retries
+     */</span>
+    <span class="hljs-function">I2CHelper <span class="hljs-title">i2c</span><span class="hljs-params">(<span class="hljs-number">0</span>, <span class="hljs-number">0x5e</span>, <span class="hljs-number">1000</span>, <span class="hljs-number">5</span>)</span></span>;
+
+    tx[<span class="hljs-number">0</span>] = CFG_H;
+    tx[<span class="hljs-number">1</span>] = CFG_L;
+
+    <span class="hljs-comment">/**
+     * Simple write
+     *
+     * Parameter 1: Write data address
+     * Parameter 2: Data length
+     */</span>
+    <span class="hljs-keyword">if</span> (!i2c.write(tx, <span class="hljs-number">2</span>)) {
+        LOGD(<span class="hljs-string">&quot;i2c tx cfg error!\n&quot;</span>);
+    }
+
+    <span class="hljs-comment">/**
+     * Simple read
+     *
+     * Parameter 1: Read data address
+     * Parameter 2: Data length
+     */</span>
+    <span class="hljs-keyword">if</span> (!i2c.read(rx, <span class="hljs-number">1</span>)) {
+        LOGD(<span class="hljs-string">&quot;i2c rx cfg error!\n&quot;</span>);
+    }
+
+    LOGD(<span class="hljs-string">&quot;i2c reg[0x%x%x]=%x\n&quot;</span>, CFG_H, CFG_L, rx[<span class="hljs-number">0</span>]);
+    <span class="hljs-built_in">memset</span>(rx, <span class="hljs-number">0</span>, <span class="hljs-number">512</span>);
+
+    <span class="hljs-comment">/**
+     * Half-duplex transmission, that is, shared read and write, no stop signal in the middle
+     *
+     * Parameter 1: Write data address
+     * Parameter 2: Write data length
+     * Parameter 3: Read data address
+     * Parameter 4: Read data length
+     */</span>
+    <span class="hljs-keyword">if</span> (!i2c.transfer(tx, <span class="hljs-number">2</span>, rx, <span class="hljs-number">1</span>)) {
+        LOGD(<span class="hljs-string">&quot;i2c i2c_transfer cfg error!\n&quot;</span>);
+    }
+
+    LOGD(<span class="hljs-string">&quot;i2c reg[0x%x%x]=%x\n&quot;</span>, CFG_H, CFG_L, rx[<span class="hljs-number">0</span>]);
+
+    tx[<span class="hljs-number">0</span>] = VER_H;
+    tx[<span class="hljs-number">1</span>] = VER_L;
+    <span class="hljs-keyword">if</span> (!i2c.write(tx, <span class="hljs-number">2</span>)) {
+        LOGD(<span class="hljs-string">&quot;i2c tx ver error!\n&quot;</span>);
+    }
+
+    <span class="hljs-keyword">if</span> (!i2c.read(rx, <span class="hljs-number">1</span>)) {
+        LOGD(<span class="hljs-string">&quot;i2c rx ver error!\n&quot;</span>);
+    }
+
+    LOGD(<span class="hljs-string">&quot;i2c reg[0x%x%x]=%x\n&quot;</span>, VER_H, VER_L, rx[<span class="hljs-number">0</span>]);
+    <span class="hljs-built_in">memset</span>(rx, <span class="hljs-number">0</span>, <span class="hljs-number">512</span>);
+    <span class="hljs-keyword">if</span> (!i2c.transfer(tx, <span class="hljs-number">2</span>, rx, <span class="hljs-number">1</span>)) {
+        LOGD(<span class="hljs-string">&quot;twi i2c_transfer ver error!\n&quot;</span>);
+    }
+
+    LOGD(<span class="hljs-string">&quot;i2c reg[0x%x%x]=%x\n&quot;</span>, VER_H, VER_L, rx[<span class="hljs-number">0</span>]);
+  }
+</code></pre>
+<p>For other interface operations, please refer to the header file notes.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="spi.html" class="navigation navigation-prev " aria-label="Previous page: SPI">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="adc.html" class="navigation navigation-next " aria-label="Next page: ADC">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"I2C","level":"4.8","depth":1,"next":{"title":"ADC","level":"4.9","depth":1,"path":"adc.md","ref":"adc.md","articles":[]},"previous":{"title":"SPI","level":"4.7","depth":1,"path":"spi.md","ref":"spi.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"i2c.md","mtime":"2020-09-11T08:48:50.205Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-26T06:05:48.774Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
