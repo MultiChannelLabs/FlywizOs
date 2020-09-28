@@ -1523,12 +1523,12 @@
 <li>Find the <code>button</code> control in the control set on the right</li>
 <li>Left-click on the <code>button</code> control and hold it, then drag it to any position, release the left button. Then you can see the automatically generated button control.</li>
 <li><p>Left-click on the button just generated then you can see the related properties of the control on the right side of the editor. In this attribute form, you can freely modify the attributes like filling in an Excel sheet!</p>
-<p><img src="assets/Button-create.gif" alt="&#x521B;&#x5EFA;Button"></p>
+<p><img src="assets/Button-create.gif" alt=""></p>
+</li>
+</ol>
 <h2 id="how-to-modify-the-color-of-buttonskeys">How to modify the color of buttons/keys?</h2>
 <p>Refer to <a href="textview.html#change_color">&quot;How to modify the color of text&quot;</a></p>
 <h2 id="how-to-add-more-animation-effects-to-the-button-"><span id="add_button_style">How to add more animation effects to the button? </span></h2>
-</li>
-</ol>
 <p>Refer to <a href="#add_multi_state_photo_for_button">&quot;How to use pictures to enrich the style of buttons/keys&quot;</a></p>
 <h2 id="how-to-use-pictures-to-enrich-the-style-of-buttonskeys"><span id="add_multi_state_photo_for_button">How to use pictures to enrich the style of buttons/keys</span></h2>
 <p>The default button control is pure color, which looks a bit boring. But you can add pictures to beautify the buttons.
@@ -1553,12 +1553,12 @@ It is observed that the attributes related to the picture among all the attribut
 </li>
 </ol>
 <p>Example&#xFF1A;   </p>
-<p><img src="assets/Button-pic-example.png" alt="Button-pic-example" title="&#x6309;&#x952E;&#x5C5E;&#x6027;&#x793A;&#x4F8B;"></p>
+<p><img src="assets/Button-pic-example.png" alt=""></p>
 <p>  Effect picture :  </p>
-<p><img src="assets/Button-pic-preview.png" alt="Button-pic-example" title="&#x6309;&#x952E;&#x5C5E;&#x6027;&#x793A;&#x4F8B;"></p>
+<p><img src="assets/Button-pic-preview.png" alt=""></p>
 <p>The above figure is a screenshot of the parameter part of the attribute table image, and its meaning is:
   The button displays off_normal.png by default, and it displays on_normal.png when the button is selected<br>  The four parameters of the left, top, width, and height of the picture determine the display area of the picture (in pixels). The upper left corner of the button rectangle area is the starting point coordinates (0, 0), and right and down are the positive direction. The end point coordinates are (67, 31). If the actual width and height of the picture are not equal to the specified width and height parameters, the picture will be scaled according to the specified width and height:</p>
-<p>  <img src="assets/Button-location.png" alt="&#x56FE;&#x7247;&#x4F4D;&#x7F6E;&#x5750;&#x6807;&#x793A;&#x4F8B;"></p>
+<p>  <img src="assets/Button-location.png" alt=""></p>
 <h3 id="understand-the-hierarchical-relationship-of-button-controls">Understand the hierarchical relationship of button controls</h3>
 <p>For general button controls, it will draw four levels of content, which are from top to bottom:</p>
 <ul>
@@ -1574,7 +1574,7 @@ It is observed that the attributes related to the picture among all the attribut
 To respond to the click time of the button is very simple. The following are the specific steps :</p>
 <ol>
 <li><p>First create a <code>button</code> control and the property ID as <code>Button1</code>. <a href="#add_button">How to create a button control</a></p>
-<p><img src="assets/Button-properties-id-button1.png" alt="ID&#x5C5E;&#x6027;&#x793A;&#x4F8B;"></p>
+<p><img src="assets/Button-properties-id-button1.png" alt=""></p>
 </li>
 <li>In the <code>Project Explorer</code>, select the current project, right-click, and select the <code>Compile FlywizOS</code> option in the pop-up menu. The function of this step is to <strong>automatically generate template code</strong> based on all UI files in the current project. <a href="ftu_and_source_relationships.html#ftu_and_source_relationships">Learn more about code generation details</a></li>
 <li><p>Take the UI file <code>main.ftu</code> as an example. After the previous step is completed, the file <code>jni/logic/mainLogic.cc</code> will be generated in the current project folder, as shown below :</p>
@@ -1671,8 +1671,7 @@ So multiple button controls will generate different associated functions.</li>
              <span class="hljs-keyword">break</span>;
          }
      }
-};
-
+ };    
  }
 </code></pre>
 </li>
@@ -1701,7 +1700,7 @@ For specific implementation, please refer to <a href="demo_download.html#demo_do
 <h2 id="sample-code">Sample code</h2>
 <p>Since there are many button control properties, please refer to the ButtonDemo project in <a href="demo_download.html#demo_download">Sample Code</a> for more property effects</p>
 <p>Sample preview effect picture :</p>
-<p><img src="assets/button/preview.png" alt="&#x6548;&#x679C;&#x56FE;"></p>
+<p><img src="assets/button/preview.png" alt=""></p>
 
                                 
                                 </section>
@@ -1745,7 +1744,7 @@ For specific implementation, please refer to <a href="demo_download.html#demo_do
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Button","level":"2.3","depth":1,"next":{"title":"Checkbox","level":"2.4","depth":1,"path":"checkbox.md","ref":"checkbox.md","articles":[]},"previous":{"title":"Text","level":"2.2","depth":1,"path":"textview.md","ref":"textview.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"button.md","mtime":"2020-09-26T06:04:00.294Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-26T06:04:34.635Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Button","level":"2.3","depth":1,"next":{"title":"Checkbox","level":"2.4","depth":1,"path":"checkbox.md","ref":"checkbox.md","articles":[]},"previous":{"title":"Text","level":"2.2","depth":1,"path":"textview.md","ref":"textview.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"button.md","mtime":"2020-09-28T02:29:28.783Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-28T03:44:57.542Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

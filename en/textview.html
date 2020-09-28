@@ -1531,19 +1531,18 @@
 <p>In the use of the serial port screen, the text view content is often updated dynamically. Then in the code, we can dynamically update the content of the text view control through the pointer corresponding to the <code>Text View</code> control. The specific steps are as follows :</p>
 <ol>
 <li>First of all, you need to know the pointer variable corresponding to the text view control in the code (<a href="named_rule.html">If you don&#x2019;t know the corresponding rules of the pointer variable name and the control ID in the UI file, click here</a>), here is the text with the ID of <code>Textview1</code>. Take the text control with ID <code>Textview1</code> as an example, its corresponding pointer variable is <code>mTextview1Ptr</code>.</li>
-<li>If we want to modify the content of the Textview1 to <code>&quot;Hello World&quot;</code>, it can be implemented by calling the member function of the text view control <code>void setText(const char *text)</code>, in the corresponding <code>Logic.cc</code> file, The specific code is:<pre><code class="lang-c++">mTextview1Ptr-&gt;setText(<span class="hljs-string">&quot;Hello World&quot;</span>);
+<li><p>If we want to modify the content of the Textview1 to <code>&quot;Hello World&quot;</code>, it can be implemented by calling the member function of the text view control <code>void setText(const char *text)</code>, in the corresponding <code>Logic.cc</code> file, The specific code is:</p>
+<pre><code class="lang-c++">mTextview1Ptr-&gt;setText(<span class="hljs-string">&quot;Hello World&quot;</span>);
 </code></pre>
-Examples of actual usage :
-The function of the following code is: when the button with ID Button1 is pressed, the text with ID Textview1 is set to &quot;Hello World&quot;</li>
-</ol>
+<p>Examples of actual usage :
+The function of the following code is: when the button with ID Button1 is pressed, the text with ID Textview1 is set to &quot;Hello World&quot;</p>
 <pre><code class="lang-c++"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">onButtonClick_Button1</span><span class="hljs-params">(ZKButton *pButton)</span> </span>{
-    mTextview1Ptr-&gt;setText(<span class="hljs-string">&quot;Hello World&quot;</span>);
-    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+   mTextview1Ptr-&gt;setText(<span class="hljs-string">&quot;Hello World&quot;</span>);
+   <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 }
 </code></pre>
-<ol>
-<li>In addition to setting strings, the text control also supports setting <strong>number</strong> and <strong>character</strong>:</li>
-</ol>
+</li>
+<li><p>In addition to setting strings, the text control also supports setting <strong>number</strong> and <strong>character</strong>:</p>
 <pre><code class="lang-c++"><span class="hljs-comment">/* function definition header file: include/control/ZKTextView.h */</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setText</span><span class="hljs-params">(<span class="hljs-keyword">int</span> text)</span></span>;  <span class="hljs-comment">// set number</span>
 <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setText</span><span class="hljs-params">(<span class="hljs-keyword">char</span> text)</span></span>; <span class="hljs-comment">// set character</span>
@@ -1552,6 +1551,8 @@ The function of the following code is: when the button with ID Button1 is presse
 mTextview1Ptr-&gt;setText(<span class="hljs-number">123</span>); <span class="hljs-comment">// Textview1 control will display the string &quot;123&quot;</span>
 mTextview1Ptr-&gt;setText(<span class="hljs-string">&apos;c&apos;</span>); <span class="hljs-comment">// The Textview1 control will display the&apos;c&apos; character</span>
 </code></pre>
+</li>
+</ol>
 <h2 id="how-to-modify-the-color-of-text"><span id="change_color">How to modify the color of text?</span></h2>
 <p>The default text is displayed in white, which usually cannot meet the requirements. You can modify the text color in the following two ways.</p>
 <h3 id="modify-the-color-of-the-control-directly-in-the-property-bar">Modify the color of the control directly in the property bar</h3>
@@ -1633,11 +1634,8 @@ mTextview1Ptr-&gt;setText(<span class="hljs-string">&apos;c&apos;</span>); <span
 <p> <img src="assets/textview/resources_dir.png" alt=""></p>
 </li>
 <li><p>Create a text view control<br> Create a text view control arbitrarily in the UI file. And set the background image of the text view control to one of the images. Here I set the first picture as the background picture. This step is just to automatically adjust the width and height of the text view control to the width and height of the picture, you can also choose not to set it.</p>
-<p> The complete properties are shown in the figure :</p>
+<p> The complete properties are shown in the figure :<br><img src="assets/textview/textview_properties.png" alt="">  </p>
 </li>
-</ol>
-<pre><code>![](assets/textview/textview_properties.png)  
-</code></pre><ol>
 <li><p>Compile the project, register the timer<br> After adding the text view control, compile the project again, register a timer in the generated <code>Logic.cc</code> file and set the time interval to 50 ms. We use the timer to switch a picture every 50ms.<br> <a href="how_to_compile_flywizOS.html">How to compile the project? </a> 
  <a href="timer.html">How to register timer? </a></p>
 </li>
@@ -1744,7 +1742,7 @@ mTextTimePtr-&gt;setText(<span class="hljs-string">&apos;0&apos;</span>); <span 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Text","level":"2.2","depth":1,"next":{"title":"Button","level":"2.3","depth":1,"path":"button.md","ref":"button.md","articles":[]},"previous":{"title":"General property","level":"2.1","depth":1,"path":"ctrl_common.md","ref":"ctrl_common.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"textview.md","mtime":"2020-09-26T06:04:00.299Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-26T06:04:34.635Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Text","level":"2.2","depth":1,"next":{"title":"Button","level":"2.3","depth":1,"path":"button.md","ref":"button.md","articles":[]},"previous":{"title":"General property","level":"2.1","depth":1,"path":"ctrl_common.md","ref":"ctrl_common.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"textview.md","mtime":"2020-09-28T02:12:54.637Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-28T03:44:57.542Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

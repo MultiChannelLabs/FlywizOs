@@ -1515,28 +1515,27 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="music-player&#x97F3;&#x9891;&#x64AD;&#x653E;">Music player(&#x97F3;&#x9891;&#x64AD;&#x653E;)</h1>
+                                <h1 id="music-player">Music player</h1>
 <p>Create a <code>ZKMediaPlayer</code> object  of type <code>ZKMediaPlayer::E_MEDIA_TYPE_AUDIO</code></p>
-<p>(&#x521B;&#x5EFA; <code>ZKMediaPlayer</code>&#x5BF9;&#x8C61;&#xFF0C;&#x7C7B;&#x578B;&#x4E3A; <code>ZKMediaPlayer::E_MEDIA_TYPE_AUDIO</code>)</p>
 <pre><code class="lang-c++"><span class="hljs-function"><span class="hljs-keyword">static</span> ZKMediaPlayer <span class="hljs-title">sPlayer</span><span class="hljs-params">(ZKMediaPlayer::E_MEDIA_TYPE_AUDIO)</span></span>;
 </code></pre>
-<p>&#x6CE8;&#x518C;&#x6D88;&#x606F;&#x76D1;&#x542C;</p>
-<pre><code class="lang-c++"><span class="hljs-comment">// The message monitoring interface is as follows(&#x6D88;&#x606F;&#x76D1;&#x542C;&#x63A5;&#x53E3;&#x5982;&#x4E0B;)</span>
+<p>Register message listener</p>
+<pre><code class="lang-c++"><span class="hljs-comment">// The message monitoring interface is as follows</span>
 <span class="hljs-keyword">class</span> PlayerMessageListener : <span class="hljs-keyword">public</span> ZKMediaPlayer::IPlayerMessageListener {
 <span class="hljs-keyword">public</span>:
     <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onPlayerMessage</span><span class="hljs-params">(ZKMediaPlayer *pMediaPlayer, <span class="hljs-keyword">int</span> msg, <span class="hljs-keyword">void</span> *pMsgData)</span> </span>{
         <span class="hljs-keyword">switch</span> (msg) {
         <span class="hljs-keyword">case</span> ZKMediaPlayer::E_MSGTYPE_ERROR_INVALID_FILEPATH:
         <span class="hljs-keyword">case</span> ZKMediaPlayer::E_MSGTYPE_ERROR_MEDIA_ERROR:
-            <span class="hljs-comment">// Error message(&#x51FA;&#x9519;&#x6D88;&#x606F;)</span>
+            <span class="hljs-comment">// Error message</span>
             <span class="hljs-keyword">break</span>;
 
         <span class="hljs-keyword">case</span> ZKMediaPlayer::E_MSGTYPE_PLAY_STARTED:
-            <span class="hljs-comment">// Start playback message(&#x5F00;&#x59CB;&#x64AD;&#x653E;&#x6D88;&#x606F;)</span>
+            <span class="hljs-comment">// Start playback message</span>
             <span class="hljs-keyword">break</span>;
 
         <span class="hljs-keyword">case</span> ZKMediaPlayer::E_MSGTYPE_PLAY_COMPLETED:
-            <span class="hljs-comment">// Stop playback message(&#x64AD;&#x653E;&#x7ED3;&#x675F;&#x6D88;&#x606F;)</span>
+            <span class="hljs-comment">// Stop playback message</span>
             <span class="hljs-keyword">break</span>;
         }
     }
@@ -1544,27 +1543,25 @@
 <span class="hljs-keyword">static</span> PlayerMessageListener sPlayerMessageListener;
 
 
-<span class="hljs-comment">// Register message monitoring(&#x6CE8;&#x518C;&#x6D88;&#x606F;&#x76D1;&#x542C;)</span>
+<span class="hljs-comment">// Register message monitoring</span>
 sPlayer.setPlayerMessageListener(&amp;sPlayerMessageListener);
 </code></pre>
-<p>&#x64CD;&#x4F5C;&#x63A5;&#x53E3;&#x8BF4;&#x660E;</p>
-<pre><code class="lang-c++">sPlayer.play(<span class="hljs-string">&quot;/mnt/extsd/music/test.mp3&quot;</span>);    <span class="hljs-comment">// Play the file in the specified path(&#x64AD;&#x653E;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#x7684;&#x6587;&#x4EF6;)</span>
-sPlayer.pause();    <span class="hljs-comment">// Pause playback(&#x6682;&#x505C;&#x64AD;&#x653E;)</span>
-sPlayer.resume();    <span class="hljs-comment">// Resume playback(&#x6062;&#x590D;&#x64AD;&#x653E;)</span>
-sPlayer.seekTo(<span class="hljs-keyword">int</span> msec);    <span class="hljs-comment">// Jump to msec time to play, msec unit: ms(&#x8DF3;&#x8F6C;&#x5230;msec&#x65F6;&#x95F4;&#x64AD;&#x653E;&#xFF0C; msec &#x5355;&#x4F4D;: ms)</span>
-sPlayer.stop();    <span class="hljs-comment">// Stop playback(&#x505C;&#x6B62;&#x64AD;&#x653E;)</span>
-sPlayer.isPlaying();    <span class="hljs-comment">// Is it playing?, return type is bool(&#x662F;&#x5426;&#x64AD;&#x653E;&#x4E2D;&#xFF0C;&#x8FD4;&#x56DE;bool&#x578B;)</span>
-
-sPlayer.getDuration();        <span class="hljs-comment">// Get the total time of current playing music(&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x64AD;&#x653E;&#x6B4C;&#x66F2;&#x7684;&#x603B;&#x65F6;&#x95F4;)</span>
-sPlayer.getCurrentPosition();    <span class="hljs-comment">// Get the current playing time of the currently playing song(&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x64AD;&#x653E;&#x6B4C;&#x66F2;&#x7684;&#x5F53;&#x524D;&#x64AD;&#x653E;&#x65F6;&#x95F4;&#x70B9;)</span>
-
-sPlayer.setVolume(<span class="hljs-number">0.5</span>, <span class="hljs-number">0.5</span>);    <span class="hljs-comment">// Set media volume, volume range: 0.0 ~ 1.0(&#x8BBE;&#x7F6E;&#x5A92;&#x4F53;&#x97F3;&#x91CF;&#xFF0C;&#x97F3;&#x91CF;&#x8303;&#x56F4;&#xFF1A;0.0 ~ 1.0)</span>
+<p>Operation interface description</p>
+<pre><code class="lang-c++">sPlayer.play(<span class="hljs-string">&quot;/mnt/extsd/music/test.mp3&quot;</span>);    <span class="hljs-comment">// Play the file in the specified path</span>
+sPlayer.pause();    <span class="hljs-comment">// Pause playback</span>
+sPlayer.resume();    <span class="hljs-comment">// Resume playback</span>
+sPlayer.seekTo(<span class="hljs-keyword">int</span> msec);    <span class="hljs-comment">// Jump to msec time to play, msec unit: ms</span>
+sPlayer.stop();    <span class="hljs-comment">// Stop playback</span>
+sPlayer.isPlaying();    <span class="hljs-comment">// Is it playing?, return type is bool</span>
+sPlayer.getDuration();        <span class="hljs-comment">// Get the total time of current playing music</span>
+sPlayer.getCurrentPosition();    <span class="hljs-comment">// Get the current playing time of the currently playing song</span>
+sPlayer.setVolume(<span class="hljs-number">0.5</span>, <span class="hljs-number">0.5</span>);    <span class="hljs-comment">// Set media volume, volume range: 0.0 ~ 1.0</span>
 </code></pre>
 <blockquote>
 <p>[!Note]
-The audio file to be played cannot be too short. Too short may cause impossible to playing.(&#x64AD;&#x653E;&#x7684;&#x97F3;&#x9891;&#x6587;&#x4EF6;&#x4E0D;&#x80FD;&#x8FC7;&#x77ED;&#xFF0C;&#x65F6;&#x95F4;&#x8FC7;&#x77ED;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x64AD;&#x653E;&#x3002;)</p>
+The audio file to be played cannot be too short. Too short may cause impossible to playing.</p>
 </blockquote>
-<p>For the complete code, see <a href="demo_download#demo_download.md">Sample Code</a> <code>MusicDemo</code> project in the sample(&#x5B8C;&#x6574;&#x4EE3;&#x7801;&#x89C1;<a href="demo_download#demo_download.md">&#x6837;&#x4F8B;&#x4EE3;&#x7801;</a> &#x63A7;&#x4EF6;&#x6837;&#x4F8B;&#x91CC;&#x7684; <code>MusicDemo</code> &#x5DE5;&#x7A0B;)</p>
+<p>For the complete code, see <a href="demo_download#demo_download.md">Sample Code</a> <code>MusicDemo</code> project in the sample</p>
 
                                 
                                 </section>
@@ -1608,7 +1605,7 @@ The audio file to be played cannot be too short. Too short may cause impossible 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Audio playback","level":"3.9.2","depth":2,"next":{"title":"Thread","level":"3.10","depth":1,"path":"thread.md","ref":"thread.md","articles":[{"title":"Mutex","level":"3.10.1","depth":2,"path":"mutex.md","ref":"mutex.md","articles":[]}]},"previous":{"title":"Video playback ","level":"3.9.1","depth":2,"path":"video.md","ref":"video.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"audio.md","mtime":"2020-08-28T07:03:21.790Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-26T06:04:34.635Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Audio playback","level":"3.9.2","depth":2,"next":{"title":"Thread","level":"3.10","depth":1,"path":"thread.md","ref":"thread.md","articles":[{"title":"Mutex","level":"3.10.1","depth":2,"path":"mutex.md","ref":"mutex.md","articles":[]}]},"previous":{"title":"Video playback ","level":"3.9.1","depth":2,"path":"video.md","ref":"video.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"audio.md","mtime":"2020-09-28T02:26:42.750Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-28T03:44:57.542Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
