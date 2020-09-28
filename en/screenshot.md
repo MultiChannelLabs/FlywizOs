@@ -1,7 +1,7 @@
 # Screenshot
 After the product is developed, when writing the manual, you may need a screenshot of the running interface. You can refer to the following code screenshot.  
 ## Ready
-1. Download the [screenshot.h](https://docs.flythings.cn/src/screenshot.h) source file and save it to the project `jni` directory.  
+1. Download the [screenshot.h](https://www.flywizos.com/src/screenshot.h) source file and save it to the project `jni` directory.  
     ![](assets/screenshot1.png)
 
 ## Use

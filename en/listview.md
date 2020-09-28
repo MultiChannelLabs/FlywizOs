@@ -8,8 +8,8 @@ WiFi list, device list, table information
 
 ## How to use
 1. Open the UI file, create a list control, and add two list item controls to the list. Then you can see the appearance style of the list. The specific operations are as follows:
-
    ![](assets/list/add_list.gif)
+   
 2. Select the list, you can see that it has the following properties    
  ![](assets/list/properties.png)   
 

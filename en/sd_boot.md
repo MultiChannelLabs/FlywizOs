@@ -9,10 +9,10 @@
 2. Select the TF card drive on the computer 
     ![](images/screenshot_1522837510660.png)
 
-3. Specify the upgraded image file
+3. Specify the upgraded image file   
     ![](images/screenshot_1522837707899.png)
 
-4. Click to burn
+4. Click to burn   
     ![](images/screenshot_1522837964362.png)
     ![](images/screenshot_1522837986861.png)
     ![](images/screenshot_1522837922983.png)
@@ -25,7 +25,7 @@
 1. Select the TF card drive on the computer
     ![](images/screenshot_1522837510660.png)
 
-2. Click to recovery card 
+2. Click to recovery card    
     ![](images/screenshot_1522838300463.png)
     ![](images/screenshot_1522838238296.png)
     ![](images/screenshot_1522838379501.png)

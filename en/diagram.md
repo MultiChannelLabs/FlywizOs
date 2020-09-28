@@ -96,7 +96,7 @@ static void movePoints(MPPOINT* p,int size){
 In general, add a timer to match the waveform to facilitate regular refresh
 
 
-# Sample code
+## Sample code
 Effect picture  
 For the use of specific waveform control, please refer to the DiagramDemo project in [Sample Code](demo_download.md#demo_download).
 

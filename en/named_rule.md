@@ -143,27 +143,26 @@ When the current progress value of the Seek Bar changes, the system will automat
    **For example:** As shown in the figure below, I added two list items to the list item, and added a picture decoration as a switch button. The property ID names are `SubItem1` and `SubItem2` respectively. When I click on `SubItem1`, by judging the equal relationship between the parameter `id` and `ID_MAIN_SubItem1` and `ID_MAIN_SubItem2`,
       You can determine which switch was clicked.   
    Specific code：
-   ```c++
-     static void onListItemClick_XXXX(ZKListView *pListView, int index, int id) {
-        //LOGD(" onListItemClick_ Listview1  !!!\n");
-        switch(id) {
-        case ID_MAIN_SubItem1:
-            //LOGD("Clicked the first subitem of item %d in the list", index);
-            break;
-        case ID_MAIN_SubItem2:
-            //LOGD("Clicked the second subitem of item %d in the list", index);
-            break;
+      ```c++
+        static void onListItemClick_XXXX(ZKListView *pListView, int index, int id) {
+          //LOGD(" onListItemClick_ Listview1  !!!\n");
+          switch(id) {
+          case ID_MAIN_SubItem1:
+              //LOGD("Clicked the first subitem of item %d in the list", index);
+              break;
+          case ID_MAIN_SubItem2:
+              //LOGD("Clicked the second subitem of item %d in the list", index);
+              break;
+        }
       }
-    }
-   ```
-  
+      ```
 
-​       ![列表outline](assets/ListView-tree.png) ![列表子项示例](assets/ListView-subitem.png)
+
+      ![列表outline](assets/ListView-tree.png) 
+      ![列表子项示例](assets/ListView-subitem.png)
 
 **Finally, we use a picture to summarize the rules between them:**
 
 ![](assets/named_rule.png)
 
 Other controls and so on
-
-> [!Note] ### Skill: [Quickly Goto related code](editor_tip#jump_to_source)

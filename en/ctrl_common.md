@@ -100,7 +100,7 @@ mButton1Ptr->setBackgroundPic("/mnt/extsd/pic/bg.png"); // Set the absolute path
 mButton1Ptr->setBackgroundPic("bg.png");    // Set the bg.png picture in the resource directory
 ```
 
-## 显示与隐藏
+## Show and hide
 
 ![](images/ctrl_visible.png)
 

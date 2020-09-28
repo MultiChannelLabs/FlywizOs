@@ -7,7 +7,7 @@ If you are familiar with Linux socket programming, you can perform network progr
    
 
   ![](assets/create_net_folder.png)
-2. Download [net.h](https://docs.flythings.cn/src/net/net.h), [net.cpp](https://docs.flythings.cn/src/net/net.cpp) Two files are saved in the `net` folder.  
+2. Download [net.h](https://www.flywizos.com/src/net/net.h), [net.cpp](https://www.flywizos.com/src/net/net.cpp) Two files are saved in the `net` folder.  
 
   ![](assets/net_class.png)  
 
@@ -20,7 +20,7 @@ If you are familiar with Linux socket programming, you can perform network progr
 * Example
   ```c++
   //Use TCP protocol to connect to port 80 of the domain name www.baidu.com, and change the domain name to IP.
-  net::Conn* conn = net::Dial("tcp", "www.baidu.com:80");
+  net::Conn* conn = net::Dial("tcp", "www.google.com:80");
   //net::Conn* conn = net::Dial("tcp", "14.215.177.38:80");
   if (conn) {
     byte buf[2048] = {0};

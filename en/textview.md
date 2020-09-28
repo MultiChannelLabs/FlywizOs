@@ -17,29 +17,28 @@ If you need to display text, you can quickly implement it with the existing `Tex
 In the use of the serial port screen, the text view content is often updated dynamically. Then in the code, we can dynamically update the content of the text view control through the pointer corresponding to the `Text View` control. The specific steps are as follows :
 1. First of all, you need to know the pointer variable corresponding to the text view control in the code ([If you don’t know the corresponding rules of the pointer variable name and the control ID in the UI file, click here](named_rule.md)), here is the text with the ID of `Textview1`. Take the text control with ID `Textview1` as an example, its corresponding pointer variable is `mTextview1Ptr`.
 2. If we want to modify the content of the Textview1 to `"Hello World"`, it can be implemented by calling the member function of the text view control `void setText(const char *text)`, in the corresponding `Logic.cc` file, The specific code is:
-```c++
-mTextview1Ptr->setText("Hello World");
-```
-Examples of actual usage :
-The function of the following code is: when the button with ID Button1 is pressed, the text with ID Textview1 is set to "Hello World"
+   ```c++
+   mTextview1Ptr->setText("Hello World");
+   ```
+   Examples of actual usage :
+   The function of the following code is: when the button with ID Button1 is pressed, the text with ID Textview1 is set to "Hello World"
 
-```c++
-static bool onButtonClick_Button1(ZKButton *pButton) {
-    mTextview1Ptr->setText("Hello World");
-    return false;
-}
-```
+   ```c++
+   static bool onButtonClick_Button1(ZKButton *pButton) {
+      mTextview1Ptr->setText("Hello World");
+      return false;
+   }
+   ```
 3. In addition to setting strings, the text control also supports setting **number** and **character**:
+   ```c++
+   /* function definition header file: include/control/ZKTextView.h */
+   void setText(int text);  // set number
+   void setText(char text); // set character
 
-```c++
-/* function definition header file: include/control/ZKTextView.h */
-void setText(int text);  // set number
-void setText(char text); // set character
-
-/* Operation example */
-mTextview1Ptr->setText(123); // Textview1 control will display the string "123"
-mTextview1Ptr->setText('c'); // The Textview1 control will display the'c' character
-```
+   /* Operation example */
+   mTextview1Ptr->setText(123); // Textview1 control will display the string "123"
+   mTextview1Ptr->setText('c'); // The Textview1 control will display the'c' character
+   ```
 
 
 ## <span id = "change_color">How to modify the color of text?</span>
@@ -143,10 +142,8 @@ One step further, if we dynamically switch the background image of the text cont
 2. Create a text view control  
     Create a text view control arbitrarily in the UI file. And set the background image of the text view control to one of the images. Here I set the first picture as the background picture. This step is just to automatically adjust the width and height of the text view control to the width and height of the picture, you can also choose not to set it.
 
-    The complete properties are shown in the figure :
-    
-
-    ![](assets/textview/textview_properties.png)  
+    The complete properties are shown in the figure :   
+   ![](assets/textview/textview_properties.png)  
     
 3. Compile the project, register the timer  
     After adding the text view control, compile the project again, register a timer in the generated `Logic.cc` file and set the time interval to 50 ms. We use the timer to switch a picture every 50ms.  

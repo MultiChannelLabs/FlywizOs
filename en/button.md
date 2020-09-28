@@ -7,7 +7,8 @@ If you need a button, you can quickly implement it using the existing `Button` c
 3. Left-click on the `button` control and hold it, then drag it to any position, release the left button. Then you can see the automatically generated button control.
 4. Left-click on the button just generated then you can see the related properties of the control on the right side of the editor. In this attribute form, you can freely modify the attributes like filling in an Excel sheet!
 
-   ![创建Button](assets/Button-create.gif)
+   ![](assets/Button-create.gif)
+
 ## How to modify the color of buttons/keys?
 Refer to ["How to modify the color of text"](textview.md#change_color)
 ## <span id = "add_button_style">How to add more animation effects to the button? </span>
@@ -31,17 +32,17 @@ It is observed that the attributes related to the picture among all the attribut
 
 Example：   
 
-![Button-pic-example](assets/Button-pic-example.png "按键属性示例")
+![](assets/Button-pic-example.png)
 
   Effect picture :  
 
-![Button-pic-example](assets/Button-pic-preview.png "按键属性示例")
+![](assets/Button-pic-preview.png)
 
 The above figure is a screenshot of the parameter part of the attribute table image, and its meaning is:
   The button displays off_normal.png by default, and it displays on_normal.png when the button is selected  
   The four parameters of the left, top, width, and height of the picture determine the display area of the picture (in pixels). The upper left corner of the button rectangle area is the starting point coordinates (0, 0), and right and down are the positive direction. The end point coordinates are (67, 31). If the actual width and height of the picture are not equal to the specified width and height parameters, the picture will be scaled according to the specified width and height:
 
-  ![图片位置坐标示例](assets/Button-location.png)
+  ![](assets/Button-location.png)
 
 ### Understand the hierarchical relationship of button controls
 For general button controls, it will draw four levels of content, which are from top to bottom:
@@ -59,7 +60,7 @@ To respond to the click time of the button is very simple. The following are the
 
 1. First create a `button` control and the property ID as `Button1`. [How to create a button control](#add_button)
 
-   ![ID属性示例](assets/Button-properties-id-button1.png)
+   ![](assets/Button-properties-id-button1.png)
 2. In the `Project Explorer`, select the current project, right-click, and select the `Compile FlywizOS` option in the pop-up menu. The function of this step is to **automatically generate template code** based on all UI files in the current project. [Learn more about code generation details](ftu_and_source_relationships.md#ftu_and_source_relationships)
 3. Take the UI file `main.ftu` as an example. After the previous step is completed, the file `jni/logic/mainLogic.cc` will be generated in the current project folder, as shown below :
 
@@ -168,8 +169,7 @@ If you need to respond when the button **press** or **lift**, you can do by regi
                 break;
             }
         }
-};
-    
+    };    
     }
     ```
     
@@ -206,4 +206,4 @@ Since there are many button control properties, please refer to the ButtonDemo p
 
 Sample preview effect picture :
 
-![效果图](assets/button/preview.png)
+![](assets/button/preview.png)

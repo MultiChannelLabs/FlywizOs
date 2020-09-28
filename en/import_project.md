@@ -7,6 +7,6 @@ The import steps are as follows.
 3. In the pop-up box, select the **Browse** button, and specify the folder where the project needs to be imported. Click **OK**, it will automatically parse the items contained in the folder.
 4. If the project file is not damaged, you can see the identified project, and then click **Finish** directly, the imported project will appear in the Project Explorer, and you can continue to view/edit it.
 
-Specific import animation  
+Import animation  
 
 ![](assets/ide/import_project.gif)

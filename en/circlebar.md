@@ -31,7 +31,7 @@ int getMax()；
 ```
 
 
-# Sample code
+## Sample code
 In the example, when you slide the upper slide bar, the progress of the two circular progress bars at the bottom will change accordingly.
 
 For the specific use of the circular progress bar control, refer to the CircleBarDemo project in [Sample Code](demo_download.md#demo_download)
