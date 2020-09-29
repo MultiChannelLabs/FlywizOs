@@ -2,10 +2,9 @@
  새로운 FlywizOS 프로젝트를 만드는 것은 매우 간단합니다. 구체적인 단계는 다음과 같습니다 :
 1. IDE의 상단 메뉴바에서 **File -> New -> FlywziOS Application Project**를 선택합니다.
 
-   ![새로운 프로젝트](assets/ide/new_flythings_project.gif)  
+   ![](assets/ide/new_flythings_project.gif)  
 
-2. 앞서 선택이 완료되면 **FlywizOS New Wizard**가 팝업됩니다.
-  
+2. 앞서 선택이 완료되면 **FlywizOS New Wizard**가 팝업됩니다.     
    ![](assets/ide/wizard_new_project_page1.png)  
    새로운 프로젝트를 만드는데 필요한 파라미터들을 채우십시오.
 
@@ -18,11 +17,9 @@
      - **Z11S**  
      - **Z6S**  
    
-   위의 파라미터들을 채운 후, 바로 **Finish**를 누르면 프로젝트가 생성됩니다. 그러나 지금은 더 많은 설정을 위해 **Next**를 선택하겠습니다.
-3. Next 클릭 후, 아래와 같은 파라미터들을 볼 수 있습니다.
-  
-   ![](assets/ide/wizard_new_project_page2.png)  
-   
+   위의 파라미터들을 채운 후, 바로 **Finish**를 누르면 프로젝트가 생성됩니다. 그러나 지금은 더 많은 설정을 위해 **Next**를 선택하겠습니다.   
+3. Next 클릭 후, 아래와 같은 파라미터들을 볼 수 있습니다.     
+   ![](assets/ide/wizard_new_project_page2.png)      
    
    ## 프로젝트의 각 속성의 의미와 기능
    * **Screen saver timeout**  
@@ -50,7 +47,7 @@
     만약 중국어 입력이 필요하다면 선택하십시오. 그리고 **[Edit Text](edittext.md)** 컨트롤의 중국어 입력을 해결하십시오.
 
    위 속성들은 이후 다시 수정이 가능하니 이곳을 채우는 것을 걱정하지 마십시오.([프로젝트의 속성을 수정하는 방법](set_project_properties.md))  
-   모든 채워진 모든 속성을 확인하고, **Finish**를 누르면 프로젝트 생성이 끝납니다. 생성 프로세스에는 약간의 시간이 걸리므로 잠시 기다려주십시오.
+   모든 채워진 모든 속성을 확인하고, **Finish**를 누르면 프로젝트 생성이 끝납니다. 생성 프로세스에는 약간의 시간이 걸리므로 잠시 기다려주십시오.   
 
-4. 프로젝트가 생성되면 먼저 [FlywizOS 프로젝트 코드 구조 소개](project_structure#project_structure.md)를 이해해야합니다.
+4. 프로젝트가 생성되면 먼저 [FlywizOS 프로젝트 코드 구조](project_structure#project_structure.md)를 이해해야합니다.
 

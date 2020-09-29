@@ -14,14 +14,12 @@
 ## 구현 단계
 
 1. 먼저 프로젝트의 **jni** 디렉토리에 헤더 파일을 만듭니다.  
-   프로젝트에서 **jni**를 선택하고 마우스 오른쪽 버튼을 클릭 한 다음 팝업 컨텍스트 메뉴에서 **New -> Header File** 옵션을 선택한 다음 이름을 **vireeprom.h**로 지정하고 Finish를 클릭합니다.
-
-   ![](assets/create_head_file.png)  
-   ![](assets/create_head_file2.png)  
+   프로젝트에서 **jni**를 선택하고 마우스 오른쪽 버튼을 클릭 한 다음 팝업 컨텍스트 메뉴에서 **New -> Header File** 옵션을 선택한 다음 이름을 **vireeprom.h**로 지정하고 Finish를 클릭합니다.   
+  ![](assets/create_head_file.png)  
+  ![](assets/create_head_file2.png)  
 
 2. 방금 추가 한 헤더 파일에 다음 코드를 복사합니다. (헤더 파일 생성 시 일부 내용이 자동으로 추가 및 삭제 될 수 있습니다.)
    이 코드는 EEPROM의 에뮬레이션 기능을 구현합니다.
-
    ```c++
    #ifndef JNI_VIREEPROM_H_
    #define JNI_VIREEPROM_H_
@@ -146,33 +144,29 @@
    
     #endif /* JNI_VIREEPROM_H_ */
     
-   ```
-
-
+   ```   
 3. 지금까지 준비 작업이 완료되었으므로 정상인지 테스트하기 위해 몇 가지 예제를 작성하겠습니다.
    `mainLogic.cc` 소스 파일을 열고 파일 맨 위에있는 "**vireeprom.h**" 헤더 파일을 인용하십시오.
+    ```c++
+    #include "vireeprom.h"
+    ```
    
-   ```c++
-#include "vireeprom.h"
-   ```
-   
-4. Test code  
+4. Test code   
+    ```c++
+    static void onUI_init(){
+        //The value array, starting from address 0, is written sequentially
+        char value[4] = {1, 2, 3, 4};
+        VIREEPROM->Write(0, value, sizeof(value));
 
-   ```c++
-   static void onUI_init(){
-       //The value array, starting from address 0, is written sequentially
-       char value[4] = {1, 2, 3, 4};
-       VIREEPROM->Write(0, value, sizeof(value));
-   
-       //Start reading from address 0, read 4 bytes in sequence, and save the read content in buf
-       char buf[4] = {0};
-       VIREEPROM->Read(0, buf, sizeof(buf));
-       //Output log
-       LOGD("Data read : %02x, %02x, %02x, %02x", buf[0], buf[1], buf[2], buf[3]);
+        //Start reading from address 0, read 4 bytes in sequence, and save the read content in buf
+        char buf[4] = {0};
+        VIREEPROM->Read(0, buf, sizeof(buf));
+        //Output log
+        LOGD("Data read : %02x, %02x, %02x, %02x", buf[0], buf[1], buf[2], buf[3]);
       
-       //Clear all eeprom to 0
-       VIREEPROM->Erase();
-   }
-   ```
+        //Clear all eeprom to 0
+        VIREEPROM->Erase();
+    }
+    ```
 
    

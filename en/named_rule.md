@@ -155,11 +155,9 @@ When the current progress value of the Seek Bar changes, the system will automat
               break;
         }
       }
-      ```
-
-
-      ![列表outline](assets/ListView-tree.png) 
-      ![列表子项示例](assets/ListView-subitem.png)
+      ```   
+      ![](assets/ListView-tree.png)    
+      ![](assets/ListView-subitem.png)   
 
 **Finally, we use a picture to summarize the rules between them:**
 
