@@ -5,7 +5,7 @@
   sconv是一个转码的开源库，我们借助它来进行utf-8和gbk之间编码的转换。
 
 ## 准备
-[下载sconv源文件](https://docs.flythings.cn/src/utf8cover.rar)，并将它解压到我们项目 `jni`文件夹下。   
+[下载sconv源文件](https://developer.flywizos.com/src/utf8cover.rar)，并将它解压到我们项目 `jni`文件夹下。   
 
   ![](assets/transcoding.png)
   

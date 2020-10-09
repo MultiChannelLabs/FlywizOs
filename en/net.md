@@ -7,7 +7,7 @@ If you are familiar with Linux socket programming, you can perform network progr
    
 
   ![](assets/create_net_folder.png)
-2. Download [net.h](https://www.flywizos.com/src/net/net.h), [net.cpp](https://www.flywizos.com/src/net/net.cpp) Two files are saved in the `net` folder.  
+2. Download [net.h](https://developer.flywizos.com/src/net/net.h), [net.cpp](https://developer.flywizos.com/src/net/net.cpp) Two files are saved in the `net` folder.  
 
   ![](assets/net_class.png)  
 

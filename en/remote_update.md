@@ -16,7 +16,7 @@ If it does not exist, the detection process ends and there is no action.
   If you have inserted a TF card, you can ignore the memory size problem.
 
 2. Call upgrade detection function   
-    First download the [UpgradeMonitor.h](https://docs.flythings.cn/src/UpgradeMonitor.h) source file and save it to the `jni/include/os` directory of the project.  
+    First download the [UpgradeMonitor.h](https://developer.flywizos.com/src/UpgradeMonitor.h) source file and save it to the `jni/include/os` directory of the project.  
 
    ![](assets/upgrade_monitor_header.png)
 

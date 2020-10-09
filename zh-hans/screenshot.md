@@ -1,7 +1,7 @@
 # 截屏
 产品开发完毕后，编写使用说明书时，可能需要运行界面的截图，可参考如下代码截屏。  
 ## 准备
-1. 下载[screenshot.h](https://docs.flythings.cn/src/screenshot.h) 源文件，保存到项目 `jni`目录下。  
+1. 下载[screenshot.h](https://developer.flywizos.com/src/screenshot.h) 源文件，保存到项目 `jni`目录下。  
   ![](assets/screenshot1.png)
   
 ## 使用

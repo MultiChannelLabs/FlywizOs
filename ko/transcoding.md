@@ -5,7 +5,7 @@
   Sconv는 트랜스 코딩을 위한 오픈 소스 라이브러리로 utf-8과 gbk간의 변환에 사용됩니다.
 
 ## 준비
-[sconv 소스 파일 다운로드](https://www.flywizos.com/src/utf8cover.rar) 후 프로젝트`jni` 폴더에 압축을 풉니 다.
+[sconv 소스 파일 다운로드](https://developer.flywizos.com/src/utf8cover.rar) 후 프로젝트`jni` 폴더에 압축을 풉니 다.
 
   ![](assets/transcoding.png)
 

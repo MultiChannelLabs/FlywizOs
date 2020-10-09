@@ -1,7 +1,7 @@
 # 스크린샷
 제품 개발 후 매뉴얼 작성시 실행중인 인터페이스의 스크린샷이 필요할 수 있으며, 아래 스크린샷 코드를 참고하십시오.
 ## Ready
-1. [screenshot.h](https://docs.flythings.cn/src/screenshot.h) 소스 파일을 다운로드하여 프로젝트`jni` 디렉토리에 저장합니다. 
+1. [screenshot.h](https://developer.flywizos.com/src/screenshot.h) 소스 파일을 다운로드하여 프로젝트`jni` 디렉토리에 저장합니다. 
     ![](assets/screenshot1.png)
 
 ## Use

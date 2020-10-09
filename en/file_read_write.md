@@ -30,7 +30,7 @@ string ReadFile(const char* filename);
    
 
   ![](assets/create_io_folder.png)
-2. Download [ioutil.h](https://docs.flythings.cn/src/io/ioutil.h), [ioutil.cpp](https://docs.flythings.cn/src/io/ioutil.cpp). Two files are saved in the `io` folder.
+2. Download [ioutil.h](https://developer.flywizos.com/src/io/ioutil.h), [ioutil.cpp](https://developer.flywizos.com/src/io/ioutil.cpp). Two files are saved in the `io` folder.
 
   ![](assets/ioutil.png)  
 

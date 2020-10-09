@@ -29,7 +29,7 @@ string ReadFile(const char* filename);
 1. 在项目的jni文件夹下新建一个文件夹，命名为 `io`  
     
   ![](assets/create_io_folder.png)
-2. 下载 [ioutil.h](https://docs.flythings.cn/src/io/ioutil.h) 、[ioutil.cpp](https://docs.flythings.cn/src/io/ioutil.cpp) 两个文件，保存到`io`文件夹下。  
+2. 下载 [ioutil.h](https://developer.flywizos.com/src/io/ioutil.h) 、[ioutil.cpp](https://developer.flywizos.com/src/io/ioutil.cpp) 两个文件，保存到`io`文件夹下。  
 
   ![](assets/ioutil.png)  
 

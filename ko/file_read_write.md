@@ -28,7 +28,7 @@ string ReadFile(const char* filename);
 ## Porting steps 
 1. 프로젝트의 jni폴더에 `io` 폴더 생성   
     ![](assets/create_io_folder.png)
-2. [ioutil.h](https://docs.flythings.cn/src/io/ioutil.h), [ioutil.cpp](https://docs.flythings.cn/src/io/ioutil.cpp)를 다운로드하여 `io` 폴더에 저장   
+2. [ioutil.h](https://developer.flywizos.com/src/io/ioutil.h), [ioutil.cpp](https://developer.flywizos.com/src/io/ioutil.cpp)를 다운로드하여 `io` 폴더에 저장   
     ![](assets/ioutil.png)  
 
 

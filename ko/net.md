@@ -6,7 +6,7 @@
 1. 프로젝트의 jni폴더 아래에 새로운폴더를 만들고 이름을 `net`으로 합니다.   
     ![](assets/create_net_folder.png)   
 
-2. [net.h](https://www.flywizos.com/src/net/net.h), [net.cpp](https://www.flywizos.com/src/net/net.cpp) 두 파일을 다운받아 `net` 폴더에 저장합니다.   
+2. [net.h](https://developer.flywizos.com/src/net/net.h), [net.cpp](https://developer.flywizos.com/src/net/net.cpp) 두 파일을 다운받아 `net` 폴더에 저장합니다.   
     ![](assets/net_class.png)  
 
 ## 사용법

@@ -7,7 +7,7 @@
 1. 在项目的jni文件夹下新建一个文件夹，命名为 `net`  
     
   ![](assets/create_net_folder.png)
-2. 下载 [net.h](https://docs.flythings.cn/src/net/net.h) 、[net.cpp](https://docs.flythings.cn/src/net/net.cpp) 两个文件，保存到`net`文件夹下。  
+2. 下载 [net.h](https://developer.flywizos.com/src/net/net.h) 、[net.cpp](https://developer.flywizos.com/src/net/net.cpp) 两个文件，保存到`net`文件夹下。  
 
   ![](assets/net_class.png)  
 

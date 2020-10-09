@@ -17,7 +17,7 @@
   TF 카드를 삽입 한 경우 메모리 크기 문제를 무시할 수 있습니다.
 
 2. 업그레이드 감지 함수 호출 
-    먼저 [UpgradeMonitor.h](https://docs.flythings.cn/src/UpgradeMonitor.h) 소스 파일을 다운로드하여 프로젝트의`jni/include/os` 디렉토리에 저장합니다.
+    먼저 [UpgradeMonitor.h](https://developer.flywizos.com/src/UpgradeMonitor.h) 소스 파일을 다운로드하여 프로젝트의`jni/include/os` 디렉토리에 저장합니다.
 
    ![](assets/upgrade_monitor_header.png)
 
