@@ -3,28 +3,20 @@
 
 소프트웨어와 하드웨어의 설계 호환성으로 인해 소프트웨어의 일련 번호가 하드웨어의 일련 번호 식별과 다를 수 있습니다. 구체적인 관계는 다음과 같습니다.
 
-* Z11 Series platform
+* FW-11s Series platform
 
 | Software serial port number | Hardware serial port number |
 |:--------:|:-------:|
 | ttyS0   | UART1  |
 | ttyS1   | UART2  |
 
-* Z6 Series platform
+* FW-6 Series platform
 
 | Software serial port number | Hardware serial port number |
 |:--------:|:-------:|
 | ttyS0   | UART0  |
 | ttyS1   | UART1  |
 | ttyS2   | UART2  |
-
-* A33 Series platform
-
-| Software serial port number | Hardware serial port number |
-|:--------:|:-------:|
-| ttyS1   | UART1  |
-| ttyS2   | UART2  |
-| ttyS3   | UART3  |
 
 ## 시리얼 포트 Baud rate 구성
 1. 새 프로젝트를 만들 때 Baud rate를 구성합니다.

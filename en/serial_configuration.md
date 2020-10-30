@@ -3,28 +3,20 @@
 
 Due to the design compatibility of software and hardware, the serial number of the software may be different from the serial number identification on the hardware. The specific correspondence is as follows :
 
-* Z11 Series platform
+* FW-11s Series platform
 
 | Software serial port number | Hardware serial port number |
 |:--------:|:-------:|
 | ttyS0   | UART1  |
 | ttyS1   | UART2  |
 
-* Z6 Series platform
+* FW-6 Series platform
 
 | Software serial port number | Hardware serial port number |
 |:--------:|:-------:|
 | ttyS0   | UART0  |
 | ttyS1   | UART1  |
 | ttyS2   | UART2  |
-
-* A33 Series platform
-
-| Software serial port number | Hardware serial port number |
-|:--------:|:-------:|
-| ttyS1   | UART1  |
-| ttyS2   | UART2  |
-| ttyS3   | UART3  |
 
 ## Serial port baud rate configuration
 1. Configure the baud rate when creating a new project 
