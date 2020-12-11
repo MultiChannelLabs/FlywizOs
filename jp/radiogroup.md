@@ -46,9 +46,7 @@
 
 7. ダウンロードおよびデバッグ、効果を確認します。
 
-
-## Sample code  
-
+## サンプルコード  
 [Sample Code](demo_download.md#demo_download)のRadioGroupDemoプロジェクトを参照してください。
 例のプレビュー :
 

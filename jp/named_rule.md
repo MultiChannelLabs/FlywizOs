@@ -104,10 +104,9 @@ Input boxが変更されたとき、システムによって自動的に呼び�
      * パラメータ`const ZKListView* pListView`はListコントロールのポインタであり、グローバル変数` mXXXXPtr`と同じオブジェクトを指します。
      * **戻り値**は整数であり、リストにあるアイテムの数を示し、必要に応じて決定されます。
 
-  
   2. システムがリストのアイテム数を知っているたが、これだけでリストを描画には不足して、各アイテムにどのようなコンテンツをピョヒすべきかも知っている。だから下の関数があります。表示するアイテムの数だけ下の関数が呼び出され、表示する内容を設定することになります。
      ```c++
-       static void obtainListItemData_XXXX(ZKListView *pListView,ZKListView::ZKListItem *pListItem, int index) {
+     static void obtainListItemData_XXXX(ZKListView *pListView,ZKListView::ZKListItem *pListItem, int index) {
          //pListItem->setText(index)
      }
      ```
@@ -120,42 +119,44 @@ Input boxが変更されたとき、システムによって自動的に呼び�
       `pListItem`と` index`を接続して、全体のリストから任意のアイテムを設定する必要があるか知ることができます。
      
      この関数では`index`に基づいて、各アイテムに表示されるコンテンツが設定されることがあります。      
-  
+
   3. ボタンコントロールと同様に、リストコントロールもクリックイベントのための関数を持っており、index値に基づいて、現在どのようなアイテムがクリックされたかを判断します。
      ```c++
      static void onListItemClick_XXXX(ZKListView *pListView, int index, int id) {
          //LOGD(" onListItemClick_ Listview1  !!!\n");
      }
      ```
-      リストコントロールがクリックされると、システムは、クリックされた位置に対応するアイテムのindex値を計算して、自動的にこの関数を呼び出します。
-  
+     リストコントロールがクリックされると、システムは、クリックされた位置に対応するアイテムのindex値を計算して、自動的にこの関数を呼び出します。
      * パラメータ`ZKListView* pListView`はListコントロールのポインタであり、グローバル変数` mXXXXPtr`と同じオブジェクトを指します。 
-
      * パラメータ`int index`は全体のリストコントロールで現在クリックされたアイテムのindex値です。
-
      * パラメータ`int id`は、現在クリックされたコントロールのIDです。このIDは、propertiesのIDと異なるので注意してください。  
 
      これに対するmacro definitionは、対応する`Activity.h`ファイルにあります。`mainActivity.h`を例に示します。   
+
      ![](assets/ID-Macro1.png)  
+
      このIDは、list itemに複数のsubitemがある場合は、現在クリックされたsubitemがどんなものかを区別するために使用することができます。  
      **例：** 下の図に示すように、list itemにスイッチイメージが配置された2つのsubitemが追加されており、それぞれのproperty IDは`SubItem1`と`SubItem2`です。`SubItem1`がクリックされたとき、パラメータ` id`と `ID_MAIN_SubItem1`そして` ID_MAIN_SubItem2`の関係で判断されるものでいくつかのスイッチがクリックされたかを決定することができます。
      ```c++
-      static void onListItemClick_XXXX(ZKListView *pListView, int index, int id) {
+     static void onListItemClick_XXXX(ZKListView *pListView, int index, int id) {
           //LOGD(" onListItemClick_ Listview1  !!!\n");
-          switch(id) {
-          case ID_MAIN_SubItem1:
-              //LOGD("Clicked the first subitem of item %d in the list", index);
-              break;
-          case ID_MAIN_SubItem2:
-              //LOGD("Clicked the second subitem of item %d in the list", index);
-              break;
+        switch(id) {
+        case ID_MAIN_SubItem1:
+            //LOGD("Clicked the first subitem of item %d in the list", index);
+            break;
+        case ID_MAIN_SubItem2:
+            //LOGD("Clicked the second subitem of item %d in the list", index);
+            break;
         }
-      }
+     }
      ```
-    ![](assets/ListView-tree.png) 
-    ![](assets/ListView-subitem.png)
+
+     ![](assets/ListView-tree.png) 
+
+     ![](assets/ListView-subitem.png)
 
 **最後に、図を用いて、それらの間のルールを要約してみましょう。**
+
 ![](assets/named_rule.png)
 
 他のコントロールもこれと同じです。

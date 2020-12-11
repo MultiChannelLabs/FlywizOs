@@ -183,30 +183,32 @@ ascii 코드의 정의에 따르면 `character char`와 `integer int`사이에�
    **참고 : 이미지 문자 집합을 설정하면 시스템이 각 문자를 문자 집합에 지정된 이미지에 매핑하려고 시도합니다. 문자가 이미지에 설정되지 않은 경우 이 문자는 화면에 표시되지 않습니다.**
 
 ### 사용법
-1. 위의 이미지 문자 집합 설정 상자에서 우리는 문자 0-9와 : 콜론을 각각 이미지에 매핑했습니다.  
-   ![](assets/textview/num.png)
+위의 이미지 문자 집합 설정 상자에서 우리는 문자 0-9와 : 콜론을 각각 이미지에 매핑했습니다.  
 
-   그런 다음 코드에서 `setText(char * str)`함수를 통해 문자열을 설정합니다. TextTime Text View컨트롤에서 이미지 문자 집합을 설정했으므로 문자는 해당 이미지로 변환됩니다.   
-   ```C++
-   static void updateTime() {
-     char timeStr[20];
-     struct tm *t = TimeHelper::getDateTime()
-     sprintf(timeStr, "%02d:%02", t->tm_hour, t->tm_min);
-     mTextTimePtr->setText(timeStr);
-   }
-   ```   
-   ![](assets/textview/0000.png)  
+![](assets/textview/num.png)
 
-   단일 문자 만 표시해야하는 경우 ascii 코드 또는 문자를 문자열로 변환하지 않고 직접 설정할 수 있습니다.   
-   예 :
-   ```C++
-   mTextTimePtr->setText((char)48); //Set the ascii code directly, it needs to be 
-									//converted to char
-   mTextTimePtr->setText('0'); //Set character directly
-   ```
+그런 다음 코드에서 `setText(char * str)`함수를 통해 문자열을 설정합니다. TextTime Text View컨트롤에서 이미지 문자 집합을 설정했으므로 문자는 해당 이미지로 변환됩니다.   
+```C++
+static void updateTime() {
+   char timeStr[20];
+   struct tm *t = TimeHelper::getDateTime()
+   sprintf(timeStr, "%02d:%02", t->tm_hour, t->tm_min);
+   mTextTimePtr->setText(timeStr);
+}
+```   
+![](assets/textview/0000.png)  
+
+단일 문자 만 표시해야하는 경우 ascii 코드 또는 문자를 문자열로 변환하지 않고 직접 설정할 수 있습니다.   
+예 :
+```C++
+mTextTimePtr->setText((char)48); //Set the ascii code directly, it needs to be 
+                                //converted to char
+mTextTimePtr->setText('0'); //Set character directly
+```
 
 ## <span id = "example_download">Sample code</span>
 더 자세한 내용은 [Sample code](demo_download.md#demo_download)의 TextViewDemo프로젝트를 참고하십시오.
 
 미리보기 :   
+
 ![](assets/textview/preview.png)

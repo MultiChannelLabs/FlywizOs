@@ -175,4 +175,5 @@ static bool onButtonClick_Button2(ZKButton *pButton) {
 **이 장에서는 오직 버튼 컨트롤과 관련된 예제로 UI파일의 컨트롤과 Logic.cc에 생성된 관련 함수의 관계에 대해서만 설명하였습니다. FlywizOS는 또한 다른 컨트롤(예 : Slide Bar, List, Slide Windows등) 에 대해서도 관련된 함수를 제공합니다. 더 자세히 다른 컨트롤과 관련된 함수에 대해 알고 싶다면 [컨트롤에 의해 자동으로 생성된 함수들의 관계에 대한 설명](named_rule.md#relation_function)을 참고하십시오.**  
 
 **끝으로, 아래의 그림은 ftu파일과 코드 사이의 상관 관계에 대한 간략한 그림입니다.**
+
 ![](assets/relationships.png)
