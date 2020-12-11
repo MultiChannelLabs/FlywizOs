@@ -1,10 +1,10 @@
 # c++ 기본 지식
- 이 장에서는 C++에 대한 기본 지식이 없는 사람들에게 C++의 기본 문법과 클래스에 대해 설명합니다.
+이 장에서는 C++에 대한 기본 지식이 없는 사람들에게 C++의 기본 문법과 클래스에 대해 설명합니다.
 
 ## Class
- C++의 경우 먼저 **클래스**를 언급해야합니다. 너무 복잡하다고 생각하지 말고 C 언어의 structure로 이해하도록 합니다. 
- 예를 들어  :
-
+C++의 경우 먼저 **class**를 언급해야합니다. 너무 복잡하다고 생각하지 말고 C 언어의 structure로 이해하도록 합니다.  
+예를 들어  :
+* 구조체 정의
 ```c++
 // C
 struct Position {
@@ -23,8 +23,8 @@ public:
 	int height;
 };
 ```
-변수 정의 :
 
+* 변수 정의 :
 ```c++
 // C
 struct Position pos;
@@ -32,14 +32,15 @@ struct Position pos;
 // c++
 Position pos;
 ```
-변수 운영 :
 
+* 변수 운영 :
 ```c++
 // C is the same as c++
 pos.left = 0;
 ```
- **클래스**에는 C 언어의 구조보다 상속, 다형성, 오버로딩 및 액세스 권한에 대한 개념이 더 많습니다. C에 익숙한 사람들은 이것을 어떻게 사용해야 하는지 충분히 알기 위해서가 아니라면, 많은 노력을 기울일 필요가 없습니다. 
- 추가적으로 C언어에서는 함수 포인터만 정의하지만 C++의 **class**에서는 함수를 바로 구현 가능합니다. 이 부분이 C와는 다른 점으로, **class**에 정의된 함수는 일종의 변수처럼 사용됩니다. 아래는 자주 사용되는 예제입니다.
+ 
+**class**에는 C 언어의 구조보다 상속, 다형성, 오버로딩 및 액세스 권한에 대한 개념이 더 많습니다. C에 익숙한 사람들은 이것을 어떻게 사용해야 하는지 충분히 알기 위해서가 아니라면, 많은 노력을 기울일 필요가 없습니다.  
+추가적으로 C언어에서는 함수 포인터만 정의하지만 C++의 **class**에서는 함수를 바로 구현 가능합니다. 이 부분이 C와는 다른 점으로, **class**에 정의된 함수는 일종의 변수처럼 사용됩니다. 아래는 자주 사용되는 예제입니다.
 
 ```c++
 // Set the text content, where mTextView1Ptr is a pointer variable of type ZKTextView
@@ -48,8 +49,7 @@ mTextView1Ptr->setText("Hello");
 
 ## 기본 class
 ### string class
-string class는 실제 string와 이를 위해 제공되는 많은 함수들이 캡슐화 되어있습니다. 그러나 C에 익숙한 사용자는 `c_str()`함수만 알아도 충분히 활용 가능합니다. 이 함수는 string class에서 characters만 반환하는 함수로 아래와 같이 사용할 수 있습니다.
-
+string class는 실제 string과 이를 위해 제공되는 많은 함수들이 캡슐화 되어있습니다. 그러나 C에 익숙한 사용자는 `c_str()`함수만 알아도 충분히 활용 가능합니다. 이 함수는 string class에서 characters만 반환하는 함수로 아래와 같이 사용할 수 있습니다.
 ```c++
 // Input box callback function
 static void onEditTextChanged_Edittext1(const std::string &text) {
@@ -57,11 +57,9 @@ static void onEditTextChanged_Edittext1(const std::string &text) {
 	const char *pStr = text.c_str();
 	
 	// Then you can operate like ordinary strings, such as getting the string length strlen(pStr), etc.
-	
 }
 ```
 아래는 텍스트 컨트롤에서 텍스트를 가져오는 예제입니다.
-
 ```c++
 // std is the namespace, std::string means to use the string class under std, don’t worry too much 
 // When encountering the string class, we can refer to the following definition
@@ -70,7 +68,6 @@ std::string text = mTextView1Ptr->getText();
 // The subsequent operations are the same
 const char *pStr = text.c_str();
 ```
-
 
 ## <span id="snprintf">snprintf</span>
 ### 함수 프로토타입 :
@@ -83,7 +80,7 @@ const char *pStr = text.c_str();
   (2) 만약 formatted string의 length가 size보다 크거나 같은 경우 오직 size-1의 string만 카피되고 마지막에 '\0'이 추가됩니다.
 
 ### 필요 헤더 파일 :
-  ```
+  ```c++
   #include <stdio.h>
   ```
 
@@ -133,7 +130,7 @@ const char *pStr = text.c_str();
   snprintf(buf, sizeof(buf), "%d", 314);
   LOGD("%s", buf);//Log output buf
   ```
- 출력된 log :
+  출력된 log :
   ```
   314
   ```
@@ -144,7 +141,7 @@ const char *pStr = text.c_str();
   snprintf(buf, sizeof(buf), "%05d", 314); //Format as 5 digits, less than 5 digits, add 0 in front
   LOGD("%s", buf);//Log output buf string
   ```
- 출력된 log :  
+  출력된 log :  
   ```
   00314
   ```
@@ -154,7 +151,7 @@ const char *pStr = text.c_str();
   snprintf(buf, sizeof(buf), "%f", 3.14); 
   LOGD("%s", buf);//Log output buf string
   ```
- 출력된 log :  
+  출력된 log :  
   ```
   3.140000
   ```
@@ -166,7 +163,7 @@ const char *pStr = text.c_str();
   snprintf(buf, sizeof(buf), "%06.3f", 3.14);
   LOGD("%s", buf);//Log output buf string
   ```
- 출력된 log :  
+  출력된 log :  
   ```
   03.140
   ```

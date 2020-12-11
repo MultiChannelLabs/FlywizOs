@@ -1,9 +1,6 @@
 # File read/write
- 만약 C언어의 File read/write에 친숙하다면, C언어의 스탠다드로 File read/write가 가능합니다.
-
- 손쉬운 File read/write를 위해 우리는 C언어로 제공되는 간단한 File read/write 패키지를 제공합니다. 만약 필요하다면 아래의 과정을 프로젝트에 추가하십시오.
-
-
+만약 C언어의 File read/write에 친숙하다면, C언어의 스탠다드로 File read/write가 가능합니다.  
+쉬운 File read/write를 위해 우리는 C언어로 제공되는 간단한 File read/write 패키지를 제공합니다. 만약 필요하다면 아래의 과정을 프로젝트에 추가하십시오.
 ```c++
 /**
  * Write a file. If the file exists, it will be overwritten. If the file does not exist, create a new file and write the content
@@ -26,11 +23,11 @@ string ReadFile(const char* filename);
 ```
 
 ## Porting steps 
-1. 프로젝트의 jni폴더에 `io` 폴더 생성   
-    ![](assets/create_io_folder.png)
-2. [ioutil.h](https://developer.flywizos.com/src/io/ioutil.h), [ioutil.cpp](https://developer.flywizos.com/src/io/ioutil.cpp)를 다운로드하여 `io` 폴더에 저장   
-    ![](assets/ioutil.png)  
+1. 프로젝트의 jni폴더에 `io` 폴더 생성합니다.  
+   ![](assets/create_io_folder.png)
 
+2. [ioutil.h](https://developer.flywizos.com/src/io/ioutil.h), [ioutil.cpp](https://developer.flywizos.com/src/io/ioutil.cpp)를 다운로드하여 `io` 폴더에 저장합니다.   
+   ![](assets/ioutil.png)  
 
 ## 사용법
 * Include header file
@@ -63,8 +60,7 @@ string ReadFile(const char* filename);
   }
   ```
   > [!Warning]
-  > `ioutil::ReadFile` 함수는 파일의 모든 내용을 메모리로 읽어들입니다. 만약 파일이 너무 크다면, 메모리 부족으로 예외가 발생합니다.
-
+  > `ioutil::ReadFile`함수는 파일의 모든 내용을 메모리로 읽어들입니다. 만약 파일이 너무 크다면, 메모리 부족으로 예외가 발생합니다.
 
 * Write file continuously, suitable for large file
   ```c++
@@ -104,8 +100,6 @@ string ReadFile(const char* filename);
     r.Close();
   }
   ```
-
-
 
 ## Test code  
 ```c++

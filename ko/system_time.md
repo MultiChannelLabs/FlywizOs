@@ -4,8 +4,7 @@
 ```c++
 #include "utils/TimeHelper.h"
 ```
-  > tm 구조체의 각 변수에 대한 설명
-
+* tm 구조체의 각 변수에 대한 설명
 ```c++
 struct tm {
     int tm_sec; /* second - the value range is [0,59] */
@@ -19,13 +18,11 @@ struct tm {
 ```
 
 * 현재 날짜 및 시간 가져오기
-
 ```c++
 struct tm *t = TimeHelper::getDateTime();
 ```
 
 * 시간 표시 예제
-
 ```c++
 static void updateUI_time() {
     char timeStr[20];
@@ -44,10 +41,7 @@ static void updateUI_time() {
 }
 ```
 
-
-
 * 시간 설정 예제
-
 ```c++
 // Use tm structure to set time
 static void setSystemTime() {

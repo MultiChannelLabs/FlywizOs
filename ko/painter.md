@@ -1,19 +1,16 @@
-
 # Painter
- Painter 컨트롤은 간단한 기하학적 그리기 인터페이스를 제공합니다.
+Painter 컨트롤은 간단한 기하학적 그리기 인터페이스를 제공합니다.
 
 ## 사용법
- **Painter** 컨트롤을 생성합니다. 기본 Painter 컨트롤은 투명합니다. 필요에 따라 배경 이미지를 추가하거나 배경 색을 수정할 수 있습니다.
+**Painter**컨트롤을 생성합니다. 기본 Painter컨트롤은 투명합니다. 필요에 따라 배경 이미지를 추가하거나 배경 색을 수정할 수 있습니다.
 
-   ![](assets/painter/properties.png)
+![](assets/painter/properties.png)
 
 ## 코드 조작
-**Painter** 컨트롤의 변수 포인터를 통해 함수들을 호출하여 그래픽을 그릴 수 있습니다.
-이 컨트롤의 대부분의 함수들은 코드로 구현해야합니다. 예제는 다음과 같습니다.
+**Painter** 컨트롤의 변수 포인터를 통해 함수들을 호출하여 그림을 그릴 수 있습니다. 이 컨트롤의 대부분의 함수들은 코드로 구현해야합니다. 예제는 다음과 같습니다.
 
 ```c++
 static void onUI_init() {
-
     /**
      * Draw a rounded rectangle border
      */
@@ -79,8 +76,8 @@ static void onUI_init() {
 }
 ```
 # Sample code
-**Painter** 컨트롤의 사용을 보여줍니다.
+**Painter**컨트롤의 사용을 보여줍니다.
 
 ![](assets/painter/preview.png) 
 
- 더 자세한 사항은 [Sample Code](demo_download.md#demo_download)의 `PainterDemo`를 참고하십시오.
+더 자세한 사항은 [Sample Code](demo_download.md#demo_download)의 `PainterDemo`를 참고하십시오.
