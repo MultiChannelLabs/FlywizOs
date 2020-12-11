@@ -1524,9 +1524,11 @@
 <h2 id="&#xC0AC;&#xC6A9;&#xBC95;">&#xC0AC;&#xC6A9;&#xBC95;</h2>
 <ol>
 <li>&#xBA3C;&#xC800; &#xCE74;&#xBA54;&#xB77C; &#xCEE8;&#xD2B8;&#xB864;&#xC744; &#xB9CC;&#xB4ED;&#xB2C8;&#xB2E4;. &#xAE30;&#xBCF8; &#xBC30;&#xACBD;&#xC740; &#xAC80;&#xC740;&#xC0C9;&#xC785;&#xB2C8;&#xB2E4;.</li>
-<li><p>&#xCE74;&#xBA54;&#xB77C; &#xCEE8;&#xD2B8;&#xB864;&#xC758; &#xC18D;&#xC131;&#xCC3D;&#xC744; &#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;.</p>
-<p><img src="assets/camera/properties.png" alt="">  </p>
-<p>Auto Preview&#xC18D;&#xC131;&#xC744; <strong>On</strong>&#xC73C;&#xB85C; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.<br>&#xC5F0;&#xACB0;&#xB418;&#xB294; &#xCE74;&#xBA54;&#xB77C; &#xD0C0;&#xC785;&#xC5D0; &#xB530;&#xB77C; <strong>CVBS Signal</strong> &#xC18D;&#xC131;&#xC744; &#xC120;&#xD0DD;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<li><p>&#xCE74;&#xBA54;&#xB77C; &#xCEE8;&#xD2B8;&#xB864;&#xC758; &#xC18D;&#xC131;&#xCC3D;&#xC744; &#xD655;&#xC778;&#xD569;&#xB2C8;&#xB2E4;.<br><img src="assets/camera/properties.png" alt="">  </p>
+<ul>
+<li>Auto Preview&#xC18D;&#xC131;&#xC744; <strong>On</strong>&#xC73C;&#xB85C; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.  </li>
+<li>&#xC5F0;&#xACB0;&#xB418;&#xB294; &#xCE74;&#xBA54;&#xB77C; &#xD0C0;&#xC785;&#xC5D0; &#xB530;&#xB77C; <strong>CVBS Signal</strong> &#xC18D;&#xC131;&#xC744; &#xC120;&#xD0DD;&#xD569;&#xB2C8;&#xB2E4;.</li>
+</ul>
 </li>
 <li><p>&#xCE74;&#xBA54;&#xB77C;&#xC744; &#xBCF4;&#xB4DC;&#xC5D0; &#xC5F0;&#xACB0;&#xD558;&#xACE0; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC744; &#xB2E4;&#xC6B4;&#xB85C;&#xB4DC;&#xD558;&#xBA74; &#xCE74;&#xBA54;&#xB77C;&#xB85C;&#xBD80;&#xD130; &#xC785;&#xB825;&#xB418;&#xB294; &#xC601;&#xC0C1;&#xC744; &#xBCFC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 </li>
@@ -1546,19 +1548,19 @@
 <li><p>&#xCE74;&#xBA54;&#xB77C; &#xCF5C;&#xBC31; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4; &#xAD6C;&#xD604;</p>
 <pre><code class="lang-c++"><span class="hljs-keyword">class</span> PictureCallback : <span class="hljs-keyword">public</span> ZKCamera::IPictureCallback {
 <span class="hljs-keyword">public</span>:
-   <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onPictureTakenStarted</span><span class="hljs-params">()</span> </span>{
-     mTextView1Ptr-&gt;setText(<span class="hljs-string">&quot;Start taking a photo&quot;</span>);
-   }
-   <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onPictureTakenEnd</span><span class="hljs-params">()</span> </span>{
-     mTextView1Ptr-&gt;setText(<span class="hljs-string">&quot;End of photo&quot;</span>);
-   }
-   <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onPictureTakenError</span><span class="hljs-params">()</span> </span>{
-     mTextView1Ptr-&gt;setText(<span class="hljs-string">&quot;Photo error&quot;</span>);
-   }
-   <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* <span class="hljs-title">onPictureSavePath</span><span class="hljs-params">()</span> </span>{
-       <span class="hljs-comment">//Photo save path</span>
-       <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;/mnt/extsd/camera.jpg&quot;</span>;
-   }
+    <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onPictureTakenStarted</span><span class="hljs-params">()</span> </span>{
+      mTextView1Ptr-&gt;setText(<span class="hljs-string">&quot;Start taking a photo&quot;</span>);
+    }
+    <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onPictureTakenEnd</span><span class="hljs-params">()</span> </span>{
+      mTextView1Ptr-&gt;setText(<span class="hljs-string">&quot;End of photo&quot;</span>);
+    }
+    <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onPictureTakenError</span><span class="hljs-params">()</span> </span>{
+      mTextView1Ptr-&gt;setText(<span class="hljs-string">&quot;Photo error&quot;</span>);
+    }
+    <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* <span class="hljs-title">onPictureSavePath</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//Photo save path</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;/mnt/extsd/camera.jpg&quot;</span>;
+    }
 };
 </code></pre>
 </li>
@@ -1569,27 +1571,26 @@
 </li>
 <li><p>&#xCE74;&#xBA54;&#xB77C; &#xCEE8;&#xD2B8;&#xB864;&#xC5D0; &#xD130;&#xD398;&#xC774;&#xC2A4; &#xB4F1;&#xB85D; &#xBC0F; &#xB4F1;&#xB85D; &#xD574;&#xC81C;</p>
 <pre><code class="lang-c++"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onUI_init</span><span class="hljs-params">()</span></span>{
-   mCameraView1Ptr-&gt;setPictureCallback(&amp;picture_callback);
+    mCameraView1Ptr-&gt;setPictureCallback(&amp;picture_callback);
 }
-</code></pre>
-<pre><code class="lang-c++"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onUI_quit</span><span class="hljs-params">()</span> </span>{
- <span class="hljs-comment">//Remember to empty the registration interface when the interface exits</span>
-   mCameraView1Ptr-&gt;setPictureCallback(<span class="hljs-literal">NULL</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onUI_quit</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">//Remember to empty the registration interface when the interface exits</span>
+  mCameraView1Ptr-&gt;setPictureCallback(<span class="hljs-literal">NULL</span>);
 }
 </code></pre>
 </li>
 <li>&#xBC84;&#xD2BC; &#xCD94;&#xAC00;&#xD558;&#xC5EC; &#xBC84;&#xD2BC;&#xC774; &#xB20C;&#xB9B4; &#xC2DC; &#xD654;&#xBA74; &#xCEA1;&#xCCD0;<pre><code class="lang-c++"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">onButtonClick_Button3</span><span class="hljs-params">(ZKButton *pButton)</span> </span>{
-   <span class="hljs-comment">//Request a photo</span>
-   mCameraView1Ptr-&gt;takePicture();
-   <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    <span class="hljs-comment">//Request a photo</span>
+    mCameraView1Ptr-&gt;takePicture();
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 }
 </code></pre>
 </li>
 </ol>
 <h2 id="&#xC608;&#xC81C;-&#xCF54;&#xB4DC;">&#xC608;&#xC81C; &#xCF54;&#xB4DC;</h2>
-<p>&#xC774; &#xC608;&#xC81C;&#xC5D0;&#xB294; &#xCE74;&#xBA54;&#xB77C; &#xD504;&#xB9AC;&#xBDF0;, &#xC568;&#xBC94; &#xAE30;&#xB2A5;&#xB4F1;&#xC774; &#xAD6C;&#xD604;&#xB418;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
-<p><a href="demo_download.html#demo_download">Sample code</a>&#xC758; CameraDemo &#xD504;&#xB85C;&#xC81D;&#xD2B8; &#xCC38;&#xACE0;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</p>
-<p><img src="assets/camera/preview.png" alt=""> </p>
+<p>&#xC774; &#xC608;&#xC81C;&#xC5D0;&#xB294; &#xCE74;&#xBA54;&#xB77C; &#xD504;&#xB9AC;&#xBDF0;, &#xC568;&#xBC94; &#xAE30;&#xB2A5;&#xB4F1;&#xC774; &#xAD6C;&#xD604;&#xB418;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br><a href="demo_download.html#demo_download">Sample code</a>&#xC758; CameraDemo &#xD504;&#xB85C;&#xC81D;&#xD2B8; &#xCC38;&#xACE0;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.
+<img src="assets/camera/preview.png" alt=""> </p>
 
                                 
                                 </section>
@@ -1633,7 +1634,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Camera","level":"2.17","depth":1,"next":{"title":"Digital Clock","level":"2.18","depth":1,"path":"digital_clock.md","ref":"digital_clock.md","articles":[]},"previous":{"title":"Painter","level":"2.16","depth":1,"path":"painter.md","ref":"painter.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"camera.md","mtime":"2020-09-28T01:54:02.866Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-29T06:13:10.385Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Camera","level":"2.17","depth":1,"next":{"title":"Digital Clock","level":"2.18","depth":1,"path":"digital_clock.md","ref":"digital_clock.md","articles":[]},"previous":{"title":"Painter","level":"2.16","depth":1,"path":"painter.md","ref":"painter.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"camera.md","mtime":"2020-12-09T02:06:03.161Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-11T06:49:14.021Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

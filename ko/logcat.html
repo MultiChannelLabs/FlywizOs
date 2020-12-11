@@ -1518,27 +1518,25 @@
                                 <h1 id="view-log">View log</h1>
 <h2 id="log-&#xCD94;&#xAC00;">Log &#xCD94;&#xAC00;</h2>
 <ul>
-<li><p>&#xD544;&#xC694;&#xD55C; &#xD5E4;&#xB354; &#xD30C;&#xC77C;</p>
-<pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">&quot;utils/Log.h&quot;</span></span>
+<li>&#xD544;&#xC694;&#xD55C; &#xD5E4;&#xB354; &#xD30C;&#xC77C;<pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">&quot;utils/Log.h&quot;</span></span>
 </code></pre>
-<p>FlywizOS&#xB294; <code>LOGD</code>&#xB610;&#xB294; <code>LOGE</code>&#xB9E4;&#xD06C;&#xB85C;&#xB97C; &#xD1B5;&#xD574; &#xB85C;&#xADF8;&#xB97C; &#xCD9C;&#xB825;&#xD569;&#xB2C8;&#xB2E4;. &#xC0AC;&#xC6A9; &#xBC29;&#xBC95;&#xC740; C&#xC5B8;&#xC5B4;&#xC758; <code>printf</code>&#xC640; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;. 
-&#xC544;&#xB798;&#xB294; &#xC790;&#xB3D9;&#xC801;&#xC73C;&#xB85C; &#xC0DD;&#xC131;&#xB41C; &#xCF54;&#xB4DC;&#xC5D0; &#xC788;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<pre><code class="lang-c++">  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">onButtonClick_Button1</span><span class="hljs-params">(ZKButton *pButton)</span> </span>{
-      LOGD(<span class="hljs-string">&quot;onButtonClick_Button1\n&quot;</span>);
-      <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
-  }
+FlywizOS&#xB294; <code>LOGD</code>&#xB610;&#xB294; <code>LOGE</code>&#xB9E4;&#xD06C;&#xB85C;&#xB97C; &#xD1B5;&#xD574; &#xB85C;&#xADF8;&#xB97C; &#xCD9C;&#xB825;&#xD569;&#xB2C8;&#xB2E4;. &#xC0AC;&#xC6A9; &#xBC29;&#xBC95;&#xC740; C&#xC5B8;&#xC5B4;&#xC758; <code>printf</code>&#xC640; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.<br>&#xC544;&#xB798;&#xB294; &#xC790;&#xB3D9;&#xC801;&#xC73C;&#xB85C; &#xC0DD;&#xC131;&#xB41C; &#xCF54;&#xB4DC;&#xC5D0; &#xC788;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.  <pre><code class="lang-c++"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">onButtonClick_Button1</span><span class="hljs-params">(ZKButton *pButton)</span> </span>{
+    LOGD(<span class="hljs-string">&quot;onButtonClick_Button1\n&quot;</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+}
 </code></pre>
 </li>
 </ul>
 <h2 id="&#xB85C;&#xADF8;-&#xD655;&#xC778;">&#xB85C;&#xADF8; &#xD655;&#xC778;</h2>
-<p><a href="adb_debug.html">ADB</a> &#xC5F0;&#xACB0; &#xD6C4;, &#xD234;&#xC744; &#xD1B5;&#xD574; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC5D0; &#xC788;&#xB294; &#xB85C;&#xADF8;&#xB97C; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBC29;&#xBC95;&#xC740; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><a href="adb_debug.html">ADB</a>&#xB97C; &#xC5F0;&#xACB0; &#xD6C4;, &#xD234;&#xC744; &#xD1B5;&#xD574; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC5D0; &#xC788;&#xB294; &#xB85C;&#xADF8;&#xB97C; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBC29;&#xBC95;&#xC740; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <ol>
 <li><p>&#xBA54;&#xB274;&#xC5D0;&#xC11C; <strong>FlywizOS</strong> -&gt; <strong>Show Log Perspective</strong>&#xB97C; &#xC120;&#xD0DD;&#xD558;&#xBA74; IDE&#xB294; &#xB2E4;&#xB978; &#xD654;&#xBA74;&#xC73C;&#xB85C; &#xC804;&#xD658;&#xB429;&#xB2C8;&#xB2E4;.
  <img src="assets/ide/log_perspective.png" alt=""></p>
 </li>
-<li><p>&#xC0C8;&#xB85C;&#xC6B4; &#xD654;&#xBA74;&#xC758; &#xC67C;&#xCABD; &#xC544;&#xB798;&#xC5D0;&#xC11C; <strong>LogCat</strong>&#xC744; &#xC120;&#xD0DD;&#xD569;&#xB2C8;&#xB2E4;. &#xB9CC;&#xC57D; &#xC815;&#xC0C1;&#xC774;&#xB77C;&#xBA74; &#xC624;&#xB978;&#xCABD;&#xC758; &#xBE68;&#xAC04; &#xC0C9; &#xBC15;&#xC2A4; &#xC601;&#xC5ED;&#xC5D0;&#xC11C; &#xCD9C;&#xB825;&#xB418;&#xB294; &#xB85C;&#xADF8;&#xB97C; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
- <img src="assets/ide/log_view.png" alt=""><br> &#xB9CC;&#xC57D; &#xCF54;&#xB529; &#xD654;&#xBA74;&#xC73C;&#xB85C; &#xB2E4;&#xC2DC; &#xC804;&#xD658;&#xD558;&#xACE0; &#xC2F6;&#xB2E4;&#xBA74; IDE&#xC758; &#xC6B0;&#xCE21; &#xC0C1;&#xB2E8; &#xCF54;&#xB108;&#xC758; <strong>FlywizOS</strong> &#xC544;&#xC774;&#xCF58;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.
- <img src="assets/ide/perspective_fly.png" alt=""></p>
+<li><p>&#xC0C8;&#xB85C;&#xC6B4; &#xD654;&#xBA74;&#xC758; &#xC67C;&#xCABD; &#xC544;&#xB798;&#xC5D0;&#xC11C; <strong>LogCat</strong>&#xC744; &#xC120;&#xD0DD;&#xD569;&#xB2C8;&#xB2E4;. &#xB9CC;&#xC57D; &#xC815;&#xC0C1;&#xC774;&#xB77C;&#xBA74; &#xC624;&#xB978;&#xCABD;&#xC758; &#xBE68;&#xAC04; &#xC0C9; &#xBC15;&#xC2A4; &#xC601;&#xC5ED;&#xC5D0;&#xC11C; &#xCD9C;&#xB825;&#xB418;&#xB294; &#xB85C;&#xADF8;&#xB97C; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><img src="assets/ide/log_view.png" alt="">   </p>
+<p>&#xB9CC;&#xC57D; &#xCF54;&#xB529; &#xD654;&#xBA74;&#xC73C;&#xB85C; &#xB2E4;&#xC2DC; &#xC804;&#xD658;&#xD558;&#xACE0; &#xC2F6;&#xB2E4;&#xBA74; IDE&#xC758; &#xC6B0;&#xCE21; &#xC0C1;&#xB2E8; &#xCF54;&#xB108;&#xC758; <strong>FlywizOS</strong> &#xC544;&#xC774;&#xCF58;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</p>
+<p><img src="assets/ide/perspective_fly.png" alt=""></p>
 </li>
 </ol>
 
@@ -1584,7 +1582,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"View log","level":"5.2.2","depth":2,"next":{"title":"TF card에서 프로그램 시작","level":"5.2.3","depth":2,"path":"start_from_sdcard.md","ref":"start_from_sdcard.md","articles":[]},"previous":{"title":"ADB 디버그","level":"5.2.1","depth":2,"path":"adb_debug.md","ref":"adb_debug.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"logcat.md","mtime":"2020-09-28T01:54:03.093Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-29T06:13:10.385Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"View log","level":"5.2.2","depth":2,"next":{"title":"TF card에서 프로그램 시작","level":"5.2.3","depth":2,"path":"start_from_sdcard.md","ref":"start_from_sdcard.md","articles":[]},"previous":{"title":"ADB 디버그","level":"5.2.1","depth":2,"path":"adb_debug.md","ref":"adb_debug.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"logcat.md","mtime":"2020-12-09T07:17:33.329Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-11T06:49:14.021Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

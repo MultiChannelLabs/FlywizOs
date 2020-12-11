@@ -1516,11 +1516,8 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="mutexlock">Mutex/lock</h1>
-<p> &#xB2E4;&#xB978; &#xCC55;&#xD130;&#xC5D0;&#xC11C; &#xC18C;&#xAC1C;&#xD588;&#xB358; thread&#xB294; &#xC5B4;&#xB5A4; &#xACBD;&#xC6B0;&#xC5D0; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC5D0; &#xBC84;&#xADF8;&#xB97C; &#xC77C;&#xC73C;&#xD0AC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
- Multi-threaded &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC5D0;&#xC11C; &#xC774;&#xB7EC;&#xD604; &#xC0C1;&#xD669;&#xC740; &#xB9E4;&#xC6B0; &#xC77C;&#xBC18;&#xC801;&#xC785;&#xB2C8;&#xB2E4;. 
- &#xC26C;&#xC6B4; &#xC774;&#xD574;&#xB97C; &#xC704;&#xD574; &#xC544;&#xB798;&#xC758; &#xCF54;&#xB4DC;&#xB85C; &#xC774; &#xC0C1;&#xD669;&#xC744; &#xC124;&#xBA85;&#xD558;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;. 
- <code>struct Student</code>&#xB97C; &#xC804;&#xC5ED; &#xBCC0;&#xC218;&#xB85C; &#xC120;&#xC5B8; &#xD6C4; 2&#xAC1C;&#xC758; thread&#xB97C; &#xC815;&#xC758;&#xD569;&#xB2C8;&#xB2E4;. A thread&#xB294;  <code>student</code>&#xBCC0;&#xC218;&#xC5D0; &#xAC12;&#xC744; &#xD560;&#xB2F9;&#xD558;&#xACE0;, B thread&#xB294; <code>student</code>&#xC758; &#xAC12;&#xC744; &#xBCF5;&#xC0AC;&#xD558;&#xC5EC; &#xAC01; &#xBA64;&#xBC84;&#xBCC0;&#xC218;&#xC758; &#xAC12;&#xC744; &#xB85C;&#xADF8;&#xB85C; &#xCD9C;&#xB825;&#xD569;&#xB2C8;&#xB2E4;.
-<strong>Question : &#xB9CC;&#xC57D; &#xB450; thread&#xAC00; &#xB3D9;&#xC2DC;&#xC5D0; &#xC2DC;&#xC791;&#xD558;&#xBA74; B thread&#xC5D0;&#xC11C; &#xCD9C;&#xB825;&#xB418;&#xB294; &#xACB0;&#xB3E0;&#xB294; &#xC5B4;&#xB5BB;&#xAC8C; &#xB420;&#xAE4C;&#xC694;?</strong></p>
+<p>&#xB2E4;&#xB978; &#xCC55;&#xD130;&#xC5D0;&#xC11C; &#xC18C;&#xAC1C;&#xD588;&#xB358; thread&#xB294; &#xC5B4;&#xB5A4; &#xACBD;&#xC6B0;&#xC5D0; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC5D0; &#xBC84;&#xADF8;&#xB97C; &#xC77C;&#xC73C;&#xD0AC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>Multi-threaded &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC5D0;&#xC11C; &#xC774;&#xB7EC;&#xD604; &#xC0C1;&#xD669;&#xC740; &#xB9E4;&#xC6B0; &#xC77C;&#xBC18;&#xC801;&#xC785;&#xB2C8;&#xB2E4;.<br>&#xC26C;&#xC6B4; &#xC774;&#xD574;&#xB97C; &#xC704;&#xD574; &#xC544;&#xB798;&#xC758; &#xCF54;&#xB4DC;&#xB85C; &#xC774; &#xC0C1;&#xD669;&#xC744; &#xC124;&#xBA85;&#xD558;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.<br><code>struct Student</code>&#xB97C; &#xC804;&#xC5ED; &#xBCC0;&#xC218;&#xB85C; &#xC120;&#xC5B8; &#xD6C4; 2&#xAC1C;&#xC758; thread&#xB97C; &#xC815;&#xC758;&#xD569;&#xB2C8;&#xB2E4;. A thread&#xB294; <code>student</code>&#xBCC0;&#xC218;&#xC5D0; &#xAC12;&#xC744; &#xD560;&#xB2F9;&#xD558;&#xACE0;, B thread&#xB294; <code>student</code>&#xC758; &#xAC12;&#xC744; &#xBCF5;&#xC0AC;&#xD558;&#xC5EC; &#xAC01; &#xBA64;&#xBC84;&#xBCC0;&#xC218;&#xC758; &#xAC12;&#xC744; &#xB85C;&#xADF8;&#xB85C; &#xCD9C;&#xB825;&#xD569;&#xB2C8;&#xB2E4;.
+<strong>Question : &#xB9CC;&#xC57D; &#xB450; thread&#xAC00; &#xB3D9;&#xC2DC;&#xC5D0; &#xC2DC;&#xC791;&#xB418;&#xBA74; B thread&#xC5D0;&#xC11C; &#xCD9C;&#xB825;&#xB418;&#xB294; &#xACB0;&#xACFC;&#xB294; &#xC5B4;&#xB5BB;&#xAC8C; &#xB420;&#xAE4C;&#xC694;?</strong></p>
 <pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;system/Thread.h&gt;</span></span>
 
 <span class="hljs-keyword">struct</span> Student {
@@ -1559,7 +1556,7 @@
 <pre><code>name&#xFF1A;David
 age&#xFF1A;10
 student id number&#xFF1A;20200101
-</code></pre><p>&#xADF8;&#xB7EC;&#xB098; &#xC2E4;&#xC81C; &#xCDA9;&#xBD84;&#xD788; &#xB9CE;&#xC740; &#xD14C;&#xC2A4;&#xD2B8;&#xB97C; &#xD560; &#xACBD;&#xC6B0;, &#xB300;&#xBD80;&#xBD84;&#xC758; &#xACB0;&#xACFC;&#xB294; &#xC6B0;&#xB9AC;&#xAC00; &#xC608;&#xC0C1;&#xD588;&#xB358; &#xACB0;&#xACFC;&#xB97C; &#xCD9C;&#xB825;&#xD558;&#xC9C0;&#xB9CC; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC740; &#xACB0;&#xACFC;&#xAC00; &#xCD9C;&#xB825;&#xB418;&#xB294; &#xACBD;&#xC6B0;&#xB3C4; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;.</p>
+</code></pre><p>&#xADF8;&#xB7EC;&#xB098; &#xC2E4;&#xC81C;&#xB85C; &#xB9CE;&#xC740; &#xD14C;&#xC2A4;&#xD2B8;&#xB97C; &#xD560; &#xACBD;&#xC6B0;, &#xB300;&#xBD80;&#xBD84;&#xC758; &#xACB0;&#xACFC;&#xB294; &#xC6B0;&#xB9AC;&#xAC00; &#xC608;&#xC0C1;&#xD588;&#xB358; &#xACB0;&#xACFC;&#xB97C; &#xCD9C;&#xB825;&#xD558;&#xC9C0;&#xB9CC; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC740; &#xACB0;&#xACFC;&#xAC00; &#xCD9C;&#xB825;&#xB418;&#xB294; &#xACBD;&#xC6B0;&#xB3C4; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;.</p>
 <pre><code>name&#xFF1A;
 age&#xFF1A;0
 student id number&#xFF1A;0
@@ -1571,78 +1568,76 @@ age&#xFF1A;10
 student id number&#xFF1A;0
 </code></pre><p>&#xB9CC;&#xC57D; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC5D0;&#xC11C; &quot;abnormal&quot;&#xD55C; &#xACB0;&#xACFC;&#xAC00; &#xB098;&#xC628;&#xB2E4;&#xBA74;, &#xC774;&#xAC83;&#xC740; &#xBC84;&#xADF8;&#xB85C; &#xD310;&#xB2E8;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <h2 id="&#xC6D0;&#xC778;-&#xBD84;&#xC11D;">&#xC6D0;&#xC778; &#xBD84;&#xC11D;</h2>
-<p> Multiple threads &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC5D0;&#xC11C; thread&#xC758; &#xC2E4;&#xD589; &#xC21C;&#xC11C;&#xB294; &#xC2DC;&#xC2A4;&#xD15C;&#xC758; &#xC2A4;&#xCF00;&#xC974;&#xB9C1;&#xC5D0; &#xC758;&#xD574; &#xACB0;&#xC84D;&#xB429;&#xB2C8;&#xB2E4;.  A thread&#xC758; instructions&#xC744; &#xBAA8;&#xB450; &#xC2E4;&#xD589;&#xD55C; &#xD6C4; B thread&#xC758; instruction&#xC744; &#xC2E4;&#xD589;&#xD558;&#xACE0;, &#xB2E4;&#xC2DC; A thread&#xC758; instructions&#xB97C; &#xC2E4;&#xD589;&#xD560; &#xC218;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. 
- &#xC704;&#xC758; &#xC608;&#xC81C;&#xC5D0;&#xC11C; <code>student</code> &#xBCC0;&#xC218;&#xC5D0; &#xC644;&#xC804;&#xD55C; &#xAC12;&#xC744; &#xD560;&#xB2F9;&#xD558;&#xAE30; &#xC704;&#xD55C; 3&#xAC1C;&#xC758; statements&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB9CC;&#xC57D; &#xCCAB; statement&#xB9CC; &#xC2E4;&#xD589;&#xB418;&#xC5C8;&#xC744; &#xB54C;(<code>name</code>&#xC758; &#xAC12;&#xB9CC; &#xD560;&#xB2F9;&#xB428;), &#xC2DC;&#xC2A4;&#xD15C;&#xC774; B thread&#xB85C; &#xC2A4;&#xC704;&#xCE6D;&#xC744; &#xD588;&#xC2B5;&#xB2C8;&#xB2E4;. &#xADF8;&#xB7EC;&#xBA74; &#xC774;&#xB54C; B thread&#xAC00; &#xC77D;&#xB294; <code>student</code>&#xC5D0;&#xB294; <code>name</code>&#xB9CC; &#xC720;&#xD6A8;&#xD558;&#xACE0;, <code>age</code> &#xC640; <code>number</code> &#xB294; 0&#xC778; &#xC0C1;&#xD0DC;&#xB85C; &apos;abnormal&apos;&#xAC00; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>Multiple threads &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC5D0;&#xC11C; thread&#xC758; &#xC2E4;&#xD589; &#xC21C;&#xC11C;&#xB294; &#xC2DC;&#xC2A4;&#xD15C;&#xC758; &#xC2A4;&#xCF00;&#xC974;&#xB9C1;&#xC5D0; &#xC758;&#xD574; &#xACB0;&#xC84D;&#xB429;&#xB2C8;&#xB2E4;. A thread&#xC758; instructions&#xB97C; &#xBAA8;&#xB450; &#xC2E4;&#xD589;&#xD55C; &#xD6C4; B thread&#xC758; instruction&#xC744; &#xC2E4;&#xD589;&#xD558;&#xACE0;, &#xB2E4;&#xC2DC; A thread&#xC758; instructions&#xB97C; &#xC2E4;&#xD589;&#xD560; &#xC218;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. 
+&#xC704;&#xC758; &#xC608;&#xC81C;&#xC5D0;&#xC11C; <code>student</code>&#xBCC0;&#xC218;&#xC5D0; &#xC644;&#xC804;&#xD55C; &#xAC12;&#xC744; &#xD560;&#xB2F9;&#xD558;&#xAE30; &#xC704;&#xD55C; 3&#xAC1C;&#xC758; statements&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB9CC;&#xC57D; &#xCCAB; statement&#xB9CC; &#xC2E4;&#xD589;&#xB418;&#xC5C8;&#xC744; &#xB54C;(<code>name</code>&#xC758; &#xAC12;&#xB9CC; &#xD560;&#xB2F9;&#xB428;), &#xC2DC;&#xC2A4;&#xD15C;&#xC774; B thread&#xB85C; &#xC2A4;&#xC704;&#xCE6D;&#xC744; &#xD588;&#xC2B5;&#xB2C8;&#xB2E4;. &#xADF8;&#xB7EC;&#xBA74; &#xC774;&#xB54C; B thread&#xAC00; &#xC77D;&#xB294; <code>student</code>&#xC5D0;&#xB294; <code>name</code>&#xB9CC; &#xC720;&#xD6A8;&#xD558;&#xACE0;, <code>age</code>&#xC640; <code>number</code>&#xB294; 0&#xC778; &#xC0C1;&#xD0DC;&#xB85C; &apos;abnormal&apos;&#xC774; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;.</p>
 <h2 id="&#xD574;&#xACB0;-&#xBC29;&#xBC95;">&#xD574;&#xACB0; &#xBC29;&#xBC95;</h2>
-<p> &#xC774;&#xB7EC;&#xD55C; &#xC774;&#xC720;&#xB85C; A thread&#xC758; instructions&#xB4E4;&#xC774; &#xBAA8;&#xB450; &#xC644;&#xB8CC;&#xAC00; &#xB41C; &#xD6C4; B thread&#xB85C; &#xC2A4;&#xC704;&#xCE6D;&#xD55C;&#xB2E4;&#xB294; &#xAC83;&#xC744; &#xD655;&#xB9BD;&#xD560; &#xC218; &#xC788;&#xB2E4;&#xBA74; &#xC774; &#xBB38;&#xC81C;&#xB294; &#xD574;&#xACB0;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC774;&#xB7EC;&#xD55C; &#xC774;&#xC720;&#xB85C; A thread&#xC758; instructions&#xB4E4;&#xC774; &#xBAA8;&#xB450; &#xC644;&#xB8CC;&#xAC00; &#xB41C; &#xD6C4; B thread&#xB85C; &#xC2A4;&#xC704;&#xCE6D;&#xD55C;&#xB2E4;&#xB294; &#xAC83;&#xC744; &#xD655;&#xB9BD;&#xD560; &#xC218; &#xC788;&#xB2E4;&#xBA74; &#xC774; &#xBB38;&#xC81C;&#xB294; &#xD574;&#xACB0;&#xB429;&#xB2C8;&#xB2E4;.</p>
 <h2 id="&#xAD6C;&#xD604;-&#xBC29;&#xBC95;">&#xAD6C;&#xD604; &#xBC29;&#xBC95;</h2>
-<p> &#xC774;&#xB7EC;&#xD55C; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC5D0;&#xC11C; <strong>mutual exclusion lock</strong>&#xC740; &#xB370;&#xC774;&#xD130; &#xACF5;&#xC720;&#xC5D0; &#xB300;&#xD55C; &#xBB34;&#xACB0;&#xC131;&#xC744; &#xD655;&#xB9BD;&#xD574;&#xC904; &#xC218; &#xC788;&#xB294; &#xAC1C;&#xB150;&#xC785;&#xB2C8;&#xB2E4;. &quot;mutual exclusion lock&quot;&#xC774;&#xB77C; &#xBD88;&#xB9B4; &#xC218; &#xC788;&#xB294; &#xD574;&#xB2F9; &#xAC1D;&#xCCB4;&#xB294; &#xC5B4;&#xB5A4; &#xC21C;&#xAC04;&#xC5D0;&#xC11C;&#xB4E0; &#xD558;&#xB098;&#xC758; thread&#xC5D0;&#xC11C;&#xB9CC; &#xD574;&#xB2F9; &#xAC1D;&#xCCB4;&#xC5D0; &#xC811;&#xADFC;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
- &#xC544;&#xB798;&#xB294; FlywizOS&#xC5D0;&#xC11C; &#xC81C;&#xACF5;&#xD558;&#xB294; <strong>mutual exclusion lock</strong> &#xAE30;&#xB2A5;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC774;&#xB7EC;&#xD55C; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC5D0;&#xC11C; <strong>mutual exclusion lock</strong>&#xC740; &#xB370;&#xC774;&#xD130; &#xACF5;&#xC720;&#xC5D0; &#xB300;&#xD55C; &#xBB34;&#xACB0;&#xC131;&#xC744; &#xD655;&#xB9BD;&#xD574;&#xC904; &#xC218; &#xC788;&#xB294; &#xAC1C;&#xB150;&#xC785;&#xB2C8;&#xB2E4;. &quot;mutual exclusion lock&quot;&#xC774;&#xB77C; &#xBD88;&#xB9B4; &#xC218; &#xC788;&#xB294; &#xD574;&#xB2F9; &#xAC1D;&#xCCB4;&#xB294; &#xC5B4;&#xB5A4; &#xC21C;&#xAC04;&#xC5D0;&#xC11C;&#xB4E0; &#xD558;&#xB098;&#xC758; thread&#xC5D0;&#xC11C;&#xB9CC; &#xD574;&#xB2F9; &#xAC1D;&#xCCB4;&#xC5D0; &#xC811;&#xADFC;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>&#xC544;&#xB798;&#xB294; FlywizOS&#xC5D0;&#xC11C; &#xC81C;&#xACF5;&#xD558;&#xB294; <strong>mutual exclusion lock</strong> &#xAE30;&#xB2A5;&#xC785;&#xB2C8;&#xB2E4;.</p>
 <ol>
-<li>Mutex &#xC815;&#xC758;</li>
-</ol>
+<li><p>Mutex &#xC815;&#xC758;</p>
 <pre><code class="lang-C++"><span class="hljs-keyword">static</span> Mutex mutex1;
 </code></pre>
-<ol>
-<li>Lock&#xC774; &#xD544;&#xC694;&#xD55C; &#xACF3;&#xC5D0; <code>Mutex::Autolock</code> class instance&#xB97C; &#xC815;&#xC758;&#xD569;&#xB2C8;&#xB2E4;.  to lock.</li>
-</ol>
+</li>
+<li><p>Lock&#xC774; &#xD544;&#xC694;&#xD55C; &#xACF3;&#xC5D0; <code>Mutex::Autolock</code> class instance&#xB97C; &#xC815;&#xC758;&#xD569;&#xB2C8;&#xB2E4;.</p>
 <pre><code class="lang-C++"><span class="hljs-comment">// This class utilizes the life cycle of local variables and the structure and destructor of C++ classes to automatically </span>
 <span class="hljs-comment">// implement locking and unlocking operations.</span>
 Mutex::Autolock _l(mutex1);
 </code></pre>
-<p> &#xC544;&#xB798; &#xCF54;&#xB4DC;&#xB294; &#xC704;&#xC758; A&#xC640; B thread &#xC608;&#xC81C;&#xB97C; &#xC774;&#xC6A9;&#xD574; &#xC218;&#xC815;&#xB41C; &#xCF54;&#xB4DC;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;system/Thread.h&gt;</span></span>
-
-<span class="hljs-keyword">struct</span> Student {
-  <span class="hljs-keyword">char</span> name[<span class="hljs-number">24</span>];
-  <span class="hljs-keyword">int</span> age;
-  <span class="hljs-keyword">int</span> number;
-};
-
-<span class="hljs-keyword">struct</span> Student student = {<span class="hljs-number">0</span>};
-<span class="hljs-comment">//Define a mutex </span>
-<span class="hljs-keyword">static</span> Mutex mutext1;
-
-<span class="hljs-keyword">class</span> AThread: <span class="hljs-keyword">public</span> Thread {
-<span class="hljs-keyword">public</span>:
-  <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">threadLoop</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-comment">//Lock the statement of the function, and automatically unlock after the function ends</span>
+<p>&#xC544;&#xB798; &#xCF54;&#xB4DC;&#xB294; &#xC704;&#xC758; A&#xC640; B thread &#xC608;&#xC81C;&#xB97C; &#xC774;&#xC6A9;&#xD574; &#xC218;&#xC815;&#xB41C; &#xCF54;&#xB4DC;&#xC785;&#xB2C8;&#xB2E4;.
+```c++</p>
+<h1 id="include-">include <system thread.h=""></system></h1>
+</li>
+</ol>
+<p>struct Student {
+  char name[24];
+  int age;
+  int number;
+};</p>
+<p>struct Student student = {0};
+//Define a mutex 
+static Mutex mutext1;</p>
+<p>class AThread: public Thread {
+public:
+  virtual bool threadLoop() {
+    //Lock the statement of the function, and automatically unlock after the function ends
     Mutex::Autolock _lock(mutext1);
-    <span class="hljs-built_in">snprintf</span>(student.name, <span class="hljs-keyword">sizeof</span>(student.name), <span class="hljs-string">&quot;David&quot;</span>);
-    student.age = <span class="hljs-number">10</span>;
-    student.number = <span class="hljs-number">20200101</span>;
-    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    snprintf(student.name, sizeof(student.name), &quot;David&quot;);
+    student.age = 10;
+    student.number = 20200101;
+    return true;
   }
-};
-
-<span class="hljs-keyword">class</span> BThread: <span class="hljs-keyword">public</span> Thread {
-<span class="hljs-keyword">public</span>:
-  <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">threadLoop</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-comment">//Lock the statement of the function, and automatically unlock after the function ends</span>
+};</p>
+<p>class BThread: public Thread {
+public:
+  virtual bool threadLoop() {
+    //Lock the statement of the function, and automatically unlock after the function ends
     Mutex::Autolock _lock(mutext1);
-    <span class="hljs-keyword">struct</span> Student s = student;
-    LOGD(<span class="hljs-string">&quot;nanme&#xFF1A;%s&quot;</span>, s.name);
-    LOGD(<span class="hljs-string">&quot;age&#xFF1A;%d&quot;</span>, s.age);
-    LOGD(<span class="hljs-string">&quot;student id number&#xFF1A;%d&quot;</span>, s.number);
-    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    struct Student s = student;
+    LOGD(&quot;nanme&#xFF1A;%s&quot;, s.name);
+    LOGD(&quot;age&#xFF1A;%d&quot;, s.age);
+    LOGD(&quot;student id number&#xFF1A;%d&quot;, s.number);
+    return true;
   }
-};
+};</p>
+<p>static AThread athread;
+static BThread bthread;</p>
+<pre><code>
+&#xCF54;&#xB4DC;&#xC5D0;&#xC11C; lock&#xC740; &#xB450; thread&#xC5D0;&#xC11C; `student`&#xC640; &#xAD00;&#xB828;&#xD558;&#xC5EC; &#xB3D9;&#xC791;&#xD569;&#xB2C8;&#xB2E4;.  
+A thread&#xAC00; &#xC2E4;&#xD589;&#xB418;&#xC5C8;&#xC744; &#xB54C;, `Mutex::Autolock _lock(mutext1);` statement&#xB97C; &#xD1B5;&#xD574; `mutex1`&#xC758; `mutex`&#xAC00; &#xC5BB;&#xC5B4;&#xC9D1;&#xB2C8;&#xB2E4;. &#xC774;&#xD6C4; A thread&#xAC00; unlock&#xB418;&#xC9C0; &#xC54A;&#xACE0; B thread&#xAC00; &#xC2E4;&#xD589;&#xB418;&#xBA74; B thread &#xC5ED;&#xC2DC;  `Mutex::Autolock _lock(mutext1);` statement&#xB85C; `mutext1` &#xC758; `mutex`&#xC744; &#xC6D0;&#xD558;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;. &#xADF8;&#xB7EC;&#xB098; &#xC774; `mutex`&#xB294; &#xC774;&#xBBF8; A thread&#xC5D0; &#xC758;&#xD574; &#xD68D;&#xB4DD;&#xB418;&#xC5C8;&#xAE30;&#xC5D0; B thread&#xAC00; &#xC774;&#xB97C; &#xD68D;&#xB4DD;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; A thread&#xAC00; &#xD574;&#xB2F9; `mutex`&#xB97C; unlock&#xD558;&#xB294; &#xAC83;&#xC744; &#xAE30;&#xB2E4;&#xB9B4; &#xC218; &#xBC16;&#xC5D0; &#xC5C6;&#xACE0;, `mutex`&#xB97C; &#xD68D;&#xB4DD; &#xD55C; &#xD6C4;&#xC5D0;&#xC57C; &#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; &#xB2E4;&#xC74C; statement&#xB85C; &#xC9C4;&#xD589;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
 
-<span class="hljs-keyword">static</span> AThread athread;
-<span class="hljs-keyword">static</span> BThread bthread;
-</code></pre>
-<p> &#xCF54;&#xB4DC;&#xC5D0;&#xC11C; lock&#xC740; &#xB450; thread&#xC5D0;&#xC11C; <code>student</code>&#xC640; &#xAD00;&#xB828;&#xD558;&#xC5EC; &#xB3D9;&#xC791;&#xD569;&#xB2C8;&#xB2E4;.<br> A thread&#xAC00; &#xC2E4;&#xD589;&#xB418;&#xC5C8;&#xC744; &#xB54C;, <code>Mutex::Autolock _lock(mutext1);</code> statement&#xB97C; &#xD1B5;&#xD574; <code>mutex1</code>&#xC758; <code>mutex</code>&#xAC00; &#xC5BB;&#xC5B4;&#xC9D1;&#xB2C8;&#xB2E4;. &#xC774;&#xD6C4; A thread&#xAC00; unlock&#xB418;&#xC9C0; &#xC54A;&#xACE0; B thread&#xAC00; &#xC2E4;&#xD589;&#xB418;&#xBA74; B thread &#xC5ED;&#xC2DC;  <code>Mutex::Autolock _lock(mutext1);</code> statement&#xB85C; <code>mutext1</code> &#xC758; <code>mutex</code>&#xC744; &#xC6D0;&#xD558;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;. &#xADF8;&#xB7EC;&#xB098; &#xC774; <code>mutex</code>&#xB294; &#xC774;&#xBBF8; A thread&#xC5D0; &#xC758;&#xD574; &#xD68D;&#xB4DD;&#xB418;&#xC5C8;&#xAE30;&#xC5D0; B thread&#xAC00; &#xC774;&#xB97C; &#xD68D;&#xB4DD;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; A thread&#xAC00; &#xD574;&#xB2F9; <code>mutex</code>&#xB97C; unlock&#xD558;&#xB294; &#xAC83;&#xC744; &#xAE30;&#xB2E4;&#xB9B4; &#xC218; &#xBC16;&#xC5D0; &#xC5C6;&#xACE0;, <code>mutex</code>&#xB97C; &#xD68D;&#xB4DD; &#xD55C; &#xD6C4;&#xC5D0;&#xC57C; &#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; &#xB2E4;&#xC74C; statement&#xB85C; &#xC9C4;&#xD589;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
-<p> &#xAE30;&#xBCF8;&#xC801;&#xC778; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0;&#xB3C4; &#xC774;&#xC640; &#xAD00;&#xB828;&#xD55C; &#xCF54;&#xB4DC;&#xB97C; &#xCC3E;&#xC544;&#xBCFC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.(<code>jni/uart/ProtocolParser.cpp</code>)</p>
-<pre><code class="lang-c++"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">registerProtocolDataUpdateListener</span><span class="hljs-params">(OnProtocolDataUpdateFun pListener)</span> </span>{
+&#xAE30;&#xBCF8;&#xC801;&#xC778; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0;&#xB3C4; &#xC774;&#xC640; &#xAD00;&#xB828;&#xD55C; &#xCF54;&#xB4DC;&#xB97C; &#xCC3E;&#xC544;&#xBCFC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.(`jni/uart/ProtocolParser.cpp`)
+```c++
+void registerProtocolDataUpdateListener(OnProtocolDataUpdateFun pListener) {
     Mutex::Autolock _l(sLock);
-    LOGD(<span class="hljs-string">&quot;registerProtocolDataUpdateListener\n&quot;</span>);
-    <span class="hljs-keyword">if</span> (pListener != <span class="hljs-literal">NULL</span>) {
+    LOGD(&quot;registerProtocolDataUpdateListener\n&quot;);
+    if (pListener != NULL) {
         sProtocolDataUpdateListenerList.push_back(pListener);
     }
 }
-</code></pre>
-<p>Note : &#xC774;&#xC0C1;&#xC758; &#xC608;&#xC81C;&#xB85C; mutex&#xC5D0; &#xB300;&#xD55C; &#xAC1C;&#xB150;&#xC744; &#xCDA9;&#xBD84;&#xD788; &#xC774;&#xD574;&#xD558;&#xC9C0; &#xBABB;&#xD588;&#xB2E4;&#xBA74; &#xC778;&#xD130;&#xB137;&#xC744; &#xD1B5;&#xD574; &#xB354; &#xB9CE;&#xC740; &#xC815;&#xBCF4;&#xB97C; &#xC5BB;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
-Note : FlywizOS&#xC758; &#xC2DC;&#xC2A4;&#xD15C;&#xC740; Linux&#xB97C; &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xD558;&#xACE0; &#xC788;&#xC5B4; standard Linux&#xC758; mutex&#xB3C4; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+</code></pre><blockquote>
+<p>Note : &#xC774;&#xC0C1;&#xC758; &#xC608;&#xC81C;&#xB85C; mutex&#xC5D0; &#xB300;&#xD55C; &#xAC1C;&#xB150;&#xC744; &#xCDA9;&#xBD84;&#xD788; &#xC774;&#xD574;&#xD558;&#xC9C0; &#xBABB;&#xD588;&#xB2E4;&#xBA74; &#xC778;&#xD130;&#xB137;&#xC744; &#xD1B5;&#xD574; &#xB354; &#xB9CE;&#xC740; &#xC815;&#xBCF4;&#xB97C; &#xC5BB;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>Note : FlywizOS&#xC758; &#xC2DC;&#xC2A4;&#xD15C;&#xC740; Linux&#xB97C; &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xD558;&#xACE0; &#xC788;&#xC5B4; standard Linux&#xC758; mutex&#xB3C4; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+</blockquote>
 
                                 
                                 </section>
@@ -1686,7 +1681,7 @@ Note : FlywizOS&#xC758; &#xC2DC;&#xC2A4;&#xD15C;&#xC740; Linux&#xB97C; &#xAE30;&
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Mutex","level":"3.10.1","depth":2,"next":{"title":"스크린샷","level":"3.11","depth":1,"path":"screenshot.md","ref":"screenshot.md","articles":[]},"previous":{"title":"Thread","level":"3.10","depth":1,"path":"thread.md","ref":"thread.md","articles":[{"title":"Mutex","level":"3.10.1","depth":2,"path":"mutex.md","ref":"mutex.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"mutex.md","mtime":"2020-09-28T01:54:03.113Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-29T06:13:10.385Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Mutex","level":"3.10.1","depth":2,"next":{"title":"스크린샷","level":"3.11","depth":1,"path":"screenshot.md","ref":"screenshot.md","articles":[]},"previous":{"title":"Thread","level":"3.10","depth":1,"path":"thread.md","ref":"thread.md","articles":[{"title":"Mutex","level":"3.10.1","depth":2,"path":"mutex.md","ref":"mutex.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"mutex.md","mtime":"2020-12-09T07:42:26.716Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-11T06:49:14.021Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
