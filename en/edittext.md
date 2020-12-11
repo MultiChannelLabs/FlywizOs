@@ -14,13 +14,13 @@ If you need numeric and text input, you can quickly implement it by using the ex
 
 5. When the download is running on the machine, click on the `Edit Text` control, and a built-in input method or numeric keyboard of the system will automatically open, so that you can enter text or numbers.
 
-    ![](assets/EditText-create.gif)     
+   ![](assets/EditText-create.gif)     
 
-    ![](assets/edittext/input_method.jpg)
-    Built-in text input method screenshot
+   ![](assets/edittext/input_method.jpg)
+   Built-in text input method screenshot
 
-    ![](assets/edittext/input_method_num.jpg)
-    Built-in numeric keyboard input screenshot
+   ![](assets/edittext/input_method_num.jpg)
+   Built-in numeric keyboard input screenshot
 
 The default `Edit Text` is white, you can customize the appearance style in the property table on the right. Among them, the relevant properties of the `Edit Text` are as follows:
   * **Password**  

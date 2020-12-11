@@ -128,46 +128,44 @@ typedef struct {
 **In essence, this array will be referenced in the `rigesterActivityTimer()` function of `mainActivity.cpp` and registered to the system in turn by calling the `void registerTimer(int id, int time)` function.**
 
 * **void onUI_init()**  
- It is used for activity initialization. If you need to initialize some content when opening this UI activity, then you can add code to this function.  
- In essence, this function will be called in the `onCreate()` method of `mainActivity.cpp`. You can understand it as the structure of `mainActivity`.
+  It is used for activity initialization. If you need to initialize some content when opening this UI activity, then you can add code to this function.  
+  In essence, this function will be called in the `onCreate()` method of `mainActivity.cpp`. You can understand it as the structure of `mainActivity`.
 
 * **void onUI_quit()**  
- Used to exit the activity, if you need to do some operations when the UI activity exits, then you can add the code to this function.
+  Used to exit the activity, if you need to do some operations when the UI activity exits, then you can add the code to this function.
 In essence, this function will be called in the destructor of `mainActivity.cpp`
 
 * **void onProtocolDataUpdate(const SProtocolData &data)**  
- Used to receive serial port data. When the serial data frame is parsed, this function will be called.  
-The essence is that in `onCreate()` of `mainActivity.cpp`, `void registerProtocolDataUpdateListener(OnProtocolDataUpdateFun pListener)` is called by default to register to receive serial port data, and the registration is cancelled in the destruction of `mainActivity.cpp`. When the serial port reads the data, the registered UI activity is called in turn through the `void notifyProtocolDataUpdate(const SProtocolData &data)` in `ProtocolParser.cpp`.  
-This is the serial port analysis function in `ProtocolParser.cpp`, combined with the process described above, you should be able to understand how the serial port data is distributed on each activity:
+  Used to receive serial port data. When the serial data frame is parsed, this function will be called.  
+  The essence is that in `onCreate()` of `mainActivity.cpp`, `void registerProtocolDataUpdateListener(OnProtocolDataUpdateFun pListener)` is called by default to register to receive serial port data, and the registration is cancelled in the destruction of `mainActivity.cpp`. When the serial port reads the data, the registered UI activity is called in turn through the `void notifyProtocolDataUpdate(const SProtocolData &data)` in `ProtocolParser.cpp`.  
+  This is the serial port analysis function in `ProtocolParser.cpp`, combined with the process described above, you should be able to understand how the serial port data is distributed on each activity:
+  ```c++
+  /**
+   * Parse each frame of data
+   */
+  static void procParse(const BYTE *pData, UINT len) {
+      switch (MAKEWORD(pData[3], pData[2])) {
+      case CMDID_POWER:
+          sProtocolData.power = pData[5];
+          break;
+      }
 
-    ```c++
-    /**
-     * Parse each frame of data
-     */
-    static void procParse(const BYTE *pData, UINT len) {
-        switch (MAKEWORD(pData[3], pData[2])) {
-        case CMDID_POWER:
-            sProtocolData.power = pData[5];
-            break;
-        }
-
-        // Notify protocol data update
-        notifyProtocolDataUpdate(sProtocolData);
-    }
-    ```
+      // Notify protocol data update
+      notifyProtocolDataUpdate(sProtocolData);
+  }
+  ```
 
 * **bool onUI_Timer(int id)**  
- Timer callback function; When a timer reaches the specified time interval, the system will call this function. When multiple timers are added, you can use the **id** parameter to distinguish the timers. The **id** parameter is the same as the id filled in the structure array above.  
-Return `true` to continue running the current timer;  
-Return `false` to stop running the current timer;  
-If you stopped the timer by returning `false`, how do you start it again? Please refer to [How to start and stop the timer arbitrarily](how_to_register_timer.md)
+  Timer callback function; When a timer reaches the specified time interval, the system will call this function. When multiple timers are added, you can use the **id** parameter to distinguish the timers. The **id** parameter is the same as the id filled in the structure array above.  
+  Return `true` to continue running the current timer;  
+  Return `false` to stop running the current timer;  
+  If you stopped the timer by returning `false`, how do you start it again? Please refer to [How to start and stop the timer arbitrarily](how_to_register_timer.md)
 
 * **bool onmainActivityTouchEvent(const MotionEvent &ev)**  
- Touch event callback function. Able to get all touch messages.  
- Similarly, this function is also registered by default in `mainActivity.cpp` through the `registerGlobalTouchListener` function; touch messages can only be obtained after registration.  
- Returning `true` means that the touch event is intercepted here and is no longer passed to the control  
- Returning `false` means that touch events will continue to be passed to the control  
- [Learn more about the handling of touch events](motion_event.md)
+  Touch event callback function. Able to get all touch messages.  
+  Similarly, this function is also registered by default in `mainActivity.cpp` through the `registerGlobalTouchListener` function; touch messages can only be obtained after registration.  
+  Return `true` means that the touch event is intercepted here and is no longer passed to the control  
+  Return `false` means that touch events will continue to be passed to the control [Learn more about the handling of touch events](motion_event.md)
 
 The above is Logic.cc generated by compiling the default UI file. When we add controls to the UI file and compile again, the tool will generate different associated functions according to different controls to the corresponding Logic.cc file.  
 For example : I added two button controls to the UI file of **main.ftu**, their IDs are `Button1` and `Button2`, then, after compilation, the following two related functions will be generated in the **mainLogic.cc** file.
@@ -192,8 +190,6 @@ Usually, during development, we will add, delete, and modify controls many times
  * In the case of modifying the control, the generation of the associated function is only related to the control ID name. If you modify other properties of the control except the ID name in the UI file, it will not affect the associated function; if you modify the control ID name property , then when compiling, it will be processed according to the situation of adding controls, and the old associated functions will be retained.
 
 **We only took button controls as an example to describe the relationship between the controls in the UI file and the associated functions generated in Logic.cc. FlywizOS also provides associated functions for generating other controls, such as sliders, lists, and sliding windows, to understand the correlation function of other controls, please refer to [Explanation of the correlation function automatically generated by the control](named_rule.md#relation_function)**
-
-<br/>
 
 **Finally, use a picture to summarize the correspondence between the ftu file and the code :**
 ![](assets/relationships.png)

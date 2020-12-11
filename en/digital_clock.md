@@ -8,15 +8,15 @@ The digital clock is a control dedicated to time display. In many scenarios, we 
 
 	![](assets/clock/clock1.png)
 	
-  * Format
+  * Format  
 	This property sets the display format of the time, you can choose a 24-hour system or a 12-hour system, and control whether the seconds are displayed.
-  * Blinking
+  * Blinking  
 	This property controls whether the `:` in the clock is static or beating.
-  * Color
+  * Color  
 	This property sets the color display of the clock text.
-  * Font size
+  * Font size  
 	The text size of the digital clock
-  * Picture Character Set  
+  * Picture Character Set   
 	We know that, according to the definition of ascii code, there is a correspondence between `character char` and `integer int`. For example, the ascii code of the character `0` is `48`. The special character set is a function of mapping the ascii code to the picture. After setting this function, when we display a string, the system will try to map each character in the string to a specified picture, and finally display a string of pictures on the screen.  For specific usage, please refer to [Use of Special Character Set](textview.md) in the text control  
 5. Save, download and debug, after running, you can see the effect. 
 6. If you want to modify the time, you can refer to the [System Time](system_time.md) document to modify.
