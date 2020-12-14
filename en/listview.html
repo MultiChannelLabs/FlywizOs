@@ -1,10 +1,10 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>List · GitBook</title>
+        <title>List · FlywizOS Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,11 +17,39 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -82,7 +110,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="https://www.flywizos.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1515,12 +1552,12 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="list-control">List control</h1>
-<h2 id="function">Function</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#list-control"><b></b>List control</a></li><ul><li><span class="title-icon "></span><a href="#function"><b></b>Function</a></li><li><span class="title-icon "></span><a href="#scenes"><b></b>Scenes</a></li><li><span class="title-icon "></span><a href="#how-to-use"><b></b>How to use</a></li><li><span class="title-icon "></span><a href="#list-drawing-process"><b></b>List drawing process</a></li><li><span class="title-icon "></span><a href="#the-idea-of-list"><b></b>The idea of list</a></li><li><span class="title-icon "></span><a href="#sample-code"><b></b>Sample code</a></li><ul><li><span class="title-icon "></span><a href="#sample-explanation"><b></b>Sample explanation</a></li></ul></ul></ul></div><h1 id="list-control"><a name="list-control" class="anchor-navigation-ex-anchor" href="#list-control"><i class="fa fa-link" aria-hidden="true"></i></a>List control</h1>
+<h2 id="function"><a name="function" class="anchor-navigation-ex-anchor" href="#function"><i class="fa fa-link" aria-hidden="true"></i></a>Function</h2>
 <p>The list control is often used when a page cannot display all the information, and there are some consistent attribute classifications in each unit information.</p>
-<h2 id="scenes">Scenes</h2>
+<h2 id="scenes"><a name="scenes" class="anchor-navigation-ex-anchor" href="#scenes"><i class="fa fa-link" aria-hidden="true"></i></a>Scenes</h2>
 <p>WiFi list, device list, table information</p>
-<h2 id="how-to-use">How to use</h2>
+<h2 id="how-to-use"><a name="how-to-use" class="anchor-navigation-ex-anchor" href="#how-to-use"><i class="fa fa-link" aria-hidden="true"></i></a>How to use</h2>
 <ol>
 <li><p>Open the UI file, create a list control, and add two list item controls to the list. Then you can see the appearance style of the list. The specific operations are as follows:
 <img src="assets/list/add_list.gif" alt=""></p>
@@ -1546,7 +1583,7 @@ When clicking on an item in the list, the system will call this function, and th
 </ul>
 </li>
 </ol>
-<h2 id="list-drawing-process">List drawing process</h2>
+<h2 id="list-drawing-process"><a name="list-drawing-process" class="anchor-navigation-ex-anchor" href="#list-drawing-process"><i class="fa fa-link" aria-hidden="true"></i></a>List drawing process</h2>
 <ol>
 <li><p>When we want to draw a list, the system first needs to know how many items it has in total, so we provide the <code>int getListItemCount_ListView1()</code> function, which will be called by the system to get the length of the list (the total number of items), Note that this function is dynamically obtained. During the running of the program, we can return different values according to needs, and then we can dynamically control the length of the list.   </p>
 </li>
@@ -1593,11 +1630,11 @@ When clicking on an item in the list, the system will call this function, and th
 </code></pre>
 </li>
 </ul>
-<h2 id="the-idea-of-list">The idea of list</h2>
+<h2 id="the-idea-of-list"><a name="the-idea-of-list" class="anchor-navigation-ex-anchor" href="#the-idea-of-list"><i class="fa fa-link" aria-hidden="true"></i></a>The idea of list</h2>
 <p> In our system, the list is a mapping of a series of rule data. If we want to modify the list, such as adding a piece of data, or modifying a certain item, we should modify the data first, then trigger the refresh, and then the system will automatically call <code>obtainListItemData_ListView1</code> function, in this function, set the display content of the list according to the latest data.<br> This idea is reflected in the following example.</p>
-<h2 id="sample-code">Sample code</h2>
+<h2 id="sample-code"><a name="sample-code" class="anchor-navigation-ex-anchor" href="#sample-code"><i class="fa fa-link" aria-hidden="true"></i></a>Sample code</h2>
 <p>   We provide a sample list control, refer to the ListViewDemo project in <a href="demo_download.html#demo_download">Sample Code</a>.  </p>
-<h3 id="sample-explanation">Sample explanation</h3>
+<h3 id="sample-explanation"><a name="sample-explanation" class="anchor-navigation-ex-anchor" href="#sample-explanation"><i class="fa fa-link" aria-hidden="true"></i></a>Sample explanation</h3>
 <ol>
 <li><p>Create a list control
 We create two list controls in turn and try to set different properties and appearances.
@@ -1670,7 +1707,9 @@ This step will automatically generate the code related to the list to the corres
 </li>
 <li>After adding the code, you can run it to see the actual effect.</li>
 </ol>
-
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">last modified:
+2020-12-08 18:24:17
+</span></footer>
                                 
                                 </section>
                             
@@ -1713,7 +1752,7 @@ This step will automatically generate the code related to the list to the corres
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"List","level":"2.8","depth":1,"next":{"title":"Diagram","level":"2.9","depth":1,"path":"diagram.md","ref":"diagram.md","articles":[]},"previous":{"title":"Pointer","level":"2.7","depth":1,"path":"pointer.md","ref":"pointer.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"listview.md","mtime":"2020-12-08T10:24:17.179Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-11T06:49:40.238Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"List","level":"2.8","depth":1,"next":{"title":"Diagram","level":"2.9","depth":1,"path":"diagram.md","ref":"diagram.md","articles":[]},"previous":{"title":"Pointer","level":"2.7","depth":1,"path":"pointer.md","ref":"pointer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-pro","splitter","chapter-fold","expandable-chapters","ga","back-to-top-button","anchor-navigation-ex","flexible-alerts","custom-favicon","scripts","tbfed-pagefooter","book-summary-scroll-position-saver"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"last modified:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"book-summary-scroll-position-saver":{},"splitter":{},"scripts":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"custom-favicon":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"ga":{"configuration":"auto","token":"UA-121188128-1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FlywizOS Docs","language":"en","links":{"sidebar":{"Home":"https://www.flywizos.com"}},"gitbook":"*"},"file":{"path":"listview.md","mtime":"2020-12-08T10:24:17.179Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-14T02:59:58.168Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1723,23 +1762,39 @@ This step will automatically generate the code related to the list to the corres
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
         
     
         

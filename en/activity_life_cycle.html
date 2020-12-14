@@ -1,10 +1,10 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Activity life cycle · GitBook</title>
+        <title>Activity life cycle · FlywizOS Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,11 +17,39 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -82,7 +110,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="https://www.flywizos.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1515,11 +1552,11 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="activity-life-cycle">Activity life cycle</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#activity-life-cycle"><b></b>Activity life cycle</a></li><ul><li><span class="title-icon "></span><a href="#activity-flow-when-opening"><b></b>Activity flow when opening</a></li><li><span class="title-icon "></span><a href="#activity-flow-when-closing"><b></b>Activity flow when closing</a></li></ul></ul></div><h1 id="activity-life-cycle"><a name="activity-life-cycle" class="anchor-navigation-ex-anchor" href="#activity-life-cycle"><i class="fa fa-link" aria-hidden="true"></i></a>Activity life cycle</h1>
 <p>Before introducing the activity life cycle, let&apos;s first understand the hierarchical relationship of the activity</p>
 <p><img src="images/activity_hierarchy.png" alt=""></p>
 <p>First of all, our application will first enter the <strong>mainActivity</strong>, which is the startup activity, and then open the <strong>subActivity</strong> through the <code>openActivity</code> method, and then enter the <strong>thirdActivity</strong> . The hierarchical effect seen in the above figure is formed; the activity opened later is at the upper level of the hierarchy, and a relationship of <strong>stack</strong> is formed between them;</p>
-<h2 id="activity-flow-when-opening">Activity flow when opening</h2>
+<h2 id="activity-flow-when-opening"><a name="activity-flow-when-opening" class="anchor-navigation-ex-anchor" href="#activity-flow-when-opening"><i class="fa fa-link" aria-hidden="true"></i></a>Activity flow when opening</h2>
 <p>Let&apos;s take a look at the process of the program after calling the <code>openActivity</code> method. Here are two scenarios:</p>
 <ul>
 <li><strong>There is no</strong> activity to be opened in the activity stack;</li>
@@ -1554,7 +1591,7 @@
 <p><br><br>Opening an activity to display means that the previous top-level interface is hidden; assuming that the <strong>subActivity</strong> is opened in the <strong>mainActivity</strong> , their activity flow is as follows:</p>
 <p><img src="images/activity_pause_and_resume.png" alt=""></p>
 <p>Here we focus on the <strong>mainActivity</strong> <strong>hide</strong> ------&gt; <strong>subActivity</strong> <strong>display</strong> process;</p>
-<h2 id="activity-flow-when-closing">Activity flow when closing</h2>
+<h2 id="activity-flow-when-closing"><a name="activity-flow-when-closing" class="anchor-navigation-ex-anchor" href="#activity-flow-when-closing"><i class="fa fa-link" aria-hidden="true"></i></a>Activity flow when closing</h2>
 <p>When we call the <code>goBack()</code> function, the top-level activity will pop up until the activity is started;</p>
 <p><img src="images/activity_goback.png" alt=""></p>
 <p>When the activity is closed, the <code>onUI_quit</code> callback function will be called. If some resources are requested after the activity is opened, remember to release it here;</p>
@@ -1562,7 +1599,9 @@
 <p>After exiting the top-level activity, the next-level activity will be displayed and will call the <code>onUI_show</code> function of the next-level activity;<br>When we call the <code>goHome()</code> function, we will directly go back to the startup activity and pop up all other activity;</p>
 <p><img src="images/activity_gohome.png" alt=""></p>
 <p>When we call the <code>closeActivity(&quot;xxx&quot;)</code> function, we can remove any activity except the startup activity; when the activity is not the top-level activity, the next-level activity will not call <del><code>onUI_show</code></del> function;</p>
-
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">last modified:
+2020-12-08 18:24:17
+</span></footer>
                                 
                                 </section>
                             
@@ -1605,7 +1644,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Activity life cycle","level":"3.3","depth":1,"next":{"title":"System built-in activity","level":"3.4","depth":1,"path":"internal_app.md","ref":"internal_app.md","articles":[]},"previous":{"title":"Open/close application activity ","level":"3.2","depth":1,"path":"open_close_app.md","ref":"open_close_app.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"activity_life_cycle.md","mtime":"2020-12-08T10:24:17.169Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-11T06:49:40.238Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Activity life cycle","level":"3.3","depth":1,"next":{"title":"System built-in activity","level":"3.4","depth":1,"path":"internal_app.md","ref":"internal_app.md","articles":[]},"previous":{"title":"Open/close application activity ","level":"3.2","depth":1,"path":"open_close_app.md","ref":"open_close_app.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-pro","splitter","chapter-fold","expandable-chapters","ga","back-to-top-button","anchor-navigation-ex","flexible-alerts","custom-favicon","scripts","tbfed-pagefooter","book-summary-scroll-position-saver"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"last modified:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"book-summary-scroll-position-saver":{},"splitter":{},"scripts":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"custom-favicon":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"ga":{"configuration":"auto","token":"UA-121188128-1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FlywizOS Docs","language":"en","links":{"sidebar":{"Home":"https://www.flywizos.com"}},"gitbook":"*"},"file":{"path":"activity_life_cycle.md","mtime":"2020-12-08T10:24:17.169Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-14T02:59:58.168Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1615,23 +1654,39 @@
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
         
     
         

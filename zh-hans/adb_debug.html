@@ -1,10 +1,10 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="zh" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>ADB调试  · GitBook</title>
+        <title>ADB调试  · FlywizOS Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,11 +17,39 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -69,7 +97,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
+    <input type="text" placeholder="輸入並搜尋" />
 </div>
 
             
@@ -80,7 +108,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="https://www.flywizos.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1475,7 +1512,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+            本書使用 GitBook 釋出
         </a>
     </li>
 </ul>
@@ -1513,15 +1550,15 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="adb-&#x5FEB;&#x901F;&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;">ADB &#x5FEB;&#x901F;&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#adb-&#x5FEB;&#x901F;&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;"><b></b>ADB &#x5FEB;&#x901F;&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x9996;&#x5148;&#x786E;&#x4FDD;&#x7535;&#x8111;&#x4E0E;&#x673A;&#x5668;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#xFF0C;&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#xFF1A;"><b></b>&#x9996;&#x5148;&#x786E;&#x4FDD;&#x7535;&#x8111;&#x4E0E;&#x673A;&#x5668;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#xFF0C;&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#xFF1A;</a></li><li><span class="title-icon "></span><a href="#&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;"><b></b>&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;</a></li></ul><li><span class="title-icon "></span><a href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><b></b>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</a></li></ul></div><h1 id="adb-&#x5FEB;&#x901F;&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;"><a name="adb-&#x5FEB;&#x901F;&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#adb-&#x5FEB;&#x901F;&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>ADB &#x5FEB;&#x901F;&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;</h1>
 <p>FlywizOS &#x53EF;&#x4EE5;&#x901A;&#x8FC7; USB&#x7EBF; &#x6216;&#x8005;WIFI &#x5FEB;&#x901F;&#x4E0B;&#x8F7D;&#x7A0B;&#x5E8F;&#x5230;&#x673A;&#x5668;&#x4E2D;&#x3002;&#x5177;&#x4F53;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;   </p>
-<h2 id="&#x9996;&#x5148;&#x786E;&#x4FDD;&#x7535;&#x8111;&#x4E0E;&#x673A;&#x5668;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#xFF0C;&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#xFF1A;">&#x9996;&#x5148;&#x786E;&#x4FDD;&#x7535;&#x8111;&#x4E0E;&#x673A;&#x5668;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#xFF0C;&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#xFF1A;</h2>
+<h2 id="&#x9996;&#x5148;&#x786E;&#x4FDD;&#x7535;&#x8111;&#x4E0E;&#x673A;&#x5668;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#xFF0C;&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#xFF1A;"><a name="&#x9996;&#x5148;&#x786E;&#x4FDD;&#x7535;&#x8111;&#x4E0E;&#x673A;&#x5668;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#xFF0C;&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x9996;&#x5148;&#x786E;&#x4FDD;&#x7535;&#x8111;&#x4E0E;&#x673A;&#x5668;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#xFF0C;&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9996;&#x5148;&#x786E;&#x4FDD;&#x7535;&#x8111;&#x4E0E;&#x673A;&#x5668;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#xFF0C;&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#xFF1A;</h2>
 <blockquote>
 <p>[!Note]</p>
-<h5 id="&#x6CE8;&#x610F;&#xFF1A;-&#x5982;&#x679C;&#x60A8;&#x8D2D;&#x4E70;&#x7684;&#x662F;&#x5E26;&#x6709;wifi&#x529F;&#x80FD;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x901A;&#x8FC7;wifi&#x8FDE;&#x63A5;&#xFF0C;usb&#x7EBF;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#xFF1B;">&#x6CE8;&#x610F;&#xFF1A; &#x5982;&#x679C;&#x60A8;&#x8D2D;&#x4E70;&#x7684;&#x662F;&#x5E26;&#x6709;WIFI&#x529F;&#x80FD;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x901A;&#x8FC7;WIFI&#x8FDE;&#x63A5;&#xFF0C;USB&#x7EBF;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#xFF1B;</h5>
-<h5 id="&#x4EE5;&#x592A;&#x7F51;&#x7248;&#x672C;&#x4F18;&#x5148;&#x4F7F;&#x7528;usb&#x7EBF;&#x8FDE;&#x63A5;&#xFF0C;&#x5982;&#x679C;usb&#x8FDE;&#x63A5;&#x4E0D;&#x6210;&#x529F;&#x624D;&#x4F7F;&#x7528;wifi&#x8FDE;&#x63A5;&#xFF08;&#x5373;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#xFF09;&#x65B9;&#x5F0F;&#xFF0C;&#x5982;&#x679C;&#x90FD;&#x4E0D;&#x80FD;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#x8BF7;&#x8054;&#x7CFB;&#x6211;&#x4EEC;&#x3002;">&#x4EE5;&#x592A;&#x7F51;&#x7248;&#x672C;&#x4F18;&#x5148;&#x4F7F;&#x7528;USB&#x7EBF;&#x8FDE;&#x63A5;&#xFF0C;&#x5982;&#x679C;USB&#x8FDE;&#x63A5;&#x4E0D;&#x6210;&#x529F;&#x624D;&#x4F7F;&#x7528;WIFI&#x8FDE;&#x63A5;&#xFF08;&#x5373;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#xFF09;&#x65B9;&#x5F0F;&#xFF0C;&#x5982;&#x679C;&#x90FD;&#x4E0D;&#x80FD;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#x8BF7;&#x8054;&#x7CFB;&#x6211;&#x4EEC;&#x3002;</h5>
-<h5 id="&#x540C;&#x7406;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x8D2D;&#x4E70;&#x7684;&#x662F;&#x4E0D;&#x5E26;wifi&#x529F;&#x80FD;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x901A;&#x8FC7;usb&#x7EBF;&#x8FDE;&#x63A5;&#x3002;">&#x540C;&#x7406;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x8D2D;&#x4E70;&#x7684;&#x662F;&#x4E0D;&#x5E26;WIFI&#x529F;&#x80FD;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x901A;&#x8FC7;USB&#x7EBF;&#x8FDE;&#x63A5;&#x3002;</h5>
-<h5 id="usb&#x7EBF;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x53EF;&#x4EE5;&#x770B;&#x5230;">USB&#x7EBF;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x53EF;&#x4EE5;&#x770B;&#x5230;</h5>
+<h5 id="&#x6CE8;&#x610F;&#xFF1A;-&#x5982;&#x679C;&#x60A8;&#x8D2D;&#x4E70;&#x7684;&#x662F;&#x5E26;&#x6709;wifi&#x529F;&#x80FD;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x901A;&#x8FC7;wifi&#x8FDE;&#x63A5;&#xFF0C;usb&#x7EBF;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#xFF1B;"><a name="&#x6CE8;&#x610F;&#xFF1A;-&#x5982;&#x679C;&#x60A8;&#x8D2D;&#x4E70;&#x7684;&#x662F;&#x5E26;&#x6709;wifi&#x529F;&#x80FD;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x901A;&#x8FC7;wifi&#x8FDE;&#x63A5;&#xFF0C;usb&#x7EBF;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#xFF1B;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x610F;&#xFF1A;-&#x5982;&#x679C;&#x60A8;&#x8D2D;&#x4E70;&#x7684;&#x662F;&#x5E26;&#x6709;wifi&#x529F;&#x80FD;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x901A;&#x8FC7;wifi&#x8FDE;&#x63A5;&#xFF0C;usb&#x7EBF;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#xFF1B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6CE8;&#x610F;&#xFF1A; &#x5982;&#x679C;&#x60A8;&#x8D2D;&#x4E70;&#x7684;&#x662F;&#x5E26;&#x6709;WIFI&#x529F;&#x80FD;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x901A;&#x8FC7;WIFI&#x8FDE;&#x63A5;&#xFF0C;USB&#x7EBF;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#xFF1B;</h5>
+<h5 id="&#x4EE5;&#x592A;&#x7F51;&#x7248;&#x672C;&#x4F18;&#x5148;&#x4F7F;&#x7528;usb&#x7EBF;&#x8FDE;&#x63A5;&#xFF0C;&#x5982;&#x679C;usb&#x8FDE;&#x63A5;&#x4E0D;&#x6210;&#x529F;&#x624D;&#x4F7F;&#x7528;wifi&#x8FDE;&#x63A5;&#xFF08;&#x5373;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#xFF09;&#x65B9;&#x5F0F;&#xFF0C;&#x5982;&#x679C;&#x90FD;&#x4E0D;&#x80FD;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#x8BF7;&#x8054;&#x7CFB;&#x6211;&#x4EEC;&#x3002;"><a name="&#x4EE5;&#x592A;&#x7F51;&#x7248;&#x672C;&#x4F18;&#x5148;&#x4F7F;&#x7528;usb&#x7EBF;&#x8FDE;&#x63A5;&#xFF0C;&#x5982;&#x679C;usb&#x8FDE;&#x63A5;&#x4E0D;&#x6210;&#x529F;&#x624D;&#x4F7F;&#x7528;wifi&#x8FDE;&#x63A5;&#xFF08;&#x5373;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#xFF09;&#x65B9;&#x5F0F;&#xFF0C;&#x5982;&#x679C;&#x90FD;&#x4E0D;&#x80FD;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#x8BF7;&#x8054;&#x7CFB;&#x6211;&#x4EEC;&#x3002;" class="anchor-navigation-ex-anchor" href="#&#x4EE5;&#x592A;&#x7F51;&#x7248;&#x672C;&#x4F18;&#x5148;&#x4F7F;&#x7528;usb&#x7EBF;&#x8FDE;&#x63A5;&#xFF0C;&#x5982;&#x679C;usb&#x8FDE;&#x63A5;&#x4E0D;&#x6210;&#x529F;&#x624D;&#x4F7F;&#x7528;wifi&#x8FDE;&#x63A5;&#xFF08;&#x5373;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#xFF09;&#x65B9;&#x5F0F;&#xFF0C;&#x5982;&#x679C;&#x90FD;&#x4E0D;&#x80FD;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#x8BF7;&#x8054;&#x7CFB;&#x6211;&#x4EEC;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE5;&#x592A;&#x7F51;&#x7248;&#x672C;&#x4F18;&#x5148;&#x4F7F;&#x7528;USB&#x7EBF;&#x8FDE;&#x63A5;&#xFF0C;&#x5982;&#x679C;USB&#x8FDE;&#x63A5;&#x4E0D;&#x6210;&#x529F;&#x624D;&#x4F7F;&#x7528;WIFI&#x8FDE;&#x63A5;&#xFF08;&#x5373;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#xFF09;&#x65B9;&#x5F0F;&#xFF0C;&#x5982;&#x679C;&#x90FD;&#x4E0D;&#x80FD;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#x8BF7;&#x8054;&#x7CFB;&#x6211;&#x4EEC;&#x3002;</h5>
+<h5 id="&#x540C;&#x7406;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x8D2D;&#x4E70;&#x7684;&#x662F;&#x4E0D;&#x5E26;wifi&#x529F;&#x80FD;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x901A;&#x8FC7;usb&#x7EBF;&#x8FDE;&#x63A5;&#x3002;"><a name="&#x540C;&#x7406;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x8D2D;&#x4E70;&#x7684;&#x662F;&#x4E0D;&#x5E26;wifi&#x529F;&#x80FD;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x901A;&#x8FC7;usb&#x7EBF;&#x8FDE;&#x63A5;&#x3002;" class="anchor-navigation-ex-anchor" href="#&#x540C;&#x7406;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x8D2D;&#x4E70;&#x7684;&#x662F;&#x4E0D;&#x5E26;wifi&#x529F;&#x80FD;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x901A;&#x8FC7;usb&#x7EBF;&#x8FDE;&#x63A5;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x540C;&#x7406;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x8D2D;&#x4E70;&#x7684;&#x662F;&#x4E0D;&#x5E26;WIFI&#x529F;&#x80FD;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x901A;&#x8FC7;USB&#x7EBF;&#x8FDE;&#x63A5;&#x3002;</h5>
+<h5 id="usb&#x7EBF;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x53EF;&#x4EE5;&#x770B;&#x5230;"><a name="usb&#x7EBF;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x53EF;&#x4EE5;&#x770B;&#x5230;" class="anchor-navigation-ex-anchor" href="#usb&#x7EBF;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x53EF;&#x4EE5;&#x770B;&#x5230;"><i class="fa fa-link" aria-hidden="true"></i></a>USB&#x7EBF;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x53EF;&#x4EE5;&#x770B;&#x5230;</h5>
 <p><img src="assets/ide/ADB.jpg" alt=""></p>
 </blockquote>
 <ol>
@@ -1533,18 +1570,20 @@
 <p><img src="assets/ide/config_ip.gif" alt="">  </p>
 </li>
 </ol>
-<h2 id="&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;">&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;</h2>
+<h2 id="&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;"><a name="&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;</h2>
 <p>&#x5B8C;&#x6210;&#x4E0A;&#x4E00;&#x6B65;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4E0B;&#x8F7D;&#x7A0B;&#x5E8F;&#x4E86;&#x3002;&#x5728;&#x9879;&#x76EE;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x4E2D;&#xFF0C;&#x9009;&#x4E2D;&#x9879;&#x76EE;&#x540D;&#xFF0C;&#x53F3;&#x952E;&#xFF0C;&#x5728;&#x5F39;&#x51FA;&#x83DC;&#x5355;&#x4E2D;&#x9009;&#x62E9; <strong>&#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;</strong> &#x83DC;&#x5355;&#xFF0C; &#x9009;&#x62E9;&#x540E;&#xFF0C;&#x5B83;&#x4F1A;&#x5148;&#x81EA;&#x52A8;&#x7F16;&#x8BD1;&#x4E00;&#x6B21;&#xFF0C;&#x7F16;&#x8BD1;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x518D;&#x5C06;&#x7A0B;&#x5E8F;&#x4E0B;&#x8F7D;&#x5230;&#x673A;&#x5668;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x793A;&#x9519;&#x8BEF;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x673A;&#x5668;&#x7A0B;&#x5E8F;&#x5DF2;&#x7ECF;&#x5F97;&#x5230;&#x4E86;&#x66F4;&#x65B0;&#x3002;<br>&#x540C;&#x6837;&#xFF0C;&#x5728;&#x9009;&#x4E2D;&#x9879;&#x76EE;&#x540E;&#xFF0C;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5FEB;&#x6377;&#x952E; <strong>Ctrl + Alt + R</strong> &#x4E0B;&#x8F7D;&#x8C03;&#x8BD5;&#x3002;</p>
 <p><img src="assets/ide/launch_adb.gif" alt=""></p>
 <p><a href="logcat.html"><strong>&#x67E5;&#x770B;&#x6253;&#x5370;&#x65E5;&#x5FD7;</strong></a></p>
-<h1 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;">&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h1>
+<h1 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><a name="&#x6CE8;&#x610F;&#x4E8B;&#x9879;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h1>
 <ul>
 <li>&#x5982;&#x679C;&#x7535;&#x8111;&#x4E0A;&#x8FDE;&#x63A5;&#x6709;Android&#x624B;&#x673A;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x4E0E;&#x673A;&#x5668;&#x9020;&#x6210;&#x51B2;&#x7A81;&#xFF0C;&#x5BFC;&#x81F4;&#x4E0B;&#x8F7D;&#x5931;&#x8D25;&#x3002;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x5EFA;&#x8BAE;&#x6682;&#x65F6;&#x65AD;&#x5F00;Android&#x624B;&#x673A;&#x8FDE;&#x63A5;&#x3002;<ul>
-<li><strong><span id="adb_run_tip">&#x6CE8;&#x610F;</span> &#xFF1A; &#x901A;&#x8FC7;&#x8BE5;&#x65B9;&#x5F0F;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x5E76;&#x4E0D;&#x80FD;&#x5C06;&#x7A0B;&#x5E8F;&#x56FA;&#x5316;&#x5230;&#x673A;&#x5668;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x62D4;&#x6389;TF&#x5361;&#x6216;&#x8005;&#x65AD;&#x7535;&#x91CD;&#x542F;&#xFF0C;&#x7A0B;&#x5E8F;&#x5C06;&#x81EA;&#x52A8;&#x6062;&#x590D;&#x3002; &#x5982;&#x679C;&#x60A8;&#x5E0C;&#x671B;&#x56FA;&#x5316;&#x7A0B;&#x5E8F;&#x5230;&#x8BBE;&#x5907;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;<a href="make_image.html">&#x5236;&#x4F5C;&#x5347;&#x7EA7;&#x955C;&#x50CF;</a>&#xFF0C;&#x7136;&#x540E;&#x5347;&#x7EA7;&#x5373;&#x53EF;&#x3002;</strong></li>
+<li><strong><span id="adb_run_tip">&#x6CE8;&#x610F;</span> &#xFF1A; &#x901A;&#x8FC7;&#x8BE5;&#x65B9;&#x5F0F;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x5E76;&#x4E0D;&#x80FD;&#x5C06;&#x7A0B;&#x5E8F;&#x56FA;&#x5316;&#x5230;&#x673A;&#x5668;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x62D4;&#x6389;TF&#x5361;&#x6216;&#x8005;&#x65AD;&#x7535;&#x91CD;&#x542F;&#xFF0C;&#x7A0B;&#x5E8F;&#x5C06;&#x81EA;&#x52A8;&#x6062;&#x590D;&#x3002; &#x5982;&#x679C;&#x60A8;&#x5E0C;&#x671B;&#x56FA;&#x5316;&#x7A0B;&#x5E8F;&#x5230;&#x8BBE;&#x5907;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;<a href="make_image.html">&#x5236;&#x4F5C;&#x5347;&#x7EA7;&#x955C;&#x50CF;</a>&#xFF0C;&#x7136;&#x540E;&#x5347;&#x7EA7;&#x5373;&#x53EF;&#x3002;</strong> </li>
 </ul>
 </li>
 </ul>
-
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">last modified:
+2020-09-28 09:54:03
+</span></footer>
                                 
                                 </section>
                             
@@ -1583,7 +1622,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ADB调试 ","level":"5.2.1","depth":2,"next":{"title":"查看打印日志 ","level":"5.2.2","depth":2,"path":"logcat.md","ref":"logcat.md","articles":[]},"previous":{"title":"升级与调试","level":"5.2","depth":1,"ref":"","articles":[{"title":"ADB调试 ","level":"5.2.1","depth":2,"path":"adb_debug.md","ref":"adb_debug.md","articles":[]},{"title":"查看打印日志 ","level":"5.2.2","depth":2,"path":"logcat.md","ref":"logcat.md","articles":[]},{"title":"从TF卡启动程序 ","level":"5.2.3","depth":2,"path":"start_from_sdcard.md","ref":"start_from_sdcard.md","articles":[]},{"title":"升级开机LOGO ","level":"5.2.4","depth":2,"path":"update_logo.md","ref":"update_logo.md","articles":[]},{"title":"制作升级镜像文件 ","level":"5.2.5","depth":2,"path":"make_image.md","ref":"make_image.md","articles":[]},{"title":"自动升级","level":"5.2.6","depth":2,"path":"autoupgrade.md","ref":"autoupgrade.md","articles":[]},{"title":"制作刷机卡 ","level":"5.2.7","depth":2,"path":"sd_boot.md","ref":"sd_boot.md","articles":[]},{"title":"远程升级","level":"5.2.8","depth":2,"path":"remote_update.md","ref":"remote_update.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"adb_debug.md","mtime":"2020-09-26T06:04:00.307Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-26T06:06:28.268Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ADB调试 ","level":"5.2.1","depth":2,"next":{"title":"查看打印日志 ","level":"5.2.2","depth":2,"path":"logcat.md","ref":"logcat.md","articles":[]},"previous":{"title":"升级与调试","level":"5.2","depth":1,"ref":"","articles":[{"title":"ADB调试 ","level":"5.2.1","depth":2,"path":"adb_debug.md","ref":"adb_debug.md","articles":[]},{"title":"查看打印日志 ","level":"5.2.2","depth":2,"path":"logcat.md","ref":"logcat.md","articles":[]},{"title":"从TF卡启动程序 ","level":"5.2.3","depth":2,"path":"start_from_sdcard.md","ref":"start_from_sdcard.md","articles":[]},{"title":"升级开机LOGO ","level":"5.2.4","depth":2,"path":"update_logo.md","ref":"update_logo.md","articles":[]},{"title":"制作升级镜像文件 ","level":"5.2.5","depth":2,"path":"make_image.md","ref":"make_image.md","articles":[]},{"title":"自动升级","level":"5.2.6","depth":2,"path":"autoupgrade.md","ref":"autoupgrade.md","articles":[]},{"title":"制作刷机卡 ","level":"5.2.7","depth":2,"path":"sd_boot.md","ref":"sd_boot.md","articles":[]},{"title":"远程升级","level":"5.2.8","depth":2,"path":"remote_update.md","ref":"remote_update.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-pro","splitter","chapter-fold","expandable-chapters","ga","back-to-top-button","anchor-navigation-ex","flexible-alerts","custom-favicon","scripts","tbfed-pagefooter","book-summary-scroll-position-saver"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"last modified:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"book-summary-scroll-position-saver":{},"splitter":{},"scripts":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"custom-favicon":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"ga":{"configuration":"auto","token":"UA-121188128-1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FlywizOS Docs","language":"zh","links":{"sidebar":{"Home":"https://www.flywizos.com"}},"gitbook":"*"},"file":{"path":"adb_debug.md","mtime":"2020-09-28T01:54:03.383Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-14T03:01:20.674Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1593,23 +1632,39 @@
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
         
     
         

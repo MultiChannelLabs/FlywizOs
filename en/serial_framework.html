@@ -1,10 +1,10 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Communication frame explanation · GitBook</title>
+        <title>Communication frame explanation · FlywizOS Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,11 +17,39 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -82,7 +110,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="https://www.flywizos.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1515,9 +1552,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="communication-framework-explanation">Communication framework explanation</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#communication-framework-explanation"><b></b>Communication framework explanation</a></li><ul><li><span class="title-icon "></span><a href="#frame"><b></b>Frame</a></li><li><span class="title-icon "></span><a href="#how-to-use-and-modify-the-protocol-receiving-part"><b></b>How to use and modify the protocol receiving part</a></li><ul><li><span class="title-icon "></span><a href="#modification-of-communication-protocol-format"><b></b>Modification of communication protocol format</a></li><li><span class="title-icon "></span><a href="#how-to-connect-communication-protocol-data-with-ui-controls"><b></b>How to connect communication protocol data with UI controls</a></li></ul><li><span class="title-icon "></span><a href="#serial-data-sending"><b></b>Serial data sending</a></li></ul></ul></div><h1 id="communication-framework-explanation"><a name="communication-framework-explanation" class="anchor-navigation-ex-anchor" href="#communication-framework-explanation"><i class="fa fa-link" aria-hidden="true"></i></a>Communication framework explanation</h1>
 <p>This chapter focuses on the implementation principle of the communication framework. There are many theoretical things. The first time you can give a rough overview of the communication model, you will probably know the communication model. The supporting <a href="serial_example.html">case</a> do it yourself. it, and then come back. After understanding the principles, reviewing a few times and getting used to them,  you can customize the protocol any way you want.</p>
-<h2 id="frame">Frame</h2>
+<h2 id="frame"><a name="frame" class="anchor-navigation-ex-anchor" href="#frame"><i class="fa fa-link" aria-hidden="true"></i></a>Frame</h2>
 <p><img src="images/screenshot_1510990787282.png" alt=""></p>
 <p>The software APP part is divided into two layers</p>
 <ul>
@@ -1541,8 +1578,8 @@
 <p><img src="images/serial_model_detail2.png" alt=""></p>
 <p>Regardless of whether it is a receiving or sending process, it is ultimately necessary to read and write to the serial port through the <code>UartContext</code>. This is a standardized process, so we basically do not need to modify the <code>UartContext</code>, and we can ignore how it is implemented. Yes, of course, you can check it out if you are interested.</p>
 <p>At this point, we have a general understanding of this communication model, and then we will look at the implementation of the specific code.</p>
-<h2 id="how-to-use-and-modify-the-protocol-receiving-part">How to use and modify the protocol receiving part</h2>
-<h3 id="modification-of-communication-protocol-format">Modification of communication protocol format</h3>
+<h2 id="how-to-use-and-modify-the-protocol-receiving-part"><a name="how-to-use-and-modify-the-protocol-receiving-part" class="anchor-navigation-ex-anchor" href="#how-to-use-and-modify-the-protocol-receiving-part"><i class="fa fa-link" aria-hidden="true"></i></a>How to use and modify the protocol receiving part</h2>
+<h3 id="modification-of-communication-protocol-format"><a name="modification-of-communication-protocol-format" class="anchor-navigation-ex-anchor" href="#modification-of-communication-protocol-format"><i class="fa fa-link" aria-hidden="true"></i></a>Modification of communication protocol format</h3>
 <p>Here we give an example of a more common communication protocol</p>
 <table>
 <thead>
@@ -1710,7 +1747,7 @@ frameLen = dataLen + DATA_PACKAGE_MIN_LEN;
     procParse(pData, frameLen);
 <span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
 </code></pre>
-<h3 id="how-to-connect-communication-protocol-data-with-ui-controls">How to connect communication protocol data with UI controls</h3>
+<h3 id="how-to-connect-communication-protocol-data-with-ui-controls"><a name="how-to-connect-communication-protocol-data-with-ui-controls" class="anchor-navigation-ex-anchor" href="#how-to-connect-communication-protocol-data-with-ui-controls"><i class="fa fa-link" aria-hidden="true"></i></a>How to connect communication protocol data with UI controls</h3>
 <p>Continue the previous protocol framework. We enter the parsing part of procParse.
 The key code here is : ProtocolParser.cpp
 Open the file and find <code>void procParse(const BYTE *pData, UINT len)</code></p>
@@ -1775,7 +1812,7 @@ Example :</p>
     <span class="hljs-comment">//Start the UI display of the initial page</span>
 }
 </code></pre>
-<h2 id="serial-data-sending">Serial data sending</h2>
+<h2 id="serial-data-sending"><a name="serial-data-sending" class="anchor-navigation-ex-anchor" href="#serial-data-sending"><i class="fa fa-link" aria-hidden="true"></i></a>Serial data sending</h2>
 <p>Open ProtocolSender.cpp
 When the APP layer needs to send data to the MCU (or other devices), it is enough to directly call sendProtocol.
 The specific protocol encapsulation is completed by the sendProtocol method. Users can modify this part of the code according to their own protocol requirements.</p>
@@ -1814,7 +1851,9 @@ The specific protocol encapsulation is completed by the sendProtocol method. Use
 <pre><code class="lang-c++">BYTE mode[] = { <span class="hljs-number">0x01</span>, <span class="hljs-number">0x02</span>, <span class="hljs-number">0x03</span>, <span class="hljs-number">0x04</span> };
 sendProtocol(<span class="hljs-number">0x01</span>, mode, <span class="hljs-number">4</span>);
 </code></pre>
-
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">last modified:
+2020-12-08 18:24:17
+</span></footer>
                                 
                                 </section>
                             
@@ -1857,7 +1896,7 @@ sendProtocol(<span class="hljs-number">0x01</span>, mode, <span class="hljs-numb
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Communication frame explanation","level":"3.7.3","depth":2,"next":{"title":"Communication case practice","level":"3.7.4","depth":2,"path":"serial_example.md","ref":"serial_example.md","articles":[]},"previous":{"title":"Introduction","level":"3.7.2","depth":2,"path":"serial_introdoction.md","ref":"serial_introdoction.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"serial_framework.md","mtime":"2020-12-08T10:24:17.185Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-11T06:49:40.238Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Communication frame explanation","level":"3.7.3","depth":2,"next":{"title":"Communication case practice","level":"3.7.4","depth":2,"path":"serial_example.md","ref":"serial_example.md","articles":[]},"previous":{"title":"Introduction","level":"3.7.2","depth":2,"path":"serial_introdoction.md","ref":"serial_introdoction.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-pro","splitter","chapter-fold","expandable-chapters","ga","back-to-top-button","anchor-navigation-ex","flexible-alerts","custom-favicon","scripts","tbfed-pagefooter","book-summary-scroll-position-saver"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"last modified:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"book-summary-scroll-position-saver":{},"splitter":{},"scripts":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"custom-favicon":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"ga":{"configuration":"auto","token":"UA-121188128-1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FlywizOS Docs","language":"en","links":{"sidebar":{"Home":"https://www.flywizos.com"}},"gitbook":"*"},"file":{"path":"serial_framework.md","mtime":"2020-12-08T10:24:17.185Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-14T02:59:58.168Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1867,23 +1906,39 @@ sendProtocol(<span class="hljs-number">0x01</span>, mode, <span class="hljs-numb
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
         
     
         

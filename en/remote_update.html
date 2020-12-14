@@ -1,10 +1,10 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Remote upgrade · GitBook</title>
+        <title>Remote upgrade · FlywizOS Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,11 +17,39 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -82,7 +110,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="https://www.flywizos.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1515,11 +1552,11 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="remote-update">Remote update</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#remote-update"><b></b>Remote update</a></li><ul><li><span class="title-icon "></span><a href="#tf-card-detection-upgrade-process"><b></b>TF card detection upgrade process</a></li><li><span class="title-icon "></span><a href="#implementation-steps"><b></b>Implementation steps</a></li><li><span class="title-icon "></span><a href="#automatically-upgrade-after-downloading-the-file"><b></b>Automatically upgrade after downloading the file</a></li><li><span class="title-icon "></span><a href="#avoid-repeated-upgrades"><b></b>Avoid repeated upgrades</a></li><ul><li><span class="title-icon "></span><a href="#solution"><b></b>Solution</a></li></ul><li><span class="title-icon "></span><a href="#sample"><b></b>Sample</a></li></ul></ul></div><h1 id="remote-update"><a name="remote-update" class="anchor-navigation-ex-anchor" href="#remote-update"><i class="fa fa-link" aria-hidden="true"></i></a>Remote update</h1>
 <p>Currently, the system does not have an interface for direct remote upgrade.<br>But we can understand the TF card detection and upgrade mechanism, and then add some of our own code to achieve the purpose of remote upgrade.  We first introduce the general upgrade process of inserting a TF card.</p>
-<h2 id="tf-card-detection-upgrade-process">TF card detection upgrade process</h2>
+<h2 id="tf-card-detection-upgrade-process"><a name="tf-card-detection-upgrade-process" class="anchor-navigation-ex-anchor" href="#tf-card-detection-upgrade-process"><i class="fa fa-link" aria-hidden="true"></i></a>TF card detection upgrade process</h2>
 <p>When the system is started or the TF card is inserted, if [TF card is normally mounted] (tf.md), the system will detect whether there is an update.img file in the root directory of the TF card (in the system, The root directory of the TF card is mapped to <code>/mnt/extsd</code>).<br>If it exists, further verify whether the file meets the requirements. If it passes the verification, an upgrade prompt interface will pop up, and the user can choose to upgrade.<br>If it does not exist, the detection process ends and there is no action.    </p>
-<h2 id="implementation-steps">Implementation steps</h2>
+<h2 id="implementation-steps"><a name="implementation-steps" class="anchor-navigation-ex-anchor" href="#implementation-steps"><i class="fa fa-link" aria-hidden="true"></i></a>Implementation steps</h2>
 <ol>
 <li><p>First we have to download the upgrade image <code>update.img</code>.<br> Under normal circumstances, downloading files through the HTTP protocol is the easiest way, of course, you can also choose other protocols according to the actual situation.<br> After downloading, save the image file to the TF card directory <code>/mnt/extsd/</code>.   </p>
 <blockquote>
@@ -1540,16 +1577,16 @@ UpgradeMonitor::getInstance()-&gt;checkUpgradeFile(<span class="hljs-string">&qu
 <p>After the upgrade prompt interface pops up, the user can choose whether to upgrade.<br>So far, the remote upgrade function has been fully realized.</p>
 </li>
 </ol>
-<h2 id="automatically-upgrade-after-downloading-the-file">Automatically upgrade after downloading the file</h2>
+<h2 id="automatically-upgrade-after-downloading-the-file"><a name="automatically-upgrade-after-downloading-the-file" class="anchor-navigation-ex-anchor" href="#automatically-upgrade-after-downloading-the-file"><i class="fa fa-link" aria-hidden="true"></i></a>Automatically upgrade after downloading the file</h2>
 <p>If you want to force the update after downloading the upgrade file, you only need to refer to the <a href="autoupgrade.html">Autoupgrade</a> document and create a <code>zkautoupgrade</code> file with code.</p>
-<h2 id="avoid-repeated-upgrades">Avoid repeated upgrades</h2>
+<h2 id="avoid-repeated-upgrades"><a name="avoid-repeated-upgrades" class="anchor-navigation-ex-anchor" href="#avoid-repeated-upgrades"><i class="fa fa-link" aria-hidden="true"></i></a>Avoid repeated upgrades</h2>
 <p>In the above steps, we save the image file in the <code>/mnt/extsd/</code> directory. After a successful upgrade, the machine will automatically restart.<br>At this time, the system will perform the regular upgrade detection process. Due to the existence of the image file, the upgrade prompt interface pops up again, resulting in repeated upgrades.</p>
-<h3 id="solution">Solution</h3>
+<h3 id="solution"><a name="solution" class="anchor-navigation-ex-anchor" href="#solution"><i class="fa fa-link" aria-hidden="true"></i></a>Solution</h3>
 <p>When downloading the image file, save it to a directory other than <code>/mnt/extsd/</code>, for example: <code>/mnt/extsd/temp/</code>&#xFF0C;
 in addition, the parameters of the call detection function are also modified synchronously.  </p>
 <pre><code class="lang-c++">UpgradeMonitor::getInstance()-&gt;checkUpgradeFile(<span class="hljs-string">&quot;/mnt/extsd/temp&quot;</span>);
 </code></pre>
-<h2 id="sample">Sample</h2>
+<h2 id="sample"><a name="sample" class="anchor-navigation-ex-anchor" href="#sample"><i class="fa fa-link" aria-hidden="true"></i></a>Sample</h2>
 <p><a href="https://docs.flythings.cn/src/netupdate.zip" target="_blank">Complete sample download</a><br>The sample simply implements the http client to download files, refer to the http part of the source code.
 Downloading files is a time-consuming operation, it is recommended to put them in a separate thread, so as not to affect the immediate response of the interface.    </p>
 <p><img src="assets/remote_update1.png" alt="">  </p>
@@ -1580,7 +1617,9 @@ Downloading files is a time-consuming operation, it is recommended to put them i
 </li>
 </ul>
 <p>After the server is started, run the sample code to test the remote upgrade.</p>
-
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">last modified:
+2020-12-08 18:24:17
+</span></footer>
                                 
                                 </section>
                             
@@ -1623,7 +1662,7 @@ Downloading files is a time-consuming operation, it is recommended to put them i
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Remote upgrade","level":"5.2.8","depth":2,"next":{"title":"Sample code","level":"5.3","depth":1,"path":"demo_download.md","ref":"demo_download.md","articles":[]},"previous":{"title":"Make swipe card","level":"5.2.7","depth":2,"path":"sd_boot.md","ref":"sd_boot.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"remote_update.md","mtime":"2020-12-08T10:24:17.183Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-11T06:49:40.238Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Remote upgrade","level":"5.2.8","depth":2,"next":{"title":"Sample code","level":"5.3","depth":1,"path":"demo_download.md","ref":"demo_download.md","articles":[]},"previous":{"title":"Make swipe card","level":"5.2.7","depth":2,"path":"sd_boot.md","ref":"sd_boot.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-pro","splitter","chapter-fold","expandable-chapters","ga","back-to-top-button","anchor-navigation-ex","flexible-alerts","custom-favicon","scripts","tbfed-pagefooter","book-summary-scroll-position-saver"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"last modified:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"book-summary-scroll-position-saver":{},"splitter":{},"scripts":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"custom-favicon":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"ga":{"configuration":"auto","token":"UA-121188128-1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FlywizOS Docs","language":"en","links":{"sidebar":{"Home":"https://www.flywizos.com"}},"gitbook":"*"},"file":{"path":"remote_update.md","mtime":"2020-12-08T10:24:17.183Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-14T02:59:58.168Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1633,23 +1672,39 @@ Downloading files is a time-consuming operation, it is recommended to put them i
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
         
     
         

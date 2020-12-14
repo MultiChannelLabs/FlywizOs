@@ -1,10 +1,10 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="kr" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>프로젝트 구조 소개 · GitBook</title>
+        <title>프로젝트 구조 소개 · FlywizOS Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,11 +17,39 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -82,7 +110,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="https://www.flywizos.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1222,7 +1259,7 @@
                 <a href="demo_download.html">
             
                     
-                    Sample code
+                    샘플 코드
             
                 </a>
             
@@ -1515,12 +1552,12 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="flywizos-&#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC758;-&#xCF54;&#xB4DC;-&#xAD6C;&#xC870;-&#xC18C;&#xAC1C;"><span id="project_structure">FlywizOS &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC758; &#xCF54;&#xB4DC; &#xAD6C;&#xC870; &#xC18C;&#xAC1C;</span></h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#flywizos-&#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC758;-&#xCF54;&#xB4DC;-&#xAD6C;&#xC870;-&#xC18C;&#xAC1C;"><b></b>FlywizOS &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC758; &#xCF54;&#xB4DC; &#xAD6C;&#xC870; &#xC18C;&#xAC1C;</a></li><ul><li><span class="title-icon "></span><a href="#ui&#xD3F4;&#xB354;"><b></b>ui&#xD3F4;&#xB354;</a></li><li><span class="title-icon "></span><a href="#resources-folder"><b></b>resources folder</a></li><li><span class="title-icon "></span><a href="#jni-folder"><b></b>jni folder</a></li><ul><li><span class="title-icon "></span><a href="#activity-subfolder"><b></b>activity subfolder</a></li><li><span class="title-icon "></span><a href="#logic-subfolder"><b></b>logic subfolder</a></li><li><span class="title-icon "></span><a href="#include-subfolder"><b></b>include subfolder</a></li><li><span class="title-icon "></span><a href="#uart-subfolder"><b></b>uart subfolder</a></li><li><span class="title-icon "></span><a href="#maincpp"><b></b>Main.cpp</a></li><li><span class="title-icon "></span><a href="#makefileandroidmk&#x3001;applicationmk"><b></b>Makefile/Android.mk&#x3001;Application.mk</a></li></ul></ul></ul></div><h1 id="flywizos-&#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC758;-&#xCF54;&#xB4DC;-&#xAD6C;&#xC870;-&#xC18C;&#xAC1C;"><a name="flywizos-&#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC758;-&#xCF54;&#xB4DC;-&#xAD6C;&#xC870;-&#xC18C;&#xAC1C;" class="anchor-navigation-ex-anchor" href="#flywizos-&#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC758;-&#xCF54;&#xB4DC;-&#xAD6C;&#xC870;-&#xC18C;&#xAC1C;"><i class="fa fa-link" aria-hidden="true"></i></a><span id="project_structure">FlywizOS &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC758; &#xCF54;&#xB4DC; &#xAD6C;&#xC870; &#xC18C;&#xAC1C;</span></h1>
 <p>&#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC744; &#xC2DC;&#xC791;&#xD558;&#xAE30; &#xC804;&#xC5D0; &#xBA3C;&#xC800; FlywizOS &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC758; &#xAE30;&#xBCF8; &#xAD6C;&#xC870;&#xB97C; &#xC774;&#xD574;&#xD574;&#xC57C; &#xCF54;&#xB4DC;&#xB97C; &#xCD94;&#xAC00;&#xD574;&#xC57C;&#xD558;&#xB294; &#xC704;&#xCE58;&#xB97C; &#xC54C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>&#xAE30;&#xBCF8; FlywizOS &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC758; &#xACBD;&#xC6B0; &#xB514;&#xB809;&#xD130;&#xB9AC; &#xAD6C;&#xC870;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <p><img src="assets/project_structure.png" alt="">  </p>
 <p>&#xD06C;&#xAC8C; <strong>jni</strong>, <strong>resources</strong>, <strong>ui</strong>&#xC758; &#xC138; &#xD3F4;&#xB354;&#xB85C; &#xB098;&#xB258;&#xBA70; &#xAC01; &#xD3F4;&#xB354;&#xC758; &#xC5ED;&#xD560;&#xC740; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <ul>
-<li><h2 id="ui&#xD3F4;&#xB354;">ui&#xD3F4;&#xB354;</h2>
+<li><h2 id="ui&#xD3F4;&#xB354;"><a name="ui&#xD3F4;&#xB354;" class="anchor-navigation-ex-anchor" href="#ui&#xD3F4;&#xB354;"><i class="fa fa-link" aria-hidden="true"></i></a>ui&#xD3F4;&#xB354;</h2>
 <p><strong>ui</strong>&#xD3F4;&#xB354; &#xD655;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;. </p>
 <p><img src="assets/project_ui_expand.png" alt="ui&#xD3F4;&#xB354; &#xD655;&#xC7A5;">    </p>
 <p><strong>main.ftu</strong>&#xD30C;&#xC77C;&#xC774; &#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; &#xD3EC;&#xD568;&#xB418;&#xC5B4; &#xC788;&#xC74C;&#xC744; &#xC54C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <strong>ftu</strong>&#xB294; <strong>FlywizOS</strong>&#xD504;&#xB85C;&#xC81D;&#xD2B8; UI &#xD30C;&#xC77C;&#xC758; &#xC811;&#xBBF8;&#xC0AC;&#xC785;&#xB2C8;&#xB2E4;. &#xAC01; <strong>ftu</strong>&#xD30C;&#xC77C;&#xC740; &#xC561;&#xD2F0;&#xBE44;&#xD2F0;&#xC5D0; &#xD574;&#xB2F9;&#xD569;&#xB2C8;&#xB2E4;. &#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC5D0;&#xB294; &#xC5EC;&#xB7EC; &#xC561;&#xD2F0;&#xBE44;&#xD2F0;&#xAC00; &#xD3EC;&#xD568;&#xB418;&#xC5B4; &#xC788;&#xC73C;&#xBBC0;&#xB85C; <strong>ui</strong>&#xD3F4;&#xB354;&#xC5D0; &#xC5EC;&#xB7EC; <strong>ftu</strong>&#xD30C;&#xC77C;&#xC744; &#xB9CC;&#xB4E4;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xC0C8; <strong>ftu</strong>&#xD30C;&#xC77C;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xB824;&#xBA74; <a href="new_flywizOS_ui_file.html">&#xC0C8;&#xB85C;&#xC6B4; FlyThings UI &#xD30C;&#xC77C; &#xC0DD;&#xC131; &#xBC29;&#xBC95;</a>&#xC744; &#xCC38;&#xC870;&#xD558;&#xC138;&#xC694;. &#xC124;&#xBA85;&#xC758; &#xD3B8;&#xC758;&#xB97C; &#xC704;&#xD574; &#xC774;&#xD6C4;&#xBD80;&#xD130;&#xB294; <strong>ftu</strong>&#xD30C;&#xC77C;&#xC744; <strong>UI &#xD30C;&#xC77C;</strong>&#xC774;&#xB77C;&#xACE0; &#xD558;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;..</p>
@@ -1532,19 +1569,19 @@
 <p>[!Note]<br><strong>&#xCC38;&#xACE0; : &#xC5EC;&#xAE30;&#xC5D0; &#xC5B8;&#xAE09; &#xB41C; &#xCEF4;&#xD30C;&#xC77C;&#xC740; &#xC18C;&#xC2A4; &#xCF54;&#xB4DC;&#xC758; &#xCEF4;&#xD30C;&#xC77C;&#xC77C; &#xBFD0;&#xB9CC; &#xC544;&#xB2C8;&#xB77C; ui &#xD30C;&#xC77C;&#xC758; &#xC804;&#xCC98;&#xB9AC; &#xBC0F; &#xD15C;&#xD50C;&#xB9BF; &#xCF54;&#xB4DC; &#xC0DD;&#xC131;&#xACFC; &#xAC19;&#xC740; &#xC77C;&#xB828;&#xC758; &#xC791;&#xC5C5;&#xC774;&#xAE30;&#xB3C4; &#xD558;&#xC9C0;&#xB9CC; &#xC774;&#xB7EC;&#xD55C; &#xC791;&#xC5C5;&#xC740; &#xBAA8;&#xB450; &#xC790;&#xB3D9;&#xD654;&#xB418;&#xC5B4; &#xC788;&#xC73C;&#xBBC0;&#xB85C; &#xC218;&#xB3D9;&#xC73C;&#xB85C; &#xC791;&#xC5C5; &#xD560; &#xD544;&#xC694;&#xAC00; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</strong><br><strong>&#xCEF4;&#xD30C;&#xC77C; - &#xC774; &#xC791;&#xC5C5;&#xC758; &#xBAA8;&#xB4E0; &#xD2B9;&#xC815; &#xC791;&#xC5C5;&#xC5D0; &#xB300;&#xD574;&#xC11C;&#xB294; <a href="ftu_and_source_relationships.html#ftu_and_source_relationships">&#xCEF4;&#xD30C;&#xC77C; &#xACFC;&#xC815; &#xBC0F; UI &#xD30C;&#xC77C;&#xACFC; &#xC18C;&#xC2A4; &#xCF54;&#xB4DC; &#xAC04;&#xC758; &#xC0C1;&#xAD00; &#xAD00;&#xACC4;</a>&#xB97C; &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;. &#xC774;&#xB97C; &#xC77D;&#xC740; &#xD6C4;&#xC5D0;&#xB294; &#xC774;&#xD574;&#xD558;&#xAE30; &#xC27D;&#xACE0; &#xBE60;&#xB974;&#xAC8C; &#xC2DC;&#xC791;&#xD560; &#xC218; &#xC788;&#xC744; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;</strong> </p>
 </blockquote>
 <ul>
-<li><h2 id="resources-folder">resources folder</h2>
+<li><h2 id="resources-folder"><a name="resources-folder" class="anchor-navigation-ex-anchor" href="#resources-folder"><i class="fa fa-link" aria-hidden="true"></i></a>resources folder</h2>
 <p>&#xC774; &#xD3F4;&#xB354;&#xC758; &#xB0B4;&#xC6A9;&#xC740; &#xBE44;&#xAD50;&#xC801; &#xAC04;&#xB2E8;&#xD558;&#xBA70; &#xC8FC;&#xB85C; &#xADF8;&#xB9BC;, &#xD3F0;&#xD2B8;, &#xC785;&#xB825; &#xBC29;&#xBC95; &#xAD6C;&#xC131; &#xD30C;&#xC77C; &#xB4F1;&#xC744; &#xD3EC;&#xD568;&#xD558;&#xC5EC; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC758; &#xB2E4;&#xC591;&#xD55C; &#xB9AC;&#xC18C;&#xC2A4; &#xD30C;&#xC77C;&#xC744; &#xC800;&#xC7A5;&#xD558;&#xB294; &#xB370; &#xC0AC;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;. &#xB2E4;&#xB978; &#xB9AC;&#xC18C;&#xC2A4; &#xD30C;&#xC77C;&#xC774; &#xC788;&#xB294; &#xACBD;&#xC6B0; &#xC774; &#xD3F4;&#xB354;&#xC5D0; &#xCD94;&#xAC00; &#xD560; &#xC218;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD3F4;&#xB354;&#xB294; &#xC2DC;&#xC2A4;&#xD15C;&#xC5D0; &#xC644;&#xC804;&#xD788; &#xBCF5;&#xC0AC;&#xB429;&#xB2C8;&#xB2E4;. &#xB2E8;, &#xAE30;&#xAE30; &#xC790;&#xCCB4; &#xC800;&#xC7A5; &#xACF5;&#xAC04;&#xC758; &#xC81C;&#xD55C;&#xC73C;&#xB85C; &#xC774; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0; &#xB300;&#xC6A9;&#xB7C9; &#xD30C;&#xC77C;&#xC744; &#xC800;&#xC7A5;&#xD558;&#xC9C0; &#xC54A;&#xB294; &#xAC83;&#xC774; &#xC88B;&#xC73C;&#xBA70; &#xB300;&#xC6A9;&#xB7C9; &#xB9AC;&#xC18C;&#xC2A4; &#xD30C;&#xC77C;&#xC740; TF&#xCE74;&#xB4DC;&#xC5D0; &#xC800;&#xC7A5;&#xD558;&#xB294; &#xAC83;&#xC774; &#xC88B;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <p>&#xCF54;&#xB4DC;&#xC758; resources&#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0; &#xC788;&#xB294; &#xD30C;&#xC77C;&#xC758; &#xC808;&#xB300; &#xACBD;&#xB85C;&#xB97C; &#xC5BB;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>&#xC608; : &#xB2E4;&#xC74C; &#xCF54;&#xB4DC;&#xB294; resources/test.txt&#xC758; &#xC808;&#xB300; &#xACBD;&#xB85C;&#xB97C; &#xAC00;&#xC838;&#xC62C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">&quot;manager/ConfigManager.h&quot;</span></span>
 <span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> resPath = CONFIGMANAGER-&gt;getResFilePathEx(<span class="hljs-string">&quot;test.txt&quot;</span>);
 </code></pre>
 </li>
-<li><h2 id="jni-folder">jni folder</h2>
+<li><h2 id="jni-folder"><a name="jni-folder" class="anchor-navigation-ex-anchor" href="#jni-folder"><i class="fa fa-link" aria-hidden="true"></i></a>jni folder</h2>
 <p>&#xC774; &#xD3F4;&#xB354;&#xB294; &#xC8FC;&#xB85C; &#xCF54;&#xB4DC; &#xD30C;&#xC77C;&#xC744; &#xC800;&#xC7A5;&#xD558;&#xB294; &#xB370; &#xC0AC;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;.<br><strong>jni</strong> &#xD3F4;&#xB354;&#xB97C; &#xD655;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;.  </p>
 <p><img src="assets/project_jni_expand.png" alt="">  </p>
 <p>&#xC704;&#xC5D0; &#xBCF4;&#xC774;&#xB294; &#xAC83;&#xCC98;&#xB7FC; &#xC5EC;&#xAE30;&#xC5D0;&#xB294; <strong>activity</strong>, <strong>include</strong>, <strong>logic</strong>, <strong>uart</strong>, <strong>Main.cpp</strong>, <strong>Makefile</strong>&#xC758; 6 &#xAC1C; &#xBD80;&#xBD84;&#xC774; &#xD3EC;&#xD568;&#xB418;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xAC01; &#xBD80;&#xBD84;&#xC758; &#xAE30;&#xB2A5;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <ul>
-<li><h3 id="activity-subfolder">activity subfolder</h3>
+<li><h3 id="activity-subfolder"><a name="activity-subfolder" class="anchor-navigation-ex-anchor" href="#activity-subfolder"><i class="fa fa-link" aria-hidden="true"></i></a>activity subfolder</h3>
 <p>UI &#xD30C;&#xC77C;&#xC758; &#xAE30;&#xBCF8; &#xD074;&#xB798;&#xC2A4; &#xCF54;&#xB4DC;&#xB97C; &#xC800;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;. &#xAC01; UI&#xD30C;&#xC77C;&#xC774; &#xCEF4;&#xD30C;&#xC77C; &#xB41C; &#xD6C4; &#xB3D9;&#xC77C;&#xD55C; &#xC811;&#xB450;&#xC0AC; &#xC774;&#xB984;&#xC744; &#xAC00;&#xC9C4; <code>Activity</code>&#xD074;&#xB798;&#xC2A4;&#xC640; <code>Logic.cc</code>&#xD30C;&#xC77C;&#xC774; &#xC0DD;&#xC131;&#xB429;&#xB2C8;&#xB2E4;. 
 &#xC608; : ui &#xD3F4;&#xB354;&#xC5D0; <strong>main.ftu</strong>&#xAC00; &#xC788;&#xB294; &#xACBD;&#xC6B0; &#xCEF4;&#xD30C;&#xC77C; &#xD6C4; <code>mainActivity.h</code>, <code>mainActivity.cpp</code> &#xBC0F; <code>mainLogic.cc</code>&#xAC00; &#xC0DD;&#xC131;&#xB418;&#xACE0; <code>mainActivity</code>&#xD074;&#xB798;&#xC2A4;&#xAC00; <strong>activity</strong>&#xD3F4;&#xB354;&#xC5D0; &#xC800;&#xC7A5;&#xB429;&#xB2C8;&#xB2E4;. <code>mainLogic.cc</code> &#xD30C;&#xC77C;&#xC740; <strong>logic</strong>&#xD3F4;&#xB354;&#xC5D0; &#xC800;&#xC7A5;&#xB429;&#xB2C8;&#xB2E4;.</p>
 <blockquote>
@@ -1552,26 +1589,28 @@
 <strong>&#xD2B9;&#xBCC4;&#xD55C; &#xC0C1;&#xD669;&#xC744; &#xC81C;&#xC678;&#xD558;&#xACE0; activity &#xD3F4;&#xB354; &#xC544;&#xB798;&#xC758; &#xCF54;&#xB4DC;&#xB294; &#xC218;&#xC815;&#xD558;&#xC9C0; &#xC54A;&#xB294; &#xAC83;&#xC774; &#xC88B;&#xC2B5;&#xB2C8;&#xB2E4;.</strong></p>
 </blockquote>
 </li>
-<li><h3 id="logic-subfolder">logic subfolder</h3>
+<li><h3 id="logic-subfolder"><a name="logic-subfolder" class="anchor-navigation-ex-anchor" href="#logic-subfolder"><i class="fa fa-link" aria-hidden="true"></i></a>logic subfolder</h3>
 <p>&#xD2B9;&#xC815; &#xB17C;&#xB9AC; &#xCF54;&#xB4DC;&#xB97C; &#xC800;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;. &#xC704;&#xC758; &#xC124;&#xBA85;&#xACFC; &#xB3D9;&#xC77C;&#xD558;&#xAC8C; &#xBAA8;&#xB4E0; UI&#xD30C;&#xC77C;&#xC740; &#xCEF4;&#xD30C;&#xC77C; &#xD6C4; &#xD574;&#xB2F9; &#xC811;&#xB450;&#xC0AC; &#xC774;&#xB984;&#xC774; &#xC788;&#xB294; <strong>Logic.cc</strong>&#xD30C;&#xC77C;&#xC744; &#xC0DD;&#xC131;&#xD569;&#xB2C8;&#xB2E4;. <strong>&#xCC38;&#xACE0; : &#xC0AC;&#xC6A9;&#xC790; &#xC9C0;&#xC815; &#xCF54;&#xB4DC;&#xB294; &#xC8FC;&#xB85C; &#xC774;&#xB7EC;&#xD55C; Logic.cc&#xD30C;&#xC77C;&#xC5D0; &#xCD94;&#xAC00;&#xB429;&#xB2C8;&#xB2E4;</strong>.</p>
 </li>
-<li><h3 id="include-subfolder">include subfolder</h3>
+<li><h3 id="include-subfolder"><a name="include-subfolder" class="anchor-navigation-ex-anchor" href="#include-subfolder"><i class="fa fa-link" aria-hidden="true"></i></a>include subfolder</h3>
 <p>&#xC2DC;&#xC2A4;&#xD15C; &#xAD00;&#xB828; &#xD5E4;&#xB354; &#xD30C;&#xC77C; &#xBC0F; &#xBAA8;&#xB4E0; &#xCEE8;&#xD2B8;&#xB864; &#xAD00;&#xB828; &#xD5E4;&#xB354; &#xD30C;&#xC77C;&#xC774; &#xC8FC;&#xB85C; &#xC5EC;&#xAE30;&#xC5D0; &#xC800;&#xC7A5;&#xB429;&#xB2C8;&#xB2E4;.</p>
 </li>
-<li><h3 id="uart-subfolder">uart subfolder</h3>
+<li><h3 id="uart-subfolder"><a name="uart-subfolder" class="anchor-navigation-ex-anchor" href="#uart-subfolder"><i class="fa fa-link" aria-hidden="true"></i></a>uart subfolder</h3>
 <p>&#xC774;&#xB984;&#xC5D0;&#xC11C; &#xC54C; &#xC218; &#xC788;&#xB4EF;&#xC774; &#xC774; &#xD3F4;&#xB354;&#xC5D0;&#xB294; &#xC2DC;&#xB9AC;&#xC5BC; &#xD3EC;&#xD2B8; &#xC77D;&#xAE30; &#xBC0F; &#xC4F0;&#xAE30;, &#xD504;&#xB85C;&#xD1A0;&#xCF5C; &#xBD84;&#xC11D; &#xB4F1;&#xC744; &#xD3EC;&#xD568;&#xD55C; &#xC2DC;&#xB9AC;&#xC5BC; &#xD3EC;&#xD2B8; &#xB3D9;&#xC791; &#xAD00;&#xB828; &#xCF54;&#xB4DC;&#xAC00; &#xC800;&#xC7A5;&#xB429;&#xB2C8;&#xB2E4;.</p>
 </li>
-<li><h3 id="maincpp">Main.cpp</h3>
+<li><h3 id="maincpp"><a name="maincpp" class="anchor-navigation-ex-anchor" href="#maincpp"><i class="fa fa-link" aria-hidden="true"></i></a>Main.cpp</h3>
 <p>&#xBD80;&#xD305; &#xBC0F; &#xC2DC;&#xC791; &#xC561;&#xD2F0;&#xBE44;&#xD2F0;&#xB97C; &#xC120;&#xD0DD;&#xD558;&#xB294; &#xD568;&#xC218; &#xB4F1; &#xC804;&#xCCB4; FlywizOS &#xC751;&#xC6A9; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC758; &#xCD08;&#xAE30;&#xD654; &#xCF54;&#xB4DC;&#xB97C; &#xD3EC;&#xD568;&#xD558;&#xBA70; &#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; &#xD30C;&#xC77C;&#xC744; &#xC218;&#xC815;&#xD560; &#xD544;&#xC694;&#xAC00; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 </li>
-<li><h3 id="makefileandroidmk&#x3001;applicationmk">Makefile/Android.mk&#x3001;Application.mk</h3>
+<li><h3 id="makefileandroidmk&#x3001;applicationmk"><a name="makefileandroidmk&#x3001;applicationmk" class="anchor-navigation-ex-anchor" href="#makefileandroidmk&#x3001;applicationmk"><i class="fa fa-link" aria-hidden="true"></i></a>Makefile/Android.mk&#x3001;Application.mk</h3>
 <p>&#xD2B9;&#xC815; &#xC18C;&#xC2A4; &#xCF54;&#xB4DC; &#xCEF4;&#xD30C;&#xC77C; &#xD504;&#xB85C;&#xC138;&#xC2A4;&#xB97C; &#xD3EC;&#xD568;&#xD558;&#xB294; &#xCEF4;&#xD30C;&#xC77C; &#xAD6C;&#xC131; &#xD30C;&#xC77C;&#xB85C; &#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; &#xC218;&#xC815;&#xD560; &#xD544;&#xC694;&#xAC00; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
 </li>
 </ul>
 <p>&#xCEF4;&#xD30C;&#xC77C; &#xD6C4; <strong>libs</strong>&#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC640; <strong>obj</strong>&#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xAC00; &#xD504;&#xB85C;&#xC81D;&#xD2B8; &#xC544;&#xB798;&#xC5D0; &#xC0DD;&#xC131;&#xB429;&#xB2C8;&#xB2E4;. &#xC774; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xB294; &#xCEF4;&#xD30C;&#xC77C;&#xB41C; &#xB300;&#xC0C1;&#xC758; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC640; &#xCEF4;&#xD30C;&#xC77C;&#xB41C; &#xC784;&#xC2DC; &#xD30C;&#xC77C; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC774;&#xBA70; &#xB458; &#xB2E4; &#xC9C1;&#xC811; &#xC815;&#xB9AC;&#xD558;&#xAC70;&#xB098; &#xC0AD;&#xC81C;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 </li>
 </ul>
-
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">last modified:
+2020-12-10 09:56:12
+</span></footer>
                                 
                                 </section>
                             
@@ -1614,7 +1653,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"프로젝트 구조 소개","level":"1.2.10","depth":2,"next":{"title":"UI파일과 생성된 코드 설명","level":"1.2.11","depth":2,"path":"ftu_and_source_relationships.md","ref":"ftu_and_source_relationships.md","articles":[]},"previous":{"title":"프로젝트 실행","level":"1.2.9","depth":2,"path":"run_project.md","ref":"run_project.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"project_structure.md","mtime":"2020-12-10T01:56:12.063Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-11T06:49:14.021Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"프로젝트 구조 소개","level":"1.2.10","depth":2,"next":{"title":"UI파일과 생성된 코드 설명","level":"1.2.11","depth":2,"path":"ftu_and_source_relationships.md","ref":"ftu_and_source_relationships.md","articles":[]},"previous":{"title":"프로젝트 실행","level":"1.2.9","depth":2,"path":"run_project.md","ref":"run_project.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-pro","splitter","chapter-fold","expandable-chapters","ga","back-to-top-button","anchor-navigation-ex","flexible-alerts","custom-favicon","scripts","tbfed-pagefooter","book-summary-scroll-position-saver"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"last modified:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"book-summary-scroll-position-saver":{},"splitter":{},"scripts":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"custom-favicon":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"ga":{"configuration":"auto","token":"UA-121188128-1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FlywizOS Docs","language":"kr","links":{"sidebar":{"Home":"https://www.flywizos.com"}},"gitbook":"*"},"file":{"path":"project_structure.md","mtime":"2020-12-10T01:56:12.063Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-14T02:59:41.336Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1624,23 +1663,39 @@
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
         
     
         

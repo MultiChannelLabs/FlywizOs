@@ -1,10 +1,10 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="zh" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>文件读写 · GitBook</title>
+        <title>文件读写 · FlywizOS Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,11 +17,39 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -69,7 +97,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
+    <input type="text" placeholder="輸入並搜尋" />
 </div>
 
             
@@ -80,7 +108,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="https://www.flywizos.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1475,7 +1512,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+            本書使用 GitBook 釋出
         </a>
     </li>
 </ul>
@@ -1513,7 +1550,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x6587;&#x4EF6;&#x8BFB;&#x5199;">&#x6587;&#x4EF6;&#x8BFB;&#x5199;</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x6587;&#x4EF6;&#x8BFB;&#x5199;"><b></b>&#x6587;&#x4EF6;&#x8BFB;&#x5199;</a></li><ul><li><span class="title-icon "></span><a href="#&#x79FB;&#x690D;&#x6B65;&#x9AA4;"><b></b>&#x79FB;&#x690D;&#x6B65;&#x9AA4;</a></li><li><span class="title-icon "></span><a href="#&#x5982;&#x4F55;&#x4F7F;&#x7528;"><b></b>&#x5982;&#x4F55;&#x4F7F;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;"><b></b>&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;</a></li></ul></ul></div><h1 id="&#x6587;&#x4EF6;&#x8BFB;&#x5199;"><a name="&#x6587;&#x4EF6;&#x8BFB;&#x5199;" class="anchor-navigation-ex-anchor" href="#&#x6587;&#x4EF6;&#x8BFB;&#x5199;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6587;&#x4EF6;&#x8BFB;&#x5199;</h1>
 <p>&#x5982;&#x679C;&#x4F60;&#x719F;&#x6089;&#x6807;&#x51C6;C&#x8BED;&#x8A00;&#x7684;&#x6587;&#x4EF6;&#x8BFB;&#x5199;&#xFF0C;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x6807;&#x51C6;C&#x8BED;&#x8A00;&#x7684;&#x65B9;&#x5F0F;&#x8BFB;&#x5199;&#x6587;&#x4EF6;&#x3002;   </p>
 <p>&#x9488;&#x5BF9;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;&#x6587;&#x4EF6;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x6211;&#x4EEC;&#x57FA;&#x4E8E;C&#x8BED;&#x8A00;&#x6587;&#x4EF6;&#x8BFB;&#x5199;&#x63A5;&#x53E3;&#x505A;&#x4E86;&#x7B80;&#x5355;&#x7684;&#x5C01;&#x88C5;&#xFF0C;&#x65B9;&#x4FBF;&#x4F7F;&#x7528;&#x3002; &#x5982;&#x679C;&#x9700;&#x8981;&#xFF0C;&#x53EF;&#x4EE5;&#x6309;&#x6B65;&#x9AA4;&#xFF0C;&#x5C06;&#x6E90;&#x7801;&#x96C6;&#x6210;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x3002;</p>
 <pre><code class="lang-c++"><span class="hljs-comment">/**
@@ -1535,7 +1572,7 @@
  */</span>
 <span class="hljs-function"><span class="hljs-built_in">string</span> <span class="hljs-title">ReadFile</span><span class="hljs-params">(<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* filename)</span></span>;
 </code></pre>
-<h2 id="&#x79FB;&#x690D;&#x6B65;&#x9AA4;">&#x79FB;&#x690D;&#x6B65;&#x9AA4;</h2>
+<h2 id="&#x79FB;&#x690D;&#x6B65;&#x9AA4;"><a name="&#x79FB;&#x690D;&#x6B65;&#x9AA4;" class="anchor-navigation-ex-anchor" href="#&#x79FB;&#x690D;&#x6B65;&#x9AA4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x79FB;&#x690D;&#x6B65;&#x9AA4;</h2>
 <ol>
 <li><p>&#x5728;&#x9879;&#x76EE;&#x7684;jni&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x547D;&#x540D;&#x4E3A; <code>io</code>  </p>
 <p><img src="assets/create_io_folder.png" alt=""></p>
@@ -1544,7 +1581,7 @@
 <p><img src="assets/ioutil.png" alt="">  </p>
 </li>
 </ol>
-<h2 id="&#x5982;&#x4F55;&#x4F7F;&#x7528;">&#x5982;&#x4F55;&#x4F7F;&#x7528;</h2>
+<h2 id="&#x5982;&#x4F55;&#x4F7F;&#x7528;"><a name="&#x5982;&#x4F55;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x4F55;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5982;&#x4F55;&#x4F7F;&#x7528;</h2>
 <ul>
 <li>&#x5F15;&#x5165;&#x5934;&#x6587;&#x4EF6; <pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">&quot;io/ioutil.h&quot;</span></span>
 </code></pre>
@@ -1616,7 +1653,7 @@ ioutil::Reader r;
 </code></pre>
 </li>
 </ul>
-<h2 id="&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;">&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;</h2>
+<h2 id="&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;"><a name="&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;</h2>
 <pre><code class="lang-c++"><span class="hljs-comment">/**
  * &#x5F53;&#x754C;&#x9762;&#x6784;&#x9020;&#x65F6;&#x89E6;&#x53D1;
  */</span>
@@ -1673,7 +1710,9 @@ ioutil::Reader r;
   }
 }
 </code></pre>
-
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">last modified:
+2020-10-09 10:28:02
+</span></footer>
                                 
                                 </section>
                             
@@ -1712,7 +1751,7 @@ ioutil::Reader r;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"文件读写","level":"6.1","depth":1,"next":{"title":"网络编程","level":"6.2","depth":1,"ref":"","articles":[{"title":"Socket编程","level":"6.2.1","depth":2,"path":"net.md","ref":"net.md","articles":[]},{"title":"HTTP","level":"6.2.2","depth":2,"path":"http.md","ref":"http.md","articles":[]}]},"previous":{"title":"代码样例","level":"5.3","depth":1,"path":"demo_download.md","ref":"demo_download.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"file_read_write.md","mtime":"2020-10-09T02:28:02.662Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-09T02:32:27.299Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"文件读写","level":"6.1","depth":1,"next":{"title":"网络编程","level":"6.2","depth":1,"ref":"","articles":[{"title":"Socket编程","level":"6.2.1","depth":2,"path":"net.md","ref":"net.md","articles":[]},{"title":"HTTP","level":"6.2.2","depth":2,"path":"http.md","ref":"http.md","articles":[]}]},"previous":{"title":"代码样例","level":"5.3","depth":1,"path":"demo_download.md","ref":"demo_download.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-pro","splitter","chapter-fold","expandable-chapters","ga","back-to-top-button","anchor-navigation-ex","flexible-alerts","custom-favicon","scripts","tbfed-pagefooter","book-summary-scroll-position-saver"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"last modified:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"book-summary-scroll-position-saver":{},"splitter":{},"scripts":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"custom-favicon":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"ga":{"configuration":"auto","token":"UA-121188128-1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FlywizOS Docs","language":"zh","links":{"sidebar":{"Home":"https://www.flywizos.com"}},"gitbook":"*"},"file":{"path":"file_read_write.md","mtime":"2020-10-09T02:28:02.662Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-14T03:01:20.674Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1722,23 +1761,39 @@ ioutil::Reader r;
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
         
     
         

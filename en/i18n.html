@@ -1,10 +1,10 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Multiple language · GitBook</title>
+        <title>Multiple language · FlywizOS Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,11 +17,39 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -80,7 +108,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="https://www.flywizos.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1513,9 +1550,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="multi-language">Multi-language</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#multi-language"><b></b>Multi-language</a></li><ul><li><span class="title-icon "></span><a href="#how-to-add"><b></b>How to add</a></li><li><span class="title-icon "></span><a href="#how-to-switch-language"><b></b>How to switch language</a></li><li><span class="title-icon "></span><a href="#font-requirements"><b></b>Font requirements</a></li><li><span class="title-icon "></span><a href="#sample"><b></b>Sample</a></li></ul></ul></ul></div><h2 id="multi-language"><a name="multi-language" class="anchor-navigation-ex-anchor" href="#multi-language"><i class="fa fa-link" aria-hidden="true"></i></a>Multi-language</h2>
 <p>FlywizOS provides multi-language function to facilitate internationalization.</p>
-<h3 id="how-to-add">How to add</h3>
+<h3 id="how-to-add"><a name="how-to-add" class="anchor-navigation-ex-anchor" href="#how-to-add"><i class="fa fa-link" aria-hidden="true"></i></a>How to add</h3>
 <ol>
 <li><p>First, create a multi-language file through the new wizard.</p>
 <p><img src="assets/ide/new_i18n_file.gif" alt=""></p>
@@ -1575,7 +1612,7 @@
     <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 }
 </code></pre>
-<h3 id="how-to-switch-language">How to switch language</h3>
+<h3 id="how-to-switch-language"><a name="how-to-switch-language" class="anchor-navigation-ex-anchor" href="#how-to-switch-language"><i class="fa fa-link" aria-hidden="true"></i></a>How to switch language</h3>
 <ol>
 <li>The default language of the system is <strong>zh_CN</strong> (Simplified Chinese). </li>
 <li><p>You can open the system&apos;s built-in language switch activity to select a language.<br>Add the following code to open the activity.</p>
@@ -1588,15 +1625,17 @@
 </code></pre>
 </li>
 </ol>
-<h3 id="font-requirements">Font requirements</h3>
+<h3 id="font-requirements"><a name="font-requirements" class="anchor-navigation-ex-anchor" href="#font-requirements"><i class="fa fa-link" aria-hidden="true"></i></a>Font requirements</h3>
 <p>   Multiple language requires font support. If the text does not exist in the font, it will be displayed abnormally. Therefore, the font must contain text in multiple languages.</p>
 <blockquote>
 <p>The default font of the system is a simplified version. It is recommended to add custom fonts, see <a href="font_cut_tool.html">Font cutting</a>.</p>
 </blockquote>
-<h3 id="sample">Sample</h3>
+<h3 id="sample"><a name="sample" class="anchor-navigation-ex-anchor" href="#sample"><i class="fa fa-link" aria-hidden="true"></i></a>Sample</h3>
 <p>For the complete source code, please see the <strong>TranslationDemo</strong> project in <a href="demo_download.html#demo_download"><strong>Sample Code</strong></a></p>
 <p><img src="assets/ide/translation_demo.png" alt=""></p>
-
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">last modified:
+2020-12-08 18:24:17
+</span></footer>
                                 
                                 </section>
                             
@@ -1635,7 +1674,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Multiple language","level":"5.1","depth":1,"next":{"title":"Upgrade and debugging","level":"5.2","depth":1,"ref":"","articles":[{"title":"ADB debug ","level":"5.2.1","depth":2,"path":"adb_debug.md","ref":"adb_debug.md","articles":[]},{"title":"View print log","level":"5.2.2","depth":2,"path":"logcat.md","ref":"logcat.md","articles":[]},{"title":"Start the program from the TF card","level":"5.2.3","depth":2,"path":"start_from_sdcard.md","ref":"start_from_sdcard.md","articles":[]},{"title":"Upgrade boot LOGO","level":"5.2.4","depth":2,"path":"update_logo.md","ref":"update_logo.md","articles":[]},{"title":"Make upgrade image file","level":"5.2.5","depth":2,"path":"make_image.md","ref":"make_image.md","articles":[]},{"title":"auto update","level":"5.2.6","depth":2,"path":"autoupgrade.md","ref":"autoupgrade.md","articles":[]},{"title":"Make swipe card","level":"5.2.7","depth":2,"path":"sd_boot.md","ref":"sd_boot.md","articles":[]},{"title":"Remote upgrade","level":"5.2.8","depth":2,"path":"remote_update.md","ref":"remote_update.md","articles":[]}]},"previous":{"title":"Reboot the system","level":"4.10","depth":1,"path":"reboot.md","ref":"reboot.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"i18n.md","mtime":"2020-12-08T10:24:17.177Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-11T06:49:40.238Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Multiple language","level":"5.1","depth":1,"next":{"title":"Upgrade and debugging","level":"5.2","depth":1,"ref":"","articles":[{"title":"ADB debug ","level":"5.2.1","depth":2,"path":"adb_debug.md","ref":"adb_debug.md","articles":[]},{"title":"View print log","level":"5.2.2","depth":2,"path":"logcat.md","ref":"logcat.md","articles":[]},{"title":"Start the program from the TF card","level":"5.2.3","depth":2,"path":"start_from_sdcard.md","ref":"start_from_sdcard.md","articles":[]},{"title":"Upgrade boot LOGO","level":"5.2.4","depth":2,"path":"update_logo.md","ref":"update_logo.md","articles":[]},{"title":"Make upgrade image file","level":"5.2.5","depth":2,"path":"make_image.md","ref":"make_image.md","articles":[]},{"title":"auto update","level":"5.2.6","depth":2,"path":"autoupgrade.md","ref":"autoupgrade.md","articles":[]},{"title":"Make swipe card","level":"5.2.7","depth":2,"path":"sd_boot.md","ref":"sd_boot.md","articles":[]},{"title":"Remote upgrade","level":"5.2.8","depth":2,"path":"remote_update.md","ref":"remote_update.md","articles":[]}]},"previous":{"title":"Reboot the system","level":"4.10","depth":1,"path":"reboot.md","ref":"reboot.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-pro","splitter","chapter-fold","expandable-chapters","ga","back-to-top-button","anchor-navigation-ex","flexible-alerts","custom-favicon","scripts","tbfed-pagefooter","book-summary-scroll-position-saver"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"last modified:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"book-summary-scroll-position-saver":{},"splitter":{},"scripts":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"custom-favicon":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"ga":{"configuration":"auto","token":"UA-121188128-1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FlywizOS Docs","language":"en","links":{"sidebar":{"Home":"https://www.flywizos.com"}},"gitbook":"*"},"file":{"path":"i18n.md","mtime":"2020-12-08T10:24:17.177Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-14T02:59:58.168Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1645,23 +1684,39 @@
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
         
     
         

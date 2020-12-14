@@ -1,10 +1,10 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Camera · GitBook</title>
+        <title>Camera · FlywizOS Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,11 +17,39 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -82,7 +110,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="https://www.flywizos.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1515,13 +1552,13 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="camera">Camera</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#camera"><b></b>Camera</a></li><ul><li><span class="title-icon "></span><a href="#how-to-use"><b></b>How to use</a></li><li><span class="title-icon "></span><a href="#startstop-preview"><b></b>Start/Stop preview</a></li><li><span class="title-icon "></span><a href="#photo-camera"><b></b>Photo camera</a></li><li><span class="title-icon "></span><a href="#sample-code"><b></b>Sample code</a></li></ul></ul></div><h1 id="camera"><a name="camera" class="anchor-navigation-ex-anchor" href="#camera"><i class="fa fa-link" aria-hidden="true"></i></a>Camera</h1>
 <p>The FlywizOS provides camera controls.</p>
 <blockquote>
 <p>[!Note]
  Not all versions of the board support the camera function! If you need to use this function normally, please purchase a version that supports the USB camera function </p>
 </blockquote>
-<h2 id="how-to-use">How to use</h2>
+<h2 id="how-to-use"><a name="how-to-use" class="anchor-navigation-ex-anchor" href="#how-to-use"><i class="fa fa-link" aria-hidden="true"></i></a>How to use</h2>
 <ol>
 <li>First, create a <strong>camera</strong> control, default background color is black. </li>
 <li><p>View the attribute table of <strong>camera</strong> </p>
@@ -1531,7 +1568,7 @@
 <li><p>Connect the camera to the board, and then download and run the program, you can see the camera preview screen.</p>
 </li>
 </ol>
-<h2 id="startstop-preview">Start/Stop preview</h2>
+<h2 id="startstop-preview"><a name="startstop-preview" class="anchor-navigation-ex-anchor" href="#startstop-preview"><i class="fa fa-link" aria-hidden="true"></i></a>Start/Stop preview</h2>
 <p>We can start/stop the preview screen through source code.</p>
 <ul>
 <li>Start preview<pre><code class="lang-c++">mCameraView1Ptr-&gt;startPreview();
@@ -1541,7 +1578,7 @@
 </code></pre>
 </li>
 </ul>
-<h2 id="photo-camera">Photo camera</h2>
+<h2 id="photo-camera"><a name="photo-camera" class="anchor-navigation-ex-anchor" href="#photo-camera"><i class="fa fa-link" aria-hidden="true"></i></a>Photo camera</h2>
 <ol>
 <li><p>Implement the camera callback interface</p>
 <pre><code class="lang-c++"><span class="hljs-keyword">class</span> PictureCallback : <span class="hljs-keyword">public</span> ZKCamera::IPictureCallback {
@@ -1586,11 +1623,13 @@
 </code></pre>
 </li>
 </ol>
-<h2 id="sample-code">Sample code</h2>
+<h2 id="sample-code"><a name="sample-code" class="anchor-navigation-ex-anchor" href="#sample-code"><i class="fa fa-link" aria-hidden="true"></i></a>Sample code</h2>
 <p>In this example, the camera preview and camera functions, and album functions are implemented.</p>
 <p>For specific implementation, refer to <a href="demo_download.html#demo_download">Sample Code</a> CameraDemo project</p>
-<p><img src="assets/camera/preview.png" alt=""> </p>
-
+<p><img src="assets/camera/preview.png" alt="">  </p>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">last modified:
+2020-12-08 18:24:17
+</span></footer>
                                 
                                 </section>
                             
@@ -1633,7 +1672,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Camera","level":"2.17","depth":1,"next":{"title":"Digital Clock","level":"2.18","depth":1,"path":"digital_clock.md","ref":"digital_clock.md","articles":[]},"previous":{"title":"Painter","level":"2.16","depth":1,"path":"painter.md","ref":"painter.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"camera.md","mtime":"2020-12-08T10:24:17.171Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-11T06:49:40.238Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Camera","level":"2.17","depth":1,"next":{"title":"Digital Clock","level":"2.18","depth":1,"path":"digital_clock.md","ref":"digital_clock.md","articles":[]},"previous":{"title":"Painter","level":"2.16","depth":1,"path":"painter.md","ref":"painter.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-pro","splitter","chapter-fold","expandable-chapters","ga","back-to-top-button","anchor-navigation-ex","flexible-alerts","custom-favicon","scripts","tbfed-pagefooter","book-summary-scroll-position-saver"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"last modified:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"book-summary-scroll-position-saver":{},"splitter":{},"scripts":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"custom-favicon":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"ga":{"configuration":"auto","token":"UA-121188128-1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FlywizOS Docs","language":"en","links":{"sidebar":{"Home":"https://www.flywizos.com"}},"gitbook":"*"},"file":{"path":"camera.md","mtime":"2020-12-08T10:24:17.171Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-14T02:59:58.168Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1643,23 +1682,39 @@
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
         
     
         

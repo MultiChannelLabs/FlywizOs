@@ -1,10 +1,10 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Common skills in development tools · GitBook</title>
+        <title>Common skills in development tools · FlywizOS Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,11 +17,39 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -82,7 +110,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="https://www.flywizos.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1515,15 +1552,15 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="common-settings-for-development-tools">Common settings for development tools</h1>
-<h2 id="quick-jump-to-related-functions"><span id="jump_to_source"> Quick jump to related functions</span></h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#common-settings-for-development-tools"><b></b>Common settings for development tools</a></li><ul><li><span class="title-icon "></span><a href="#quick-jump-to-related-functions"><b></b> Quick jump to related functions</a></li><li><span class="title-icon "></span><a href="#modify-fontfont-size"><b></b>Modify font/font size</a></li><li><span class="title-icon "></span><a href="#code-smart-completion"><b></b>Code smart completion</a></li><li><span class="title-icon "></span><a href="#reindex"><b></b>Reindex</a></li></ul></ul></div><h1 id="common-settings-for-development-tools"><a name="common-settings-for-development-tools" class="anchor-navigation-ex-anchor" href="#common-settings-for-development-tools"><i class="fa fa-link" aria-hidden="true"></i></a>Common settings for development tools</h1>
+<h2 id="quick-jump-to-related-functions"><a name="quick-jump-to-related-functions" class="anchor-navigation-ex-anchor" href="#quick-jump-to-related-functions"><i class="fa fa-link" aria-hidden="true"></i></a><span id="jump_to_source"> Quick jump to related functions</span></h2>
 <p>When we add too many controls to the UI file, multiple associated functions will also be generated in the <strong>Logic.cc</strong> file. If you want to find the associated function of a certain control is quite time-consuming.<br>Fortunately, the tool provides a function to quickly jump from the UI control to the relevant code.<br>On the preview, select a control, right-click, and select <strong>Goto relative code</strong> in the pop-up menu to open the corresponding Logic.cc file, and position the cursor to the associated function of the control.  </p>
 <p>   <img src="assets/ide/jump_to_source.png" alt=""></p>
 <blockquote>
 <p><strong>Note: This function is only valid for control types that automatically generate associated functions, such as the control types mentioned above. If you choose other control types, the function will only jump to the corresponding Logic.cc file , And position the cursor at the bottom of the file. </strong></p>
 </blockquote>
 <hr>
-<h2 id="modify-fontfont-size">Modify font/font size</h2>
+<h2 id="modify-fontfont-size"><a name="modify-fontfont-size" class="anchor-navigation-ex-anchor" href="#modify-fontfont-size"><i class="fa fa-link" aria-hidden="true"></i></a>Modify font/font size</h2>
 <ol>
 <li><p>On the menu bar of the tool, select <strong>Window</strong> -&gt; <strong>Preferences</strong> </p>
 <p>   <img src="assets/ide/preference.png" alt=""></p>
@@ -1532,14 +1569,16 @@
 <p> <img src="assets/ide/set_font.png" alt=""></p>
 </li>
 </ol>
-<h2 id="code-smart-completion">Code smart completion</h2>
+<h2 id="code-smart-completion"><a name="code-smart-completion" class="anchor-navigation-ex-anchor" href="#code-smart-completion"><i class="fa fa-link" aria-hidden="true"></i></a>Code smart completion</h2>
 <p>When editing the code, you first need to input the starting part, and then press &quot;<strong>Alt + /</strong>&quot; to turn on the code completion function.<br>As shown in the figure below, I input the two letters <strong>UA</strong>, and then press &quot;<strong>Alt + /</strong>&quot; shortcut key, you can see that there are multiple completion options, which can be selected with the up and down arrow keys. <strong>Enter</strong> key confirms the selection.</p>
 <p>  <img src="assets/ide/intelisence.png" alt=""></p>
-<h2 id="reindex">Reindex</h2>
+<h2 id="reindex"><a name="reindex" class="anchor-navigation-ex-anchor" href="#reindex"><i class="fa fa-link" aria-hidden="true"></i></a>Reindex</h2>
 <p> If the code completion function fails, or the editor prompts a code error, but there is no problem with the compilation, please try to rebuild the index. </p>
 <p> The steps to rebuild the index are as follows :</p>
 <p> <img src="assets/ide/rebuild_index.gif" alt="">  </p>
-
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">last modified:
+2020-12-08 18:24:17
+</span></footer>
                                 
                                 </section>
                             
@@ -1582,7 +1621,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Common skills in development tools","level":"1.2.13","depth":2,"next":{"title":"General property","level":"2.1","depth":1,"path":"ctrl_common.md","ref":"ctrl_common.md","articles":[]},"previous":{"title":"Control naming rules","level":"1.2.12","depth":2,"path":"named_rule.md","ref":"named_rule.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"editor_tip.md","mtime":"2020-12-08T10:24:17.174Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-11T06:49:40.238Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Common skills in development tools","level":"1.2.13","depth":2,"next":{"title":"General property","level":"2.1","depth":1,"path":"ctrl_common.md","ref":"ctrl_common.md","articles":[]},"previous":{"title":"Control naming rules","level":"1.2.12","depth":2,"path":"named_rule.md","ref":"named_rule.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-pro","splitter","chapter-fold","expandable-chapters","ga","back-to-top-button","anchor-navigation-ex","flexible-alerts","custom-favicon","scripts","tbfed-pagefooter","book-summary-scroll-position-saver"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"last modified:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"book-summary-scroll-position-saver":{},"splitter":{},"scripts":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"custom-favicon":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"ga":{"configuration":"auto","token":"UA-121188128-1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FlywizOS Docs","language":"en","links":{"sidebar":{"Home":"https://www.flywizos.com"}},"gitbook":"*"},"file":{"path":"editor_tip.md","mtime":"2020-12-08T10:24:17.174Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-14T02:59:58.168Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1592,23 +1631,39 @@
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
         
     
         

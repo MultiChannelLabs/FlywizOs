@@ -1,10 +1,10 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>General property · GitBook</title>
+        <title>General property · FlywizOS Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,11 +17,39 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -82,7 +110,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="https://www.flywizos.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1515,9 +1552,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="common-properties">Common properties</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#common-properties"><b></b>Common properties</a></li><ul><li><span class="title-icon "></span><a href="#control-id-value"><b></b>Control ID value</a></li><li><span class="title-icon "></span><a href="#control-location"><b></b>Control location</a></li><li><span class="title-icon "></span><a href="#background-color"><b></b>Background color</a></li><li><span class="title-icon "></span><a href="#background-picture"><b></b>Background picture</a></li><li><span class="title-icon "></span><a href="#show-and-hide"><b></b>Show and hide</a></li><li><span class="title-icon "></span><a href="#control-state"><b></b>Control state</a></li><li><span class="title-icon "></span><a href="#example-description"><b></b>Example description</a></li><ul><li><span class="title-icon "></span><a href="#1create-control"><b></b>1.Create control</a></li><li><span class="title-icon "></span><a href="#2compile-the-project"><b></b>2.Compile the project</a></li><li><span class="title-icon "></span><a href="#3call-control-property-function"><b></b>3.Call control property function</a></li><li><span class="title-icon "></span><a href="#4download-and-debugging"><b></b>4.Download and debugging</a></li><li><span class="title-icon "></span><a href="#note-"><b></b>Note :</a></li></ul></ul></ul></div><h1 id="common-properties"><a name="common-properties" class="anchor-navigation-ex-anchor" href="#common-properties"><i class="fa fa-link" aria-hidden="true"></i></a>Common properties</h1>
 <p>Before we start to introduce each control, let&apos;s have a basic understanding of some common properties and setting interfaces of the control ;</p>
-<h2 id="control-id-value"><span id="widgetID">Control ID value</span></h2>
+<h2 id="control-id-value"><a name="control-id-value" class="anchor-navigation-ex-anchor" href="#control-id-value"><i class="fa fa-link" aria-hidden="true"></i></a><span id="widgetID">Control ID value</span></h2>
 <p>The ID value is the unique identifier of the control. The control ID value in each ftu file is not allowed to have the same name. The control ID value in different ftu files is allowed to have the same name; after setting the ID value, it will be compiled in <em>*activity</em> *The corresponding macro definition is generated in the corresponding header file in the directory:</p>
 <p><img src="images/ctrl_id_def.png" alt=""></p>
 <p>Get the ID value of the control:</p>
@@ -1537,7 +1574,7 @@
     <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 }
 </code></pre>
-<h2 id="control-location">Control location</h2>
+<h2 id="control-location"><a name="control-location" class="anchor-navigation-ex-anchor" href="#control-location"><i class="fa fa-link" aria-hidden="true"></i></a>Control location</h2>
 <p>We open any ftu file, select any control, in the property box, we can see the attribute <strong>coordinates</strong>, which determines the display position of the control :</p>
 <p><img src="images/ctrl_position.png" alt=""></p>
 <p>The coordinates of the upper left corner are relative to the upper left corner of the parent control ;<br>
@@ -1565,7 +1602,7 @@ Set and get the position of the control through code :</p>
     <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 }
 </code></pre>
-<h2 id="background-color">Background color</h2>
+<h2 id="background-color"><a name="background-color" class="anchor-navigation-ex-anchor" href="#background-color"><i class="fa fa-link" aria-hidden="true"></i></a>Background color</h2>
 <p><img src="images/ctrl_bgcolor.png" alt=""></p>
 <p>This is simple, modify the color to see the effect ;<br>
 Code to set the background color :</p>
@@ -1579,7 +1616,7 @@ Code to set the background color :</p>
     <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 }
 </code></pre>
-<h2 id="background-picture">Background picture</h2>
+<h2 id="background-picture"><a name="background-picture" class="anchor-navigation-ex-anchor" href="#background-picture"><i class="fa fa-link" aria-hidden="true"></i></a>Background picture</h2>
 <p><img src="images/ctrl_bg.png" alt=""></p>
 <p>After selecting the picture, you can see the effect
 <img src="images/ctrl_background.png" alt=""></p>
@@ -1597,7 +1634,7 @@ Code to set the background color :</p>
 mButton1Ptr-&gt;setBackgroundPic(<span class="hljs-string">&quot;/mnt/extsd/pic/bg.png&quot;</span>); <span class="hljs-comment">// Set the absolute path</span>
 mButton1Ptr-&gt;setBackgroundPic(<span class="hljs-string">&quot;bg.png&quot;</span>);    <span class="hljs-comment">// Set the bg.png picture in the resource directory</span>
 </code></pre>
-<h2 id="show-and-hide">Show and hide</h2>
+<h2 id="show-and-hide"><a name="show-and-hide" class="anchor-navigation-ex-anchor" href="#show-and-hide"><i class="fa fa-link" aria-hidden="true"></i></a>Show and hide</h2>
 <p><img src="images/ctrl_visible.png" alt=""></p>
 <p>Through this property, we can set the default display or hidden state of the control.</p>
 <p>Double-click the control in the outline view to quickly modify the state :</p>
@@ -1623,7 +1660,7 @@ mButton1Ptr-&gt;setVisible(FALSE); <span class="hljs-comment">// Hide the button
 mWindow1Ptr-&gt;showWnd();
 mWindow1Ptr-&gt;hideWnd();
 </code></pre>
-<h2 id="control-state">Control state</h2>
+<h2 id="control-state"><a name="control-state" class="anchor-navigation-ex-anchor" href="#control-state"><i class="fa fa-link" aria-hidden="true"></i></a>Control state</h2>
 <p>For <strong>text</strong>, <strong>button</strong>, and <strong>list item</strong>, they have 5 states, here we need to explain : <strong>normal/pressed/selected/pressed and selected /invalid state</strong>. After setting, it will affect the background color, text color and display picture of the corresponding state of the control;</p>
 <p><img src="images/ctrl_bgcolor_status.png" alt=""></p>
 <p><img src="images/ctrl_textcolor_status.png" alt=""></p>
@@ -1650,25 +1687,27 @@ mButton1Ptr-&gt;setSelected(FALSE);
 mButton1Ptr-&gt;setInvalid(TRUE);
 mButton1Ptr-&gt;setInvalid(FALSE);
 </code></pre>
-<h2 id="example-description">Example description</h2>
+<h2 id="example-description"><a name="example-description" class="anchor-navigation-ex-anchor" href="#example-description"><i class="fa fa-link" aria-hidden="true"></i></a>Example description</h2>
 <p>We use the following small examples to understand the simple usage of related interface functions of common attributes.</p>
-<h3 id="1create-control">1.Create control</h3>
+<h3 id="1create-control"><a name="1create-control" class="anchor-navigation-ex-anchor" href="#1create-control"><i class="fa fa-link" aria-hidden="true"></i></a>1.Create control</h3>
 <p>First, we create a new FlywizOS project, double-click to open the main.ftu file under the project UI folder, and drag the button control and text control in the control bar.</p>
 <p><img src="images/ctrl_new_widget.gif" alt=""></p>
-<h3 id="2compile-the-project">2.Compile the project</h3>
+<h3 id="2compile-the-project"><a name="2compile-the-project" class="anchor-navigation-ex-anchor" href="#2compile-the-project"><i class="fa fa-link" aria-hidden="true"></i></a>2.Compile the project</h3>
 <p>(If you are not sure about the specific operation, please see the <a href="how_to_compile_flywizOS.html#how_to_compile_flywizOS">&quot;How to compile the FlywizOS project&quot;</a> chapter)</p>
 <p><img src="images/ctrl_compile_project.gif" alt=""></p>
-<h3 id="3call-control-property-function">3.Call control property function</h3>
+<h3 id="3call-control-property-function"><a name="3call-control-property-function" class="anchor-navigation-ex-anchor" href="#3call-control-property-function"><i class="fa fa-link" aria-hidden="true"></i></a>3.Call control property function</h3>
 <p>After the compilation is complete, open the jni/logic/mainLogic.cc file in the project and you can see that the <code>onButtonClick_Button1</code> function is generated at the bottom of the file.
 <strong>We will call the getID() function in this function to get the ID value of the Button1 control , and call the setText() function to display it in the TextView1 control. </strong>
 (<a href="named_rule.html">If you are not clear about the corresponding rules between the pointer variable name and the control ID in the UI file, click here</a>)</p>
 <p><img src="images/ctrl_getButton1ID.jpg" alt=""></p>
-<h3 id="4download-and-debugging">4.Download and debugging</h3>
+<h3 id="4download-and-debugging"><a name="4download-and-debugging" class="anchor-navigation-ex-anchor" href="#4download-and-debugging"><i class="fa fa-link" aria-hidden="true"></i></a>4.Download and debugging</h3>
 <p>In the project manager, select the project name, right-click, and select <strong>Download and Debug</strong> in the pop-up menu to temporarily download the program to the screen and run it. After running, click the button to see the <a href="#widgetID">ID value of Button1 control</a> is 20001.</p>
-<h3 id="note-">Note :</h3>
+<h3 id="note-"><a name="note-" class="anchor-navigation-ex-anchor" href="#note-"><i class="fa fa-link" aria-hidden="true"></i></a>Note :</h3>
 <p><font color="#E6161E" size="4">To learn more about the setting interface functions of the common properties of the control, you can open the /jni/include/control/ZKBase.h file, and the main property setting interface functions have been commented.</font>
-<img src="images/ctrl_ZKBase.jpg" alt=""></p>
-
+<img src="images/ctrl_ZKBase.jpg" alt=""> </p>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">last modified:
+2020-12-08 18:24:17
+</span></footer>
                                 
                                 </section>
                             
@@ -1711,7 +1750,7 @@ mButton1Ptr-&gt;setInvalid(FALSE);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"General property","level":"2.1","depth":1,"next":{"title":"Text","level":"2.2","depth":1,"path":"textview.md","ref":"textview.md","articles":[]},"previous":{"title":"Common skills in development tools","level":"1.2.13","depth":2,"path":"editor_tip.md","ref":"editor_tip.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ctrl_common.md","mtime":"2020-12-08T10:24:17.172Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-11T06:49:40.238Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"General property","level":"2.1","depth":1,"next":{"title":"Text","level":"2.2","depth":1,"path":"textview.md","ref":"textview.md","articles":[]},"previous":{"title":"Common skills in development tools","level":"1.2.13","depth":2,"path":"editor_tip.md","ref":"editor_tip.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-pro","splitter","chapter-fold","expandable-chapters","ga","back-to-top-button","anchor-navigation-ex","flexible-alerts","custom-favicon","scripts","tbfed-pagefooter","book-summary-scroll-position-saver"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"last modified:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"book-summary-scroll-position-saver":{},"splitter":{},"scripts":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"custom-favicon":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"ga":{"configuration":"auto","token":"UA-121188128-1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FlywizOS Docs","language":"en","links":{"sidebar":{"Home":"https://www.flywizos.com"}},"gitbook":"*"},"file":{"path":"ctrl_common.md","mtime":"2020-12-08T10:24:17.172Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-14T02:59:58.168Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1721,23 +1760,39 @@ mButton1Ptr-&gt;setInvalid(FALSE);
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
         
     
         

@@ -1,10 +1,10 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Diagram · GitBook</title>
+        <title>Diagram · FlywizOS Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,11 +17,39 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -82,7 +110,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="https://www.flywizos.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -1515,9 +1552,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="diagram">Diagram</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#diagram"><b></b>Diagram</a></li><ul><li><span class="title-icon "></span><a href="#how-to-use"><b></b>How to use</a></li><li><span class="title-icon "></span><a href="#coordinate-axis-and-scale"><b></b>Coordinate axis and scale</a></li><li><span class="title-icon "></span><a href="#code-operating"><b></b>Code operating</a></li><li><span class="title-icon "></span><a href="#additional-method-of-wave-movement"><b></b>Additional method of wave movement</a></li><li><span class="title-icon "></span><a href="#add-timer-to-refresh-waveform-data-regularly"><b></b>Add timer to refresh waveform data regularly</a></li><li><span class="title-icon "></span><a href="#sample-code"><b></b>Sample code</a></li></ul></ul></div><h1 id="diagram"><a name="diagram" class="anchor-navigation-ex-anchor" href="#diagram"><i class="fa fa-link" aria-hidden="true"></i></a>Diagram</h1>
 <p>Use this control to easily draw a curve or broken line diagram.</p>
-<h2 id="how-to-use">How to use</h2>
+<h2 id="how-to-use"><a name="how-to-use" class="anchor-navigation-ex-anchor" href="#how-to-use"><i class="fa fa-link" aria-hidden="true"></i></a>How to use</h2>
 <ol>
 <li><p>First, create a <strong>diagram</strong> control in the UI file, which specifies the drawing area of the waveform, and then add a <strong>waveform</strong> control to the area just created. You can see a rough preview of the diagram immediately. The specific creation process is as follows:</p>
 <p><img src="assets/diagram/add_diagram.gif" alt="">  </p>
@@ -1537,13 +1574,13 @@
 <li><strong>Erase Space</strong><br>Indicates the width of the <strong>vacanct</strong> part when the waveform is refreshed  </li>
 </ol>
 <p><strong>The above two properties are only valid when the waveform data is added using the <code>void addData(int index, float data)</code> function.</strong> </p>
-<h2 id="coordinate-axis-and-scale">Coordinate axis and scale</h2>
+<h2 id="coordinate-axis-and-scale"><a name="coordinate-axis-and-scale" class="anchor-navigation-ex-anchor" href="#coordinate-axis-and-scale"><i class="fa fa-link" aria-hidden="true"></i></a>Coordinate axis and scale</h2>
 <p> The image scaling of the entire waveform is done automatically, we don&apos;t need to care about it, we only need to determine the x-axis range, y-axis range, and the rectangular display area of the entire waveform image in the property table.</p>
 <p>Note: The <strong>X scale and Y scale</strong> properties in the waveform control will multiply the value by the ratio and then draw it on the screen. The default is 1.0, which means no scaling.
  The coordinate axis of the waveform is determined by <strong>x-axis min value, x-axis max  value, y-axis min  value, and y-axis max  value</strong>.<br> For example, the default x-axis range is [0, 100], y-axis range is [0,100], then the coordinate axis they form is</p>
 <p> <img src="assets/diagram/location.png" alt="">  </p>
 <p> In general, the value entered in the <strong>x-axis min value</strong> property is smaller than the value of the <strong>x-axis max value</strong> property. But if the input minimum and maximum values are reversed, the waveform image drawn with the same data will be reversed;<br> If you use the <code>void setData(int index, const MPPOINT *pPoints, int count)</code> function to add waveform data, the refresh direction will be reversed. Similarly, for the y-axis, drawing a waveform image will cause upside down.   </p>
-<h2 id="code-operating">Code operating</h2>
+<h2 id="code-operating"><a name="code-operating" class="anchor-navigation-ex-anchor" href="#code-operating"><i class="fa fa-link" aria-hidden="true"></i></a>Code operating</h2>
 <p>  Similarly, the UI file only helps us quickly modify the appearance of the waveform, and the specific waveform data must be added through code. 
   In the public function of the project&apos;s <code>jni/include/control/ZKDiagram.h</code> file, you can see all the supported operations.<br>  <strong>Note: Different from other controls, the <code>Waveform</code> control we added has ID attribute, but it does not generate independent pointer variables. Only the <code>Diagram</code> control that contains <code>Waveform</code> will generate pointer variables. Therefore, to operate a certain waveform, you need to use the <code>Diagram</code> pointer, and then use the <code>index</code> value to indicate which <code>waveform</code> is operated.
 The value of <code>index</code> starts from 0. </strong></p>
@@ -1572,7 +1609,7 @@ Add a single data to the waveform, <code>data</code> is the y value, you may won
 </blockquote>
 </li>
 </ul>
-<h2 id="additional-method-of-wave-movement">Additional method of wave movement</h2>
+<h2 id="additional-method-of-wave-movement"><a name="additional-method-of-wave-movement" class="anchor-navigation-ex-anchor" href="#additional-method-of-wave-movement"><i class="fa fa-link" aria-hidden="true"></i></a>Additional method of wave movement</h2>
 <p>As mentioned earlier, if you use the <code>void setData(int index, const MPPOINT *pPoints, int count)</code> method to draw waveforms, you usually need to offset the values in the array by yourself.</p>
 <pre><code class="lang-c++"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">movePoints</span><span class="hljs-params">(MPPOINT* p,<span class="hljs-keyword">int</span> size)</span></span>{
     <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">0</span>;i &lt; size<span class="hljs-number">-1</span>;i++){
@@ -1581,12 +1618,14 @@ Add a single data to the waveform, <code>data</code> is the y value, you may won
     p[size<span class="hljs-number">-1</span>].y = <span class="hljs-number">0</span>;
 }
 </code></pre>
-<h2 id="add-timer-to-refresh-waveform-data-regularly">Add timer to refresh waveform data regularly</h2>
+<h2 id="add-timer-to-refresh-waveform-data-regularly"><a name="add-timer-to-refresh-waveform-data-regularly" class="anchor-navigation-ex-anchor" href="#add-timer-to-refresh-waveform-data-regularly"><i class="fa fa-link" aria-hidden="true"></i></a>Add timer to refresh waveform data regularly</h2>
 <p>In general, add a timer to match the waveform to facilitate regular refresh</p>
-<h2 id="sample-code">Sample code</h2>
+<h2 id="sample-code"><a name="sample-code" class="anchor-navigation-ex-anchor" href="#sample-code"><i class="fa fa-link" aria-hidden="true"></i></a>Sample code</h2>
 <p>Effect picture<br>For the use of specific waveform control, please refer to the DiagramDemo project in <a href="demo_download.html#demo_download">Sample Code</a>.</p>
 <p><img src="assets/diagram/preview.jpg" alt="">  </p>
-
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">last modified:
+2020-12-08 18:24:17
+</span></footer>
                                 
                                 </section>
                             
@@ -1629,7 +1668,7 @@ Add a single data to the waveform, <code>data</code> is the y value, you may won
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Diagram","level":"2.9","depth":1,"next":{"title":"Circle Bar","level":"2.10","depth":1,"path":"circlebar.md","ref":"circlebar.md","articles":[]},"previous":{"title":"List","level":"2.8","depth":1,"path":"listview.md","ref":"listview.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"diagram.md","mtime":"2020-12-08T10:24:17.173Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-11T06:49:40.238Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Diagram","level":"2.9","depth":1,"next":{"title":"Circle Bar","level":"2.10","depth":1,"path":"circlebar.md","ref":"circlebar.md","articles":[]},"previous":{"title":"List","level":"2.8","depth":1,"path":"listview.md","ref":"listview.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-pro","splitter","chapter-fold","expandable-chapters","ga","back-to-top-button","anchor-navigation-ex","flexible-alerts","custom-favicon","scripts","tbfed-pagefooter","book-summary-scroll-position-saver"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"last modified:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"book-summary-scroll-position-saver":{},"splitter":{},"scripts":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"custom-favicon":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"ga":{"configuration":"auto","token":"UA-121188128-1"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"FlywizOS Docs","language":"en","links":{"sidebar":{"Home":"https://www.flywizos.com"}},"gitbook":"*"},"file":{"path":"diagram.md","mtime":"2020-12-08T10:24:17.173Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-14T02:59:58.168Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1639,23 +1678,39 @@ Add a single data to the waveform, <code>data</code> is the y value, you may won
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
         
     
         
