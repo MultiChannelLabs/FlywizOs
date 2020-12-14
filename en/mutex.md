@@ -81,18 +81,17 @@ If there is an "abnormal" result in the program, it must be regarded as a bug.
 
   If you are familiar with Linux programming, you can use standard implementation. Here we introduce the use of our encapsulated mutex class. 
 
-  1. Define a mutex 
+  1. Define a mutex   
+     ```C++
+     static Mutex mutex1;
+     ```
 
-```C++
-static Mutex mutex1;
-```
-  2. Where locking is required, define a local `Mutex::Autolock` class instance to lock.
-
-```C++
-// This class utilizes the life cycle of local variables and the structure and destructor of C++ classes to automatically 
-// implement locking and unlocking operations.
-Mutex::Autolock _l(mutex1);
-```
+  2. Where locking is required, define a local `Mutex::Autolock` class instance to lock.  
+     ```C++
+     // This class utilizes the life cycle of local variables and the structure and destructor of C++ classes to automatically 
+     // implement locking and unlocking operations.
+     Mutex::Autolock _l(mutex1);
+     ```
 
 Combining the above A and B thread examples, the modified code is as follows :
 ```c++

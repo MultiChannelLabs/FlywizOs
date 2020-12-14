@@ -4,10 +4,8 @@
 
    ![](assets/ide/new_flythings_project.gif)  
 
-2. 先の選択が完了したら、** FlywizOS New Wizard**がポップアップされます。  
-    
+2. 先の選択が完了したら、** FlywizOS New Wizard**がポップアップされます。     
    ![](assets/ide/wizard_new_project_page1.png)  
-
    新しいプロジェクトを作るのに必要なパラメータを入力します。
 
    * **Project name**  
@@ -20,14 +18,14 @@
      - **F9306**  
    
    上記のパラメータを満たした後、すぐに**Finish**をクリックすると、プロジェクトが作成されます。しかし、今では、より多くの設定のために**Next**を選択します。   
-3. Nextをクリックした後、以下のようなパラメータを見ることができます。  
-      
+3. Nextをクリックした後、以下のようなパラメータを見ることができます。     
    ![](assets/ide/wizard_new_project_page2.png)      
    
    ## プロジェクトの各属性の意味と機能
    * **Screen saver timeout**  
-     FlywizOSシステムはスクリーンセーバー機能を提供します。もし、特定の時間内にタッチ操作がないか、コードを介してスクリーンセーバーの時間をリセットしない場合、システムは自動的にスクリーンセーバーに入ります。  
-     時間が **-1**場合スクリーンセーバー機能を使用しないということを意味します。
+   
+    FlywizOSシステムはスクリーンセーバー機能を提供します。もし、特定の時間内にタッチ操作がないか、コードを介してスクリーンセーバーの時間をリセットしない場合、システムは自動的にスクリーンセーバーに入ります。
+    時間が **-1**場合スクリーンセーバー機能を使用しないということを意味します。
    
    * **Serial port**  
     通信シリアルポートであり、一般的に変更する必要がありません。
@@ -47,7 +45,7 @@
    * **Input method**  
     もし中国語入力が必要な場合選択してください。そして **[Edit Text](edittext.md)**コントロールの中国語入力を解決します。
 
-   上記の属性は、後に再度変更が可能なので、ここを満たすことを心配しないでください。([プロジェクトのプロパティを変更する方法](set_project_properties.md))  
+   Don't worry about satisfying this, as the above attributes can be changed again later. ([How to change project properties](set_project_properties.md)) 
    入力されたすべてのプロパティを確認し、**Finish**をクリックすると、プロジェクトの作成が終了します。作成プロセスには、いくつかの時間がかかりますので、しばらくお待ちください。  
 
 4. プロジェクトが作成されると、まず、[FlywizOSプロジェクトコード構造](project_structure＃project_structure.md)を理解する必要があります。

@@ -36,9 +36,5 @@ See [Core Module Instructions](core_module.md)
 ## Hardware
 See [Hardware Instructions](hardware.md)
 
-## Questions
+## FAQ
 Here are some [common problems and solutions](problems.md);
-
-## Contact us
-QQ群：[371608200](//shang.qq.com/wpa/qunwpa?idkey=da6e12d1773a7e55295a0accd2a46ad51aece61657fe55a2f8277f4cd91dc56a)<br/>
-论坛：[SuperV](http://bbs.zkswe.com/forum.php)

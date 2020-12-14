@@ -40,7 +40,5 @@ Tool에 익숙해진 후, LCD보드의 개발 규칙에 대해 알아봅니다.
 ## Hardware편
 [하드웨어 소개](hardware.md)를 참고하십시오.
 
-## Questions편
+## FAQ편
 [FAQ](problems.md)를 참고하십시오.
-
-## Contact us

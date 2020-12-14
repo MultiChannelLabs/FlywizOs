@@ -59,9 +59,5 @@ Toolに慣れた後、LCD基板の開発規則について説明します。<br/
 
 
 
-## Questions編
+## FAQ編
 [common problems and solutions](problems.md) 参照してください。
-
-
-
-## Contact us
