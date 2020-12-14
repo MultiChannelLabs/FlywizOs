@@ -87,7 +87,9 @@ Multiple threads 프로그램에서 thread의 실행 순서는 시스템의 스�
    // implement locking and unlocking operations.
    Mutex::Autolock _l(mutex1);
    ```
-아래 코드는 위의 A와 B thread 예제를 이용해 수정된 코드입니다.
+
+아래 코드는 위의 A와 B thread 예제를 이용해 수정된 코드입니다.  
+
 ```c++
 #include <system/Thread.h>
 

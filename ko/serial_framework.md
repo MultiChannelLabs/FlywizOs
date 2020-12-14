@@ -126,65 +126,64 @@ int parseProtocol(const BYTE *pData, UINT len) {
 ![](images/serial_data_package.png)
 
 * 프로토콜 헤더를 수정
-```c++
-// 1.Modify the definition of the protocol header. If the length of the protocol header changes, pay attention to modifying the
-// statement of the protocol header judgment part.
-#define CMD_HEAD1	0xFF
-#define CMD_HEAD2	0x55
+   ```c++
+   // 1.Modify the definition of the protocol header. If the length of the protocol header changes, pay attention to modifying the
+   // statement of the protocol header judgment part.
+   #define CMD_HEAD1	0xFF
+   #define CMD_HEAD2	0x55
 
-// 2.You need to modify this when the length of the protocol header changes.
-while ((mDataBufLen >= 2) && ((pData[0] != CMD_HEAD1) || (pData[1] != CMD_HEAD2)))
-```
+   // 2.You need to modify this when the length of the protocol header changes.
+   while ((mDataBufLen >= 2) && ((pData[0] != CMD_HEAD1) || (pData[1] != CMD_HEAD2)))
+   ```
 
 * 프로토콜 길이 위치 변경 또는 길이 계산 방법 수정
-```c++
-// Here pData[4] represents the fifth data is the length byte, if it changes, please modify it here.
-dataLen = pData[4];
-// The frame length is generally the data length plus the head and tail length. If the length calculation method passed in the 
-// agreement changes, modify this part.
-frameLen = dataLen + DATA_PACKAGE_MIN_LEN;
-```
+   ```c++
+   // Here pData[4] represents the fifth data is the length byte, if it changes, please modify it here.
+   dataLen = pData[4];
+   // The frame length is generally the data length plus the head and tail length. If the length calculation method passed in the 
+   // agreement changes, modify this part.
+   frameLen = dataLen + DATA_PACKAGE_MIN_LEN;
+   ```
 
 * 프로토콜 검증 방법이 변경되는 경우
-```c++
-/**
- * By default, we turn off checksum verification. If you need to support checksum verification, open the PRO_SUPPORT_CHECK_SUM 
- * macro in the CommDef.h file
- * When the verification is different, the verification method needs to be modified.
- * 1.Check the content changes to modify this location
- *     if (getCheckSum(pData, frameLen - 1) == pData[frameLen - 1])
- * 2.Check the calculation formula changes to modify the content in the getCheckSum function
- */
+   ```c++
+   /**
+    * By default, we turn off checksum verification. If you need to support checksum verification, open the PRO_SUPPORT_CHECK_SUM 
+    * macro in the CommDef.h file
+    * When the verification is different, the verification method needs to be modified.
+    * 1.Check the content changes to modify this location
+    *     if (getCheckSum(pData, frameLen - 1) == pData[frameLen - 1])
+    * 2.Check the calculation formula changes to modify the content in the getCheckSum function
+    */
 
-/**
- * Get checksum code
- */
-BYTE getCheckSum(const BYTE *pData, int len) {
-	int sum = 0;
-	for (int i = 0; i < len; ++i) {
-		sum += pData[i];
-	}
-
-	return (BYTE) (~sum + 1);
-}
-```
+   /**
+    * Get checksum code
+    */
+   BYTE getCheckSum(const BYTE *pData, int len) {
+	   int sum = 0;
+	   for (int i = 0; i < len; ++i) {
+           sum += pData[i];
+	   }
+       return (BYTE) (~sum + 1);
+   }
+   ```
 
 * 데이터 프레임 수신이 완료되면 프로그램은 procParse를 호출하여 분석합니다.
-```c++
-	// Support checksum verification, open PRO_SUPPORT_CHECK_SUM macro in CommDef.h file when needed
-#ifdef PRO_SUPPORT_CHECK_SUM
-	// Get checksum code
-	if (getCheckSum(pData, frameLen - 1) == pData[frameLen - 1]) {
+   ```c++
+   // Support checksum verification, open PRO_SUPPORT_CHECK_SUM macro in CommDef.h file when needed
+   #ifdef PRO_SUPPORT_CHECK_SUM
+   // Get checksum code
+   if (getCheckSum(pData, frameLen - 1) == pData[frameLen - 1]) {
 		// Parse a frame of data
 		procParse(pData, frameLen);
-	} else {
+   } else {
 		LOGE("CheckSum error!!!!!!\n");
-	}
-#else
-	// Parse a frame of data
-	procParse(pData, frameLen);
-#endif
-```
+   }
+   #else
+   // Parse a frame of data
+   procParse(pData, frameLen);
+   #endif
+   ```
 
 ### 통신 프로토콜 데이터를 UI컨트롤과 연결하는 방법
 이전 프로토콜 프레임워크를 계속하여 procParse의 구문 분석 부분에 들어갑니다.  
@@ -209,22 +208,20 @@ void procParse(const BYTE *pData, UINT len) {
 	}
 	notifyProtocolDataUpdate(sProtocolData);
 }
-
 ```
+
 위의 `MAKEWORD (pData [2], pData [3])`는 프로토콜 예제에서 Cmd 값을 나타냅니다.  
 데이터 분석이 완료되면 `notifyProtocolDataUpdate`를 통해 UI에 업데이트를 알립니다. 이 부분은 아래 UI 업데이트 부분을 참고하시기 바랍니다.
 
 * 데이터 구조  
   위의 프로토콜은 sProtocolData구조로 구문 분석되며 sProtocolData는 MCU(또는 기타 장치)의 시리얼 포트에서 보낸 데이터 값을 저장하는 데 사용되는 정적 변수입니다.
   이 데이터 구조는 ProtocolData.h 파일에 있습니다. 여기에서 전체 프로젝트에서 사용하는 통신 변수를 추가 할 수 있습니다.
-
-```c++
-typedef struct {
-	// You can add protocol data variables here
-	BYTE power;
-} SProtocolData;
-
-```
+   ```c++
+   typedef struct {
+	   // You can add protocol data variables here
+       BYTE power;
+   } SProtocolData;
+   ```
 
 * UI 업데이트  
   IDE가 Activity.cpp를 생성 할 때 UI 액티비티의 registerProtocolDataUpdateListener가 완료됩니다. 이는 데이터가 업데이트될 때 등록된 함수로 데이터를 수신함을 의미합니다.

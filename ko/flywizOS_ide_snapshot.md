@@ -14,14 +14,14 @@ IDE를 실행하면, 아래의 팝업화면을 볼 수 있습니다.
   * **New Project**  
     어떻게 [새로운 프로젝트를 생성](new_flythings_project.html)하는지를 단계적으로 수행합니다.
     
-  * **Import Project**
-    이 기능을 통해 기존에 만들어졌던 프로젝트들을 현재의 Workspace에 가져와서 이전 개발을 지속할 수 있습니다.
+  * **Import Project**  
+    이 기능을 통해 기존에 만들어졌던 프로젝트들을 현재의 Workspace에 가져와서 이전 개발을 지속할 수 있습니다.  
     [프로젝트 가져오기](import_project.md)
     
-    ![](assets/ide/welcome.png)  
+    ![](assets/ide/welcome.png)
     
-
     Welcome화면을 다시 열기를 원한다면 **메뉴**에서 **Help -> Welcome**을 선택하십시오.
+
     ![](assets/ide/reopen_welcome.png)  
 
 ​    

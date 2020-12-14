@@ -97,7 +97,7 @@
     * [플래쉬 카드 만들기](sd_boot.md)
     * [원격 업그레이드](remote_update.md)
 
-* [Sample code](demo_download.md)
+* [샘플 코드](demo_download.md)
 
 ## Linux standard programming
 * [파일 읽기/쓰기](file_read_write.md)

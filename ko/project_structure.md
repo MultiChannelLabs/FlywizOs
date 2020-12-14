@@ -37,27 +37,27 @@
   ![](assets/project_jni_expand.png)  
   
   위에 보이는 것처럼 여기에는 **activity**, **include**, **logic**, **uart**, **Main.cpp**, **Makefile**의 6 개 부분이 포함되어 있습니다. 각 부분의 기능은 다음과 같습니다.
-
-   * **activity subfolder**  
+   
+   * ### activity subfolder  
      UI 파일의 기본 클래스 코드를 저장합니다. 각 UI파일이 컴파일 된 후 동일한 접두사 이름을 가진 `Activity`클래스와 `Logic.cc`파일이 생성됩니다. 
      예 : ui 폴더에 **main.ftu**가 있는 경우 컴파일 후 `mainActivity.h`, `mainActivity.cpp` 및 `mainLogic.cc`가 생성되고 `mainActivity`클래스가 **activity**폴더에 저장됩니다. `mainLogic.cc` 파일은 **logic**폴더에 저장됩니다.
      > [!Warning] 
      > **특별한 상황을 제외하고 activity 폴더 아래의 코드는 수정하지 않는 것이 좋습니다.**
-
-   * **logic subfolder**  
+          
+   * ### logic subfolder   
      특정 논리 코드를 저장합니다. 위의 설명과 동일하게 모든 UI파일은 컴파일 후 해당 접두사 이름이 있는 **Logic.cc**파일을 생성합니다. **참고 : 사용자 지정 코드는 주로 이러한 Logic.cc파일에 추가됩니다**.
-
-   * **include subfolder**   
+          
+   * ### include subfolder   
      시스템 관련 헤더 파일 및 모든 컨트롤 관련 헤더 파일이 주로 여기에 저장됩니다.
-
-   * **uart subfolder**  
+      
+   * ### uart subfolder     
      이름에서 알 수 있듯이 이 폴더에는 시리얼 포트 읽기 및 쓰기, 프로토콜 분석 등을 포함한 시리얼 포트 동작 관련 코드가 저장됩니다.
-
-   * **Main.cpp**
+          
+   * ### Main.cpp   
      부팅 및 시작 액티비티를 선택하는 함수 등 전체 FlywizOS 응용 프로그램의 초기화 코드를 포함하며 일반적으로 파일을 수정할 필요가 없습니다.
-
-   * **Makefile/Android.mk, Application.mk**  
+      
+   * ### Makefile/Android.mk、Application.mk   
      특정 소스 코드 컴파일 프로세스를 포함하는 컴파일 구성 파일로 일반적으로 수정할 필요가 없습니다. 
 
-컴파일 후 **libs**디렉토리와 **obj**디렉토리가 프로젝트 아래에 생성됩니다. 이 디렉토리는 컴파일된 대상의 라이브러리 디렉토리와 컴파일된 임시 파일 디렉토리이며 둘 다 직접 정리하거나 삭제할 수 있습니다.
+ 컴파일 후 **libs**디렉토리와 **obj**디렉토리가 프로젝트 아래에 생성됩니다. 이 디렉토리는 컴파일된 대상의 라이브러리 디렉토리와 컴파일된 임시 파일 디렉토리이며 둘 다 직접 정리하거나 삭제할 수 있습니다.
 

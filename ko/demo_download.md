@@ -1,32 +1,13 @@
-## <span id = "demo_download">Sample</span> download
+## <span id = "demo_download">샘플 코드</span> download
  > [!Note] 
- > **Please download the sample code of the platform corresponding to the screen first, if it is not, you can download a copy, and then refer to [convert compile platform](convert_platform.md) to convert by yourself**
+ > **먼저 원하는 해당하는 플랫폼과 LCD해상도에 맞는 샘플 코드를 다운로드 하십시오. 만약 해당 플랫폼에 사용중인 해상도에 맞는 샘플 코드가 없다면, 다른 플랫폼의 동일 해상도의 샘플코드를 다운로드 한 후 [convert compile platform](convert_platform.md)를 참조하여 직접 변환하세요.**
 
 
-* Z6S或z6平台
-   * [480x272 控件样例](http://download.flythings.cn/archive/basedemo_z6s_480_272.zip)
-   * [480x854 控件样例](http://download.flythings.cn/archive/basedemo_z6s_480_854.zip)
-   * [800x480 控件样例](http://download.flythings.cn/archive/basedemo_z6s_800_480.zip)
-   * [1024x600 控件样例](http://download.flythings.cn/archive/basedemo_z6s_1024_600.zip)
-   * [第三方库移植代码样例(Modbus、Sqlite、CURL HTTP、Mqtt)](http://download.flythings.cn/archive/Z6SThirdPart-master.zip)
-   * [场景应用样例(日历、表格、文件浏览器)](http://download.flythings.cn/archive/Z6SClassicCases-master.zip)
-* Z11S平台  
-   * [480x272 控件样例](http://download.flythings.cn/archive/basedemo_z11s_480_272.zip)
-   * [480x854 控件样例](http://download.flythings.cn/archive/basedemo_z11s_480_854.zip)
-   * [800x480 控件样例](http://download.flythings.cn/archive/basedemo_z11s_800_480.zip)
-   * [1024x600 控件样例](http://download.flythings.cn/archive/basedemo_z11s_1024_600.zip)
-   * [第三方库移植代码样例(Modbus、Sqlite、CURL HTTP、Mqtt)](http://download.flythings.cn/archive/Z11SThirdPart-master.zip)
-   * [场景应用样例(日历、表格、文件浏览器)](http://download.flythings.cn/archive/Z11SClassicCases-master.zip)
-
-* A33NOR平台
-   * [480x272 控件样例](http://download.flythings.cn/archive/basedemo_a33nor_480_272.zip)
-   * [480x854 控件样例](http://download.flythings.cn/archive/basedemo_a33nor_480_854.zip)
-   * [800x480 控件样例](http://download.flythings.cn/archive/basedemo_a33nor_800_480.zip)
-   * [1024x600 控件样例](http://download.flythings.cn/archive/basedemo_a33nor_1024_600.zip)
-   * [第三方库移植代码样例(Modbus、Sqlite、CURL HTTP、Mqtt)](http://download.flythings.cn/archive/A33NorThirdPart-master.zip)
-   * [场景应用样例(日历、表格、文件浏览器)](http://download.flythings.cn/archive/A33NorClassicCases-master.zip)
-
-
-
-* 出厂样例代码
-   * [代码样例](http://download.flythings.cn/archive/zkswe_sampleUI-master.zip)
+* FW9306 또는 FW9306s 플랫폼
+   * [480x272 샘플 코드](http://www.flywizos.com/archive/basedemo_fw9306_480_272.zip)
+   * [기타 샘플 코드(Modbus、Sqlite、CURL HTTP、Mqtt)](http://www.flywizos.com/archive/FW9306SThirdPart-master.zip)
+   
+* FW9311 플랫폼
+   * [800x480 샘플 코드](http://www.flywizos.com/archive/basedemo_z11s_800_480.zip)
+   * [1024x600 샘플 코드](http://www.flywizos.com/archive/basedemo_z11s_1024_600.zip)
+   * [기타 샘플 코드(Modbus、Sqlite、CURL HTTP、Mqtt)](http://www.flywizos.com/archive/Z11SThirdPart-master.zip)

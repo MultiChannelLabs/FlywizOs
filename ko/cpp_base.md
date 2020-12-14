@@ -5,39 +5,39 @@
 C++의 경우 먼저 **class**를 언급해야합니다. 너무 복잡하다고 생각하지 말고 C 언어의 structure로 이해하도록 합니다.  
 예를 들어  :
 * 구조체 정의
-```c++
-// C
-struct Position {
-	int left;
-	int top;
-	int width;
-	int height;
-};
+  ```c++
+  // C
+  struct Position {
+    int left;
+    int top;
+    int width;
+    int height;
+  };
 
-// c++
-class Position {
-public:
-	int left;
-	int top;
-	int width;
-	int height;
-};
-```
+  // c++
+  class Position {
+  public:
+    int left;
+    int top;
+    int width;
+    int height;
+  };
+  ```
 
 * 변수 정의 :
-```c++
-// C
-struct Position pos;
+  ```c++
+  // C
+  struct Position pos;
 
-// c++
-Position pos;
-```
+  // c++
+  Position pos;
+  ```
 
 * 변수 운영 :
-```c++
-// C is the same as c++
-pos.left = 0;
-```
+  ```c++
+  // C is the same as c++
+  pos.left = 0;
+  ```
  
 **class**에는 C 언어의 구조보다 상속, 다형성, 오버로딩 및 액세스 권한에 대한 개념이 더 많습니다. C에 익숙한 사람들은 이것을 어떻게 사용해야 하는지 충분히 알기 위해서가 아니라면, 많은 노력을 기울일 필요가 없습니다.  
 추가적으로 C언어에서는 함수 포인터만 정의하지만 C++의 **class**에서는 함수를 바로 구현 가능합니다. 이 부분이 C와는 다른 점으로, **class**에 정의된 함수는 일종의 변수처럼 사용됩니다. 아래는 자주 사용되는 예제입니다.
