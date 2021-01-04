@@ -74,13 +74,8 @@
   * [Emulated EEPROM](vireeprom.md)
 * [画面の明るさを調整](brightness.md)
 * [システム時間](system_time.md)
-* [機器固有のID](machine_unique_id.md)
 * [TF card](tf.md)
   * [カード監視](mount.md)
-* [GPIO](gpio.md)
-* [SPI](spi.md)
-* [I2C](i2c.md)
-* [ADC](adc.md)
 * [システムの再スタート](reboot.md)
 
 
@@ -93,7 +88,7 @@
     * [TF cardでプログラムを起動する](start_from_sdcard.md)
     * [Boot LOGOアップグレード](update_logo.md)
     * [Upgrade imageファイルの作成](make_image.md)
-    * [自動TF cardアップデート](autoupgrade.md)
+    * [自動TF cardアップグレード](autoupgrade.md)
     * [フラッシュカードを作成する](sd_boot.md)
     * [リモートアップグレード](remote_update.md)
 
@@ -102,22 +97,16 @@
 ## Linux standard programming
 * [ファイルの読み取り/書き込み](file_read_write.md)
 * [ネットワークプログラミング]()
-  * [ソケットプログラミング](net.md) 
+  * [ソケットプログラミング](net.md)
   * [HTTP](http.md)
 * [トランスコーディング](transcoding.md)
 * [JSON](json.md)
 
 * [付録]()
-    * [C++ basic ](cpp_base.md)
+    * [C++基本](cpp_base.md)
     * [タッチ補正](touchcalibration.md)
     * [Font設定](font_setting.md)
     * [Fontトリミング](font_cut_tool.md)
-    * [ハードウェアの使用説明](hardware.md)
     * [FAQ](problems.md)
     * [ADB driverインストール](install_adb_driver.md)
     * [プラットフォーム移行](convert_platform.md)
-    * [製品仕様とモデルの説明](board_tag_explain.md)
-    * [コアモジュールの使い方のチュートリアル](core_module.md)
-
-
-

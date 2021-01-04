@@ -74,13 +74,8 @@
   * [Emulated EEPROM](vireeprom.md)
 * [Screen backlight operation](brightness.md)
 * [System time](system_time.md)
-* [Device unique ID](machine_unique_id.md)
 * [TF card](tf.md)
   * [Plug-in card monitoring](mount.md)
-* [GPIO operation](gpio.md)
-* [SPI operation](spi.md)
-* [I2C operation](i2c.md)
-* [ADC operation](adc.md)
 * [Reboot the system](reboot.md)
 
 
@@ -93,7 +88,7 @@
     * [Start the program from the TF card](start_from_sdcard.md)
     * [Upgrade boot LOGO](update_logo.md)
     * [Make upgrade image file](make_image.md)
-    * [auto update](autoupgrade.md)
+    * [Auto upgrade](autoupgrade.md)
     * [Make swipe card](sd_boot.md)
     * [Remote upgrade](remote_update.md)
 
@@ -108,16 +103,10 @@
 * [JSON](json.md)
 
 * [Appendix]()
-    * [C++ basic ](cpp_base.md)
-    * [Touch calibration ](touchcalibration.md)
+    * [C++ basic](cpp_base.md)
+    * [Touch calibration](touchcalibration.md)
     * [Font setting](font_setting.md)
     * [Font cutting ](font_cut_tool.md)
-    * [Hardware instructions ](hardware.md)
     * [FAQ](problems.md)
     * [install ADB driver](install_adb_driver.md)
     * [Convert platform](convert_platform.md)
-    * [Product specification and model description](board_tag_explain.md)
-    * [Core module usage tutorial](core_module.md)
-
-
-

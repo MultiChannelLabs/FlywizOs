@@ -1,11 +1,5 @@
 
 # FAQ
-* ### The project created by the old tool is imported into the new tool, the compilation prompt **ndk-build not found**
-  If you install the new tool and delete the old tool, then after importing the project created by the old tool into the new tool, the compiler may prompt **ndk-build not found**.  
-  It can be solved by manually replacing the following files.  
-  Download [z11s project configuration file] (assets/z11sproject-configuration.zip), unzip, copy all the contents of the folder to the project folder, **Note: This operation will cover a total of three files, please note Backup. **
-  After overwriting the file, restart the tool to solve it.
-  
 * ### Time-consuming operations in the UI main thread cause the card to not display the upgrade interface
 The refresh display of the activity is handled in the main UI thread. If there are some time-consuming operations or an infinite loop of the program in the main UI thread, it will affect the refresh of the UI and cause the card to not display the upgrade interface;
 `onUI_init`, `onUI_intent`, `onUI_show`, `onUI_hide`, `onUI_quit`, `onUI_Timer` and some callback interfaces related to controls, these functions are all called in the UI main thread, so this situation should First check if there are any time-consuming operations in these functions;
@@ -33,5 +27,3 @@ In this case, the machine can only be restarted by plugging in the card. After t
   There is another kind of crash, which may be caused by not paying attention to the error of **Divisor cannot be 0**.
   
   If the program is stuck, from the log, there is no restart phenomenon, then we can check from **thread deadlock**, **whether the code loops indefinitely**, **there is a long time-consuming operation, causing the stuck the illusion of death** analyze these situations.
-
-#### For more questions, please go to [Forum](http://bbs.zkswe.com/forum.php) to search or ask questions

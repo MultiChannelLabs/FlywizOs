@@ -74,13 +74,8 @@
   * [Emulated EEPROM](vireeprom.md)
 * [화면 밝기 조정](brightness.md)
 * [시스템 시간](system_time.md)
-* [기기 고유 ID](machine_unique_id.md)
 * [TF card](tf.md)
   * [카드 모니터링](mount.md)
-* [GPIO](gpio.md)
-* [SPI](spi.md)
-* [I2C](i2c.md)
-* [ADC](adc.md)
 * [시스템 재 시작](reboot.md)
 
 
@@ -93,7 +88,7 @@
     * [TF card에서 프로그램 시작](start_from_sdcard.md)
     * [Boot LOGO 업그레이드](update_logo.md)
     * [Upgrade image 파일 만들기](make_image.md)
-    * [자동 TF card 업데이트](autoupgrade.md)
+    * [자동 TF card 업그레이드](autoupgrade.md)
     * [플래쉬 카드 만들기](sd_boot.md)
     * [원격 업그레이드](remote_update.md)
 
@@ -108,16 +103,10 @@
 * [JSON](json.md)
 
 * [부록]()
-    * [C++ basic ](cpp_base.md)
+    * [C++ basic](cpp_base.md)
     * [터치 보정](touchcalibration.md)
     * [Font 설정](font_setting.md)
     * [Font 자르기](font_cut_tool.md)
-    * [하드웨어 사용 설명](hardware.md)
     * [FAQ](problems.md)
     * [ADB driver 설치](install_adb_driver.md)
     * [플랫폼 전환](convert_platform.md)
-    * [제품 사양 및 모델 설명](board_tag_explain.md)
-    * [핵심 모듈 사용법 튜토리얼](core_module.md)
-
-
-

@@ -74,13 +74,8 @@
   * [模拟EEPROM](vireeprom.md)
 * [屏幕背光操作 ](brightness.md)
 * [系统时间 ](system_time.md)
-* [设备唯一ID ](machine_unique_id.md)
 * [TF卡](tf.md)
   * [插拔卡监听](mount.md)
-* [GPIO操作 ](gpio.md)
-* [SPI操作 ](spi.md)
-* [I2C操作 ](i2c.md)
-* [ADC操作 ](adc.md)
 * [重启系统](reboot.md)
 
 
@@ -108,16 +103,10 @@
 * [JSON](json.md)
 
 * [附录]()
-    * [C++基础 ](cpp_base.md)
-    * [触摸校准 ](touchcalibration.md)
-    * [字体库设置说明 ](font_setting.md)
-    * [裁剪字体 ](font_cut_tool.md)
-    * [硬件使用说明 ](hardware.md)
-    * [常见问题 ](problems.md)
+    * [C++基础](cpp_base.md)
+    * [触摸校准](touchcalibration.md)
+    * [字体库设置说明](font_setting.md)
+    * [裁剪字体](font_cut_tool.md)
+    * [常见问题](problems.md)
     * [安装ADB驱动](install_adb_driver.md)
     * [转换项目平台](convert_platform.md)
-    * [产品规格型号说明 ](board_tag_explain.md)
-    * [核心模组使用教程 ](core_module.md)
-
-
-
