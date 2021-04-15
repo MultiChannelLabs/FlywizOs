@@ -1,9 +1,9 @@
 {
   "title": "FlywizOS Docs",
-  "language": "kr",
+  "language": "en",
   "links": {
     "sidebar": {
-      "Home": "https://www.flywizos.com"
+      "Home": "http://www.flywizos.com"
     }
   },
   "plugins": [
@@ -14,11 +14,9 @@
     "splitter",
     "chapter-fold",
     "expandable-chapters",
-    "ga",
     "back-to-top-button",
     "anchor-navigation-ex",
-    "flexible-alerts",
-    "custom-favicon",
+    "flexible-alerts",    
     "scripts",
     "tbfed-pagefooter",
     "book-summary-scroll-position-saver"
@@ -30,13 +28,10 @@
       "modify_label": "last modified:",
       "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
-    "ga": {
-      "token": "UA-121188128-1"
-    },
     "anchor-navigation-ex": {
       "showLevel": false,
       "showGoTop": false
     }
   }
-}
+  }
 
